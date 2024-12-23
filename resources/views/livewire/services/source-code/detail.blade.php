@@ -2,11 +2,12 @@
 
     <head>
         <title>{{ $sourceCodeDetail->name }} - GIANGTRAN.COM.VN</title>
-
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     </head>
 
     <body id="content">
-          <div class="preloader flex-column justify-content-center align-items-center">
+        <div class="preloader flex-column justify-content-center align-items-center">
             <img class="animation__shake" src="/logo/giangtran.webp" alt="AdminLTELogo" height="60" width="60">
         </div>
         <div>
@@ -183,6 +184,11 @@
                                 img.style.width = "100%";
                                 img.style.height = "auto";
                             }
+                        });
+                    </script>
+                    <script>
+                        Fancybox.bind('[data-fancybox="gallery"]', {
+                            // Your custom options for a specific gallery
                         });
                     </script>
 

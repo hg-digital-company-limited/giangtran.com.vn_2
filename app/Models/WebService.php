@@ -14,7 +14,5 @@ class WebService extends Model
     protected $fillable = [
         'name',
         'image',
-        'min_price',
-        'max_price',
     ];
 }

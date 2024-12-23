@@ -2,10 +2,10 @@
     <div class="row">
         <div class="col-md-4">
             <a data-fancybox="gallery"
-                href="https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg"
+                href="{{ Storage::url($sourceCodeDetail->image) }}"
                 data-caption="<strong>{{ $sourceCodeDetail->name }}</strong>">
-                <img src="https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg"
-                    class="img-fluid" alt="{{ $sourceCodeDetail->name }}"
+                <img src="{{ Storage::url($sourceCodeDetail->image) }}"
+                    class="img-fluid" alt="{{ $sourceCodeDetail->name }}" alt="{{ $sourceCodeDetail->name }}"
                     style="max-width: 100%; border-radius: 5px;">
             </a>
         </div>

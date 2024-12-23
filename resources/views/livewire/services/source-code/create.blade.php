@@ -47,16 +47,11 @@
                                                 <div class="card">
                                                     <div class="product-box">
                                                         <div class="product-img">
-                                                            @php
-                                                                // Giả sử $item->images chứa chuỗi JSON
-                                                                $imagesArray = json_decode($item->images, true); // Giải mã JSON thành mảng
-                                                                $firstImage = !empty($imagesArray)
-                                                                    ? $imagesArray[0]['image']
-                                                                    : ''; // Lấy ảnh đầu tiên
-                                                            @endphp
+
 
                                                             <img style=" object-fit: cover;   width: 100%;"
-                                                                class="img-fluid" src="{{ $firstImage }}" alt="">
+                                                                class="img-fluid" src="{{ Storage::url($item->image) }}"
+                                                                alt="">
                                                             <div class="product-hover">
                                                                 <ul>
                                                                     <li>

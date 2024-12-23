@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 23, 2024 lúc 09:57 AM
+-- Thời gian đã tạo: Th12 23, 2024 lúc 10:24 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -86,7 +86,6 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (1275, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1277, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1279, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1517, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1519, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1521, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1523, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
@@ -150,7 +149,8 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (2347, 23, 'Cập nhật thông tin thành công!', '127.0.0.1', '2024-12-23 02:32:34', '2024-12-23 02:32:34'),
 (2348, 23, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-23 02:36:24', '2024-12-23 02:36:24'),
 (2349, 23, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-23 02:36:53', '2024-12-23 02:36:53'),
-(2350, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-23 02:39:02', '2024-12-23 02:39:02');
+(2350, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-23 02:39:02', '2024-12-23 02:39:02'),
+(2351, 20, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-23 09:00:20', '2024-12-23 09:00:20');
 
 -- --------------------------------------------------------
 
@@ -169,8 +169,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('91032ad7bbcb6cf72875e8e8207dcfba80173f7c', 'i:1;', 1734924447),
-('91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer', 'i:1734924447;', 1734924447),
+('91032ad7bbcb6cf72875e8e8207dcfba80173f7c', 'i:1;', 1734945134),
+('91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer', 'i:1734945134;', 1734945134),
 ('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1734921616),
 ('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1734921616;', 1734921616);
 
@@ -341,10 +341,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('5zvlrx31gnNYLUShkgMTVIDb6H6CFiqDDEAE5OxR', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiT3B2ZW9SNm1USFdQUGxvZmZzd0l2VmZnV1NoVEZLbjlaQnFqR291ZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MjA7fQ==', 1734944229),
-('7iUynMnJy2eJboZ9cRn12vEcAcdUEIUonoYW7ZQ1', 23, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoicGlOOUhZVk15Y2FWY09JSFZyWVZOdGpWcEhSZjRqZmRQcnJaejJ6dyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjIzO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkOWxaUFFHVHRTNmE4MU16WkE0ZHJSZWV6SlZWeUhJNlQvMXY2WWhncngzdmpJR05TN2kvcVMiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjI5OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvcHJvZmlsZSI7fX0=', 1734919997),
-('ebKWyzybTLMvO7ZNtKoHf7w7R2bQmTkDWuVZSO8C', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiZ2ZYOUs1NFlLSXdQdlA1NEtYQ3Bxbjc4a3I1ZkNkNzlFM0tpNXdDUyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1734918279),
-('GTMa9sZfWPfPUflRZYcCiHxwvqvHosVrYNED82C3', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjM6InVybCI7YTowOnt9czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9tYW5hZ2VyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6IlhWWkk1ODIzRmFyY1NLdU5mT1l4VXpaV1plWllsWVRCVVROZWpqSmciO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkMkZtbUNHMmpIUnpMV0NBS2tIYVMzLmx0Q2VBb2dwS1QxdmJKWkNlcGxQOUw3LkQyWmpWckMiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1734926005);
+('5zvlrx31gnNYLUShkgMTVIDb6H6CFiqDDEAE5OxR', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiT3B2ZW9SNm1USFdQUGxvZmZzd0l2VmZnV1NoVEZLbjlaQnFqR291ZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0LzEiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJDJGbW1DRzJqSFJ6TFdDQUtrSGFTMy5sdENlQW9ncEtUMXZiSlpDZXBsUDlMNy5EMlpqVnJDIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1734945862);
 
 -- --------------------------------------------------------
 
@@ -617,6 +614,13 @@ CREATE TABLE `source_code_orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `source_code_orders`
+--
+
+INSERT INTO `source_code_orders` (`id`, `user_id`, `source_code_product_id`, `name`, `unit_price`, `order_code`, `link_download`, `created_at`, `updated_at`) VALUES
+(29, 20, 1, 'Mã Nguồn Smm Panel Siêu Xịn', 100000.00, '280370', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', '2024-12-23 09:00:20', '2024-12-23 09:00:20');
+
 -- --------------------------------------------------------
 
 --
@@ -633,7 +637,7 @@ CREATE TABLE `source_code_products` (
   `link_download` varchar(255) DEFAULT NULL,
   `purchase_count` int(11) NOT NULL DEFAULT 0,
   `view_count` int(11) NOT NULL DEFAULT 0,
-  `images` varchar(255) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -642,8 +646,8 @@ CREATE TABLE `source_code_products` (
 -- Đang đổ dữ liệu cho bảng `source_code_products`
 --
 
-INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `images`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Mã Nguồn Smm Panel Siêu Xịn', '<p>&nbsp;Thuê Setup Liên Hệ Ạ</p><p>Link SQL: https://drive.google.com/file/d/167K5cOI8HyU6IVVTnnz9VKFG-6Pg4Mu2/view</p><p>- Không dùng mã nguồn này cho mục đích vi phạm pháp luật&nbsp;</p>', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 100000.00, 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 4, 129, '[{\"image\":\"https:\\/\\/img.upanh.tv\\/2024\\/10\\/12\\/NK6Cnp2.jpg\"}]', '2024-12-18 10:54:14', '2024-12-23 02:42:34');
+INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Mã Nguồn Smm Panel Siêu Xịn', '<p>&nbsp;Thuê Setup Liên Hệ Ạ</p><p>Link SQL: https://drive.google.com/file/d/167K5cOI8HyU6IVVTnnz9VKFG-6Pg4Mu2/view</p><p>- Không dùng mã nguồn này cho mục đích vi phạm pháp luật&nbsp;</p>', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 100000.00, 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 5, 148, '01JFSCJ18WGHDMNEQNQB2GJYHJ.png', '2024-12-18 10:54:14', '2024-12-23 09:24:22');
 
 -- --------------------------------------------------------
 
@@ -746,7 +750,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$2FmmCG2jHRzLWCAKkHaS3.ltCeAogpKT1vbJZCeplP9L7.D2ZjVrC', 'KSP9dT8cmFCa2mxhC8L4f30IMEXt5FPLAWaOMSBs3tkIY3UC5DukguW83A76', '2024-12-07 02:40:50', '2024-12-22 07:35:28', 'default', NULL, 1002156.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, '123', 179583),
+(20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$2FmmCG2jHRzLWCAKkHaS3.ltCeAogpKT1vbJZCeplP9L7.D2ZjVrC', 'KSP9dT8cmFCa2mxhC8L4f30IMEXt5FPLAWaOMSBs3tkIY3UC5DukguW83A76', '2024-12-07 02:40:50', '2024-12-23 09:00:20', 'default', NULL, 902156.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 100000.00, NULL, 0, NULL, '123', 179583),
 (21, '2509robloxx', '2509roblox@gmail.comx', '2509robloxx', NULL, '$2y$12$oGWYZv37sgROOHeRHBZKoueExVCXDhOyQw8iU5uY6JfX3hMIxlWcm', NULL, '2024-12-17 14:15:59', '2024-12-17 14:15:59', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
 (22, '2509robloxa', '2509robloxa@gmail.com', '2509robloxa', NULL, '$2y$12$FEN67dl2z5nuGkvKhfIKcO24lCuQTkP.xGMepxjcPYzdBL.T35Qiu', NULL, '2024-12-18 03:18:56', '2024-12-18 03:18:56', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
 (23, 'admin', 'admin@gmail.com', 'admin@gmail.com', NULL, '$2y$12$9lZPQGTtS6a81MzZA4drReezJVVyHI6T/1v6Yhgrx3vjIGNS7i/qS', 'BFTD7VWtzmNmumgjnHDHg9e95iSxOEvQcB18IeevaxeLPmlvXBcFDAk5yrqx', '2024-12-18 03:19:54', '2024-12-23 02:36:53', 'default', NULL, 999696805.00, NULL, NULL, NULL, 1600000.00, 1000000.00, 0, NULL, NULL, NULL);
@@ -761,8 +765,6 @@ CREATE TABLE `web_services` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `min_price` decimal(30,2) NOT NULL,
-  `max_price` decimal(30,2) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -771,13 +773,13 @@ CREATE TABLE `web_services` (
 -- Đang đổ dữ liệu cho bảng `web_services`
 --
 
-INSERT INTO `web_services` (`id`, `name`, `image`, `min_price`, `max_price`, `created_at`, `updated_at`) VALUES
-(1, 'Code, thêm chức năng, và xây dựng website', '01JFRQ0ZRF671FRRHA2GXX56A2.jpeg', 100000.00, 1000000.00, '2024-12-23 02:55:01', '2024-12-23 02:55:01'),
-(3, 'Clone giao diện website nhanh chóng', '01JFRRM4R6V7V6DXA2CXXNJGBV.jpg', 100000.00, 1000000.00, '2024-12-23 03:22:58', '2024-12-23 03:22:58'),
-(4, 'Xây dựng LandingPage website', '01JFRRMYDHDNZAPWZR8G5PKFJQ.png', 100000.00, 1000000.00, '2024-12-23 03:23:24', '2024-12-23 03:23:24'),
-(5, 'Giải bài tập, hỗ trợ thi môn website', '01JFRRNZCDK17TT089XPJKMA8T.png', 100000.00, 1000000.00, '2024-12-23 03:23:58', '2024-12-23 03:23:58'),
-(6, 'Cho thuê Hosting / VPS theo ngày / tháng', '01JFRRSD89VAKAZ6ARBQC907YE.jpg', 100000.00, 1000000.00, '2024-12-23 03:25:50', '2024-12-23 03:25:50'),
-(7, 'Deploy hộ website: Wordpress, php, Laravel', '01JFRRW4CNWJKMTYANS3SVX5MS.jpg', 100000.00, 1000000.00, '2024-12-23 03:27:19', '2024-12-23 03:27:19');
+INSERT INTO `web_services` (`id`, `name`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'Code, thêm chức năng, và xây dựng website', '01JFRQ0ZRF671FRRHA2GXX56A2.jpeg', '2024-12-23 02:55:01', '2024-12-23 02:55:01'),
+(3, 'Clone giao diện website nhanh chóng', '01JFRRM4R6V7V6DXA2CXXNJGBV.jpg', '2024-12-23 03:22:58', '2024-12-23 03:22:58'),
+(4, 'Xây dựng LandingPage website', '01JFRRMYDHDNZAPWZR8G5PKFJQ.png', '2024-12-23 03:23:24', '2024-12-23 03:23:24'),
+(5, 'Giải bài tập, hỗ trợ thi môn website', '01JFRRNZCDK17TT089XPJKMA8T.png', '2024-12-23 03:23:58', '2024-12-23 03:23:58'),
+(6, 'Cho thuê Hosting / VPS theo ngày / tháng', '01JFRRSD89VAKAZ6ARBQC907YE.jpg', '2024-12-23 03:25:50', '2024-12-23 03:25:50'),
+(7, 'Deploy hộ website: Wordpress, php, Laravel', '01JFRRW4CNWJKMTYANS3SVX5MS.jpg', '2024-12-23 03:27:19', '2024-12-23 03:27:19');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -920,7 +922,7 @@ ALTER TABLE `web_services`
 -- AUTO_INCREMENT cho bảng `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2351;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2352;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
@@ -974,7 +976,7 @@ ALTER TABLE `source_code_categories`
 -- AUTO_INCREMENT cho bảng `source_code_orders`
 --
 ALTER TABLE `source_code_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT cho bảng `source_code_products`

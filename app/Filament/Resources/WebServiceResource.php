@@ -31,12 +31,6 @@ class WebServiceResource extends Resource
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
-                Forms\Components\TextInput::make('min_price')
-                    ->required()
-                    ->numeric(),
-                Forms\Components\TextInput::make('max_price')
-                    ->required()
-                    ->numeric(),
             ]);
     }
 
@@ -47,12 +41,6 @@ class WebServiceResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
-                Tables\Columns\TextColumn::make('min_price')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('max_price')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

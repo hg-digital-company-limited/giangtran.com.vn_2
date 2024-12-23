@@ -20,7 +20,7 @@ class SourceCodeProduct extends Model
         'link_download',
         'purchase_count',
         'view_count',
-        'images',
+        'image',
     ]; // Các cột có thể gán giá trị hàng loạt
     public function category()
     {
