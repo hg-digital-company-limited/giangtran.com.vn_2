@@ -56,9 +56,9 @@
                                                                 <td class="sorting_1">{{ $order->id }}</td>
                                                                 <td>{{ $order->service->name }}</td>
                                                                 <!-- Hiển thị tên dịch vụ -->
-                                                                <td>{{ $order->total_price }}
+                                                                <td>{{ number_format($order->total_price, 0, ',', '.') }}
                                                                     VNĐ</td> <!-- Giá tiền -->
-                                                                <td>{{ $order->unit_price }}
+                                                                <td>{{ number_format($order->unit_price, 0, ',', '.') }}
                                                                     VNĐ</td> <!-- Giá đơn vị -->
                                                                 <td>{{ $order->quantity }}</td> <!-- Số lượng -->
                                                                 <td>{{ $order->start_count }}</td>

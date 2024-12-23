@@ -62,96 +62,25 @@
 
                                         <div class="mt-3">
                                             <div class="row">
+                                                @foreach ($randomProducts as $item)
                                                 <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="https://i.imgur.com/HbwUH5l.png"
+                                                    <a data-fancybox="gallery" href="{{ Storage::url($item->image) }}"
                                                         data-caption="<strong>Code web cho thuê cronjob ( Nạp Tiền tự Động ) Dùng Python</strong>">
-                                                        <img src="https://i.imgur.com/HbwUH5l.png" class="img-fluid"
+                                                        <img src="{{ Storage::url($item->image) }}" class="img-fluid"
                                                             alt="Code web cho thuê cronjob ( Nạp Tiền tự Động ) Dùng Python"
                                                             style="max-width: 100%; border-radius: 5px;">
                                                     </a>
 
-                                                    <a style="cursor: pointer;" onclick="loadto('/mua-ma-nguon/3');">
+                                                    <a style="cursor: pointer;"
+                                                        href="/source-code/list/{{ $item->id }}"
+                                                        wire:navigate>
                                                         <h5
                                                             style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
-                                                            Code web cho thuê cronjob ( Nạp Tiền tự Động ) Dùng Python
+                                                            {{ $item->name }}
                                                         </h5>
                                                     </a>
                                                 </div>
-                                                <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="https://i.imgur.com/x44RuuS.png"
-                                                        data-caption="<strong>Code WHMCS 8.6.1 tích hợp nạp tự động ngân hàng tích hợp tiếng Việt.</strong>">
-                                                        <img src="https://i.imgur.com/x44RuuS.png" class="img-fluid"
-                                                            alt="Code WHMCS 8.6.1 tích hợp nạp tự động ngân hàng tích hợp tiếng Việt."
-                                                            style="max-width: 100%; border-radius: 5px;">
-                                                    </a>
-
-                                                    <a style="cursor: pointer;" onclick="loadto('/mua-ma-nguon/4');">
-                                                        <h5
-                                                            style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
-                                                            Code WHMCS 8.6.1 tích hợp nạp tự động ngân hàng tích hợp
-                                                            tiếng Việt. </h5>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="https://i.imgur.com/vqR9fO2.png"
-                                                        data-caption="<strong>Code bán host Cpanel tự động (dailysieure WHM v3)</strong>">
-                                                        <img src="https://i.imgur.com/vqR9fO2.png" class="img-fluid"
-                                                            alt="Code bán host Cpanel tự động (dailysieure WHM v3)"
-                                                            style="max-width: 100%; border-radius: 5px;">
-                                                    </a>
-
-                                                    <a style="cursor: pointer;" onclick="loadto('/mua-ma-nguon/5');">
-                                                        <h5
-                                                            style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
-                                                            Code bán host Cpanel tự động (dailysieure WHM v3) </h5>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="https://i.imgur.com/tWUq27G.png"
-                                                        data-caption="<strong>Code Bán Mã Nguồn Viết Bằng ReactJs Cao Cấp </strong>">
-                                                        <img src="https://i.imgur.com/tWUq27G.png" class="img-fluid"
-                                                            alt="Code Bán Mã Nguồn Viết Bằng ReactJs Cao Cấp "
-                                                            style="max-width: 100%; border-radius: 5px;">
-                                                    </a>
-
-                                                    <a style="cursor: pointer;" onclick="loadto('/mua-ma-nguon/6');">
-                                                        <h5
-                                                            style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
-                                                            Code Bán Mã Nguồn Viết Bằng ReactJs Cao Cấp </h5>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="https://i.imgur.com/n7g2Oru.png"
-                                                        data-caption="<strong>Mã Nguồn Game Đa Dạng Full game H5 ( TRUNG QUỐC , CÒN ZIN )</strong>">
-                                                        <img src="https://i.imgur.com/n7g2Oru.png" class="img-fluid"
-                                                            alt="Mã Nguồn Game Đa Dạng Full game H5 ( TRUNG QUỐC , CÒN ZIN )"
-                                                            style="max-width: 100%; border-radius: 5px;">
-                                                    </a>
-
-                                                    <a style="cursor: pointer;" onclick="loadto('/mua-ma-nguon/7');">
-                                                        <h5
-                                                            style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
-                                                            Mã Nguồn Game Đa Dạng Full game H5 ( TRUNG QUỐC , CÒN ZIN )
-                                                        </h5>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery"
-                                                        href="https://sv1.anhsieuviet.com/2024/08/28/14629b47d318a988dea9ebb30168407c.png"
-                                                        data-caption="<strong>Mã Nguồn Bán Hosting, Reseller, Tên Miền API Cyberlux.vn (Gốc)</strong>">
-                                                        <img src="https://sv1.anhsieuviet.com/2024/08/28/14629b47d318a988dea9ebb30168407c.png"
-                                                            class="img-fluid"
-                                                            alt="Mã Nguồn Bán Hosting, Reseller, Tên Miền API Cyberlux.vn (Gốc)"
-                                                            style="max-width: 100%; border-radius: 5px;">
-                                                    </a>
-
-                                                    <a style="cursor: pointer;" onclick="loadto('/mua-ma-nguon/8');">
-                                                        <h5
-                                                            style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
-                                                            Mã Nguồn Bán Hosting, Reseller, Tên Miền API Cyberlux.vn
-                                                            (Gốc) </h5>
-                                                    </a>
-                                                </div>
+                                                @endforeach
 
                                             </div>
                                         </div>

@@ -2,17 +2,21 @@
 
 namespace App\Livewire\Services\SourceCode;
 
-use App\Models\SourceCodeProduct;
-use App\Repositories\SourceCodeOrder\SourceCodeOrderRepositoryInterface;
+use App\Repositories\SourceCodeProduct\SourceCodeProductRepositoryInterface;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 class Detail extends Component
 {
     use LivewireAlert;
     public $sourceCodeDetail;
-    public function mount($id)
+    protected $sourceCodeProductRepository;
+    public $randomProducts;
+    public function mount($id, SourceCodeProductRepositoryInterface $sourceCodeProductRepository)
     {
-        $this->sourceCodeDetail = SourceCodeProduct::find($id);
+        $this->sourceCodeProductRepository = $sourceCodeProductRepository;
+        $this->randomProducts = $this->sourceCodeProductRepository->getRandomProductsFromSameCategory($id);
+
+        $this->sourceCodeDetail = $this->sourceCodeProductRepository->find($id);
         if (!$this->sourceCodeDetail) {
             abort(404);
         }
