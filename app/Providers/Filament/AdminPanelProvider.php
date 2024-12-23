@@ -62,7 +62,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->brandLogo(asset('/logo/giangtran.png'))
             ->brandLogoHeight('2rem')
-            ->favicon('/logo/icon.png')
+            ->favicon('/logo/avatar.jpg')
             ->brandName('GIANGTRAN.COM.VN');
     }
 }

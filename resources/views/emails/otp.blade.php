@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/PttpxCf/giangtran-com-vn-dark.png" alt="Logo" style="width: 100px;">
+<img src="https://i.ibb.co/MNkB3KP/giangtran-1.png" alt="Logo" style="width: 300px;">
 <br>
 {{-- <img src="{{ asset('/logo/giangtran.com.vn.dark.png') }}" alt="Logo" style="width: 100px;"> --}}
  Xin chào! <br>

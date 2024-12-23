@@ -10,7 +10,7 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="google-site-verification" content="XdpPCe9WLWMZA9pEynO-7B7lRoimKZl7qFlCqvZsVlo">
-    <link rel="shortcut icon" href="{{ asset('/logo/icon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('/logo/avatar.jpg') }}" type="image/png">
 
     <meta name="description"
         content="GIANGTRAN.COM.VN - Chuyên thiết kế website Bán Code, Mã, Sản phẩm, chuẩn SEO, chuyên nghiệp">

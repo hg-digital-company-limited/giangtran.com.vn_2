@@ -17,7 +17,7 @@
                 @if (Auth::check())
                     <div class="project-details">
                         <div class="d-flex gap-2">
-                            <img src="/logo/avatar.png" style="width: 48px;" alt="user">
+                            <img src="/logo/avatar.jpg"   style="width: 48px; border-radius: 10px;" alt="user">
                             <div>
                                 <h4 class="f-w-500">
                                     {{ Auth::user()->username }}

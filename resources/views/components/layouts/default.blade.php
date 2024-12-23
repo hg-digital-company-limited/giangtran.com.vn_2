@@ -10,7 +10,7 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="google-site-verification" content="W1Wf5_b9Yoc5PaKmRkfDJB0bzRUGDkcn2rDUhja0skU" />
-    <link rel="shortcut icon" href="{{ asset('/logo/icon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('/logo/avatar.jpg') }}" type="image/png">
 
     <meta name="description"
         content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp.">

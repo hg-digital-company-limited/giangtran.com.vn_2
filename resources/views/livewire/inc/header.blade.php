@@ -73,7 +73,7 @@
 
 
                             <div class="onhover-click">
-                                <div class="sidebar-image"> <img loading="lazy" src="/logo/avatar.png"
+                                <div class="sidebar-image"> <img style="border-radius: 10px;" loading="lazy" src="/logo/avatar.jpg"
                                         alt="profile"><span class="status status-success"></span></div>
                                 <div class="sidebar-content">
                                     <h4>
