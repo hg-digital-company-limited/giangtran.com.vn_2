@@ -65,9 +65,9 @@
                                                 @foreach ($randomProducts as $item)
                                                 <div class="col-md-4 col-4" style="padding: 10px;">
                                                     <a data-fancybox="gallery" href="{{ Storage::url($item->image) }}"
-                                                        data-caption="<strong>Code web cho thuê cronjob ( Nạp Tiền tự Động ) Dùng Python</strong>">
+                                                        data-caption="{{ $item->name }}">
                                                         <img src="{{ Storage::url($item->image) }}" class="img-fluid"
-                                                            alt="Code web cho thuê cronjob ( Nạp Tiền tự Động ) Dùng Python"
+                                                            alt="{{ $item->name }}"
                                                             style="max-width: 100%; border-radius: 5px;">
                                                     </a>
 

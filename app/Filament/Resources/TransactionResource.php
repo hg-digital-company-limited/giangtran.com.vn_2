@@ -18,7 +18,7 @@ class TransactionResource extends Resource
 {
     protected static ?string $model = Transaction::class;
     protected static ?string $navigationLabel = 'Lịch Sử Giao Dịch';
-    protected static ?string $navigationGroup = 'Người Dùng';
+    protected static ?string $navigationGroup = 'Giao Dịch';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form

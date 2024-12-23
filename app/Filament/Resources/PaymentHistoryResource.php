@@ -19,7 +19,7 @@ class PaymentHistoryResource extends Resource
     protected static ?string $model = PaymentHistory::class;
 
     protected static ?string $navigationLabel = 'Lịch Sử Nạp Tiền';
-    protected static ?string $navigationGroup = 'Người Dùng';
+    protected static ?string $navigationGroup = 'Giao Dịch';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     public static function getNavigationLabel(): string
     {
