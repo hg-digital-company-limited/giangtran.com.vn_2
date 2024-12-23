@@ -51,7 +51,7 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        @foreach (App\Models\SmmOrder::getOrdersByCurrentUser() as $order)
+                                                        @foreach ($smmOrders as $order)
                                                             <tr role="row" class="odd">
                                                                 <td class="sorting_1">{{ $order->id }}</td>
                                                                 <td>{{ $order->service->name }}</td>
