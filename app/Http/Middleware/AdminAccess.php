@@ -21,7 +21,7 @@ class AdminAccess
         }
 
         // Check if the authenticated user has the required email
-        if (Auth::user()->email === 'admin@gmail.com') {
+        if (Auth::user()->email === '2509roblox@gmail.com') {
             return $next($request);
         }
 

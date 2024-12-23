@@ -3,6 +3,7 @@
 namespace App\Livewire\Page\Profile\Form;
 
 use App\Models\User;
+use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -58,6 +59,8 @@ class ResetPassword extends Component
             $user->save();
 
             $this->alert('success', 'Mật khẩu đã được thay đổi thành công!');
+            ActivityHistoryEloquentRepository::logActivity('Đổi mật khẩu tài khoản!');
+
             return redirect()->route('home'); // Chuyển hướng đến trang bạn muốn
         }
     }

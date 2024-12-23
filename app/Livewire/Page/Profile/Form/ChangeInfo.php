@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Livewire\Page\Profile\Form;
+use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 use Livewire\Component;
@@ -24,6 +25,7 @@ class ChangeInfo extends Component
         ]);
         if ($user) {
             $this->alert('success', 'Cập nhật thông tin thành công!');
+            ActivityHistoryEloquentRepository::logActivity('Cập nhật thông tin tài khoản!');
         }
     }
     public function render()

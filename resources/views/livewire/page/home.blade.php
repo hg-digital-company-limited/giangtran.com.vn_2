@@ -279,10 +279,11 @@
                             src='https://www.freevisitorcounters.com/auth.php?id=edade5990080b86e1416a2cedeb15a986f449778'></script>
                         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1279811/t/8"></script>
                         <script>
-                            document.querySelectorAll('a[href="https://www.freevisitorcounters.com/en/home/stats/id/1279811"]').forEach(
-                                function(link) {
+                            document.addEventListener('DOMContentLoaded', function() {
+                                document.querySelectorAll('a[href="https://www.freevisitorcounters.com/en/home/stats/id/1279811"]').forEach(function(link) {
                                     link.style.opacity = '0';
                                 });
+                            });
                         </script>
                     </div>
 

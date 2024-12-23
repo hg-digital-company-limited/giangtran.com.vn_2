@@ -3,6 +3,7 @@
 namespace App\Livewire\Services\SourceCode\Components;
 
 use App\Models\SourceCodeProduct;
+use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use App\Repositories\SourceCodeOrder\SourceCodeOrderRepositoryInterface;
 use App\Repositories\SourceCodeProduct\SourceCodeProductRepositoryInterface;
 use App\Repositories\User\UserRepositoryInterface;
@@ -55,6 +56,8 @@ class Form extends Component
         $this->sourceCodeProductRepository->updateSourceCodeProductPurchaseCount($this->sourceCodeDetail->id );
 
         $this->alert('success', 'Mua mã nguồn thành công!');
+        ActivityHistoryEloquentRepository::logActivity('Mua Source Code . ' . $this->sourceCodeDetail->name . '!');
+
         return redirect('/source-code/manager');
     }
 

@@ -4,6 +4,7 @@ namespace App\Livewire\Services\Smm\Components;
 
 use App\Models\SmmCategory;
 use App\Models\SmmService;
+use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use App\Repositories\SmmOrder\SmmOrderRepositoryInterface;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
@@ -143,6 +144,9 @@ class Form extends Component
             // Reset form fields after successful order creation
             $this->reset();
             $this->alert('success', 'Đơn hàng đã được tạo thành công');
+
+            ActivityHistoryEloquentRepository::logActivity('Tạo đơn hàng Smm!');
+
             return redirect('/smm/manager');
         } else {
             $this->alert('error', 'Đã xảy ra lỗi khi tạo đơn hàng. Vui lòng thử lại.');

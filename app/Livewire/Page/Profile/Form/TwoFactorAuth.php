@@ -1,6 +1,7 @@
 <?php
 namespace App\Livewire\Page\Profile\Form;
 
+use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert; // Thêm import
 use Illuminate\Support\Facades\Auth;
@@ -25,6 +26,7 @@ class TwoFactorAuth extends Component
         $user->save();
 
         // Hiển thị thông báo thành công
+        ActivityHistoryEloquentRepository::logActivity('Cập nhật trạng thái xác thực hai yếu tố!');
         $this->alert('success', 'Trạng thái xác thực hai yếu tố đã được cập nhật.');
     }
 
