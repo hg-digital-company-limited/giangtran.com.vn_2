@@ -28,11 +28,9 @@ class Form extends Component
         $this->categories = SmmCategory::get();
         if ($this->categories->isNotEmpty()) {
             $this->selectedCategory = $this->categories->first()->id;
-            $this->selectedCategory = $this->categories->first()->id;
             $this->selectedCategory_path = $this->categories->first()->image ?? null;
-            $this->services = SmmService::where('is_active', 1)
-                ->where('smmcategory_id', $this->selectedCategory)
-                ->get();
+            $this->services = collect(); // Return an empty collection
+
         } else {
             $this->selectedCategory = null;
             $this->selectedCategory_path = null;

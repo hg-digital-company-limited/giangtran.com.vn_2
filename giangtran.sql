@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 23, 2024 lúc 11:30 AM
+-- Thời gian đã tạo: Th12 23, 2024 lúc 03:09 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -292,7 +292,7 @@ CREATE TABLE `password_reset_tokens` (
 --
 
 INSERT INTO `password_reset_tokens` (`email`, `token`, `created_at`) VALUES
-('2509roblox@gmail.com', '$2y$12$6l6XPqUlyqYTKGGIdgmoeeEVcvcJAgnH89beTlD4ju5R2d86ceJkm', '2024-12-13 02:50:58');
+('2509roblox@gmail.com', '$2y$12$nejARjQYfEcC/Dwhd98ApOONDRu0MX.owyp5OpAfAvMC3hg//7LGu', '2024-12-23 13:32:54');
 
 -- --------------------------------------------------------
 
@@ -341,7 +341,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('5zvlrx31gnNYLUShkgMTVIDb6H6CFiqDDEAE5OxR', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiT3B2ZW9SNm1USFdQUGxvZmZzd0l2VmZnV1NoVEZLbjlaQnFqR291ZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzQ6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9jaHV5ZW4ta2hvYW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJDJGbW1DRzJqSFJ6TFdDQUtrSGFTMy5sdENlQW9ncEtUMXZiSlpDZXBsUDlMNy5EMlpqVnJDIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1734949807);
+('r1ukjRcdL3LB6ypSEmb1hH9cBQNdSHMIvUzRUdbA', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMVVjMUFyR1I4ZHJOeXNPbjBkV3NxY0U4ZTJoTUxMcVJyNzRPZ2pQdSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vY3JlYXRlIjt9fQ==', 1734962971);
 
 -- --------------------------------------------------------
 
