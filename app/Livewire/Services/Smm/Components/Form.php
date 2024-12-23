@@ -91,7 +91,6 @@ class Form extends Component
         $totalPrice = $this->getServicePrice($this->selectedService) * $this->quantity;
 
         // Get user's balance
-        $userBalance = auth()->user()->balance; // Assuming 'bala
         // Reset errors before processing
         $this->errors = [];
 
@@ -123,8 +122,6 @@ class Form extends Component
             $this->dispatch('select2:updated');
             return;
         }
-
-
         // Prepare order data
         $data = [
             'user_id' => auth()->user()->id,

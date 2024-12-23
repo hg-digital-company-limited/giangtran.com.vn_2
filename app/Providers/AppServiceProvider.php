@@ -39,6 +39,10 @@ class AppServiceProvider extends ServiceProvider
             \App\Repositories\Transaction\TransactionRepositoryInterface::class,
             \App\Repositories\Transaction\TransactionEloquentRepository::class
         );
+        $this->app->singleton(
+            \App\Repositories\WebService\WebServiceRepositoryInterface::class,
+            \App\Repositories\WebService\WebServiceEloquentRepository::class
+        );
     }
 
     /**

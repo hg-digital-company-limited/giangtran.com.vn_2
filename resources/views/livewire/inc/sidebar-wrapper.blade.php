@@ -233,6 +233,15 @@
 
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/web-service/create">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
+                            </svg>
+                            <span> Dịch Vụ Website </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
                         <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/chuyen-khoan">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-starter-kit"></use>
