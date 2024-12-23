@@ -33,7 +33,7 @@
                                                 <div class="product-box">
                                                     <div class="product-img">
 
-                                                        <img style=" object-fit: cover;   width: 100%; height: 300px;"
+                                                        <img style=" object-fit: cover;   width: 100%; height: 250px;"
                                                             class="card-img-top"
                                                             src="{{Storage::url($item->image) }}"
                                                             alt="">

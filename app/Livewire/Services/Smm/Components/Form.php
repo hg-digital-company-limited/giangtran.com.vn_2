@@ -45,12 +45,10 @@ class Form extends Component
         $this->selectedServiceMax = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->max;
         $this->selectedServiceTime = SmmService::where('smmcategory_id', $this->selectedCategory)->first()->time;
         $this->quantity = $this->selectedServiceMin;
-
     }
     public function updatedSelectedCategory()
     {
         $services = SmmService::where('smmcategory_id', $this->selectedCategory)->get();
-
         if ($services->isNotEmpty()) {
             $this->services = $services;
             $firstService = $services->first();
