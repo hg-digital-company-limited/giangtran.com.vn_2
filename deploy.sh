@@ -1,7 +1,7 @@
 cd /var/www/giangtran.com.vn
 sudo rm -rf ./*
 sudo rm -rf .[^.]*  # Xóa các tệp ẩn
-sudo git clone  https://github.com/hg-digital-company-limited/giangtran.com.vn_1.git ./ && \
+sudo git clone  https://github.com/hg-digital-company-limited/giangtran.com.vn_2.git ./ && \
 sudo composer install && \
 sudo cp .env.production .env && \
 sudo chmod -R 777 . && \
