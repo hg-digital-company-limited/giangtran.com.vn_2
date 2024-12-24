@@ -1,6 +1,7 @@
 <?php
 namespace App\Repositories\Transaction;
 
+use App\Helpers\SettingsHelper;
 use App\Models\Transaction;
 use App\Repositories\EloquentRepository;
 use Illuminate\Support\Carbon;
@@ -30,7 +31,7 @@ class TransactionEloquentRepository extends EloquentRepository implements Transa
     public  function fetchTransactionsFromApi()
     {
         $url = 'https://my.sepay.vn/userapi/transactions/list';
-        $accountNumber = env('SEPAY_ACCOUNT_NUMBER');
+        $accountNumber = SettingsHelper::getSetting('sepay_account_number');
         $limit = 10;
 
         // Khởi tạo cURL
@@ -41,7 +42,7 @@ class TransactionEloquentRepository extends EloquentRepository implements Transa
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json',
-            'Authorization: Bearer '. env('SEPAY_TOKEN') ,
+            'Authorization: Bearer '.SettingsHelper::getSetting('sepay_token'),
         ]);
         curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\cron;
 
+use App\Helpers\SettingsHelper;
 use App\Http\Controllers\Controller;
 use App\Repositories\PaymentHistory\PaymentHistoryRepositoryInterface;
 use App\Repositories\SmmOrder\SmmOrderRepositoryInterface;
@@ -18,7 +19,7 @@ class Checkpayment extends Controller
     public function checkPayment(PaymentHistoryRepositoryInterface $paymentHistoryRepository)
     {
         $this->paymentHistoryRepository = $paymentHistoryRepository;
-        $code = 'HG '.  strtoupper(string: Auth::user()->username);
+        $code = SettingsHelper::getSetting('prefix') .  strtoupper(string: Auth::user()->username);
         $userId = Auth::user()->id;
         // Gọi hàm từ model và truyền user_id
         $result = $this->paymentHistoryRepository->createPaymentHistory($code, $userId);

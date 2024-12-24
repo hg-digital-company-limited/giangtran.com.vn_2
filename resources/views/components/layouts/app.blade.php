@@ -11,13 +11,15 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="google-site-verification" content="XdpPCe9WLWMZA9pEynO-7B7lRoimKZl7qFlCqvZsVlo">
-    <link rel="shortcut icon" href="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('icon'))) }}" type="image/png">
+    <link rel="shortcut icon" href="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('icon'))) }}"
+        type="image/png">
 
-    <meta name="description"
-        content="{{ App\Helpers\SettingsHelper::getSetting('website_description') }}">
-    <meta name="twitter:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}" /> <!-- Add your image path here -->
+    <meta name="description" content="{{ App\Helpers\SettingsHelper::getSetting('website_description') }}">
+    <meta name="twitter:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}" />
+    <!-- Add your image path here -->
     <meta property="og:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
-    <meta property="og:image" itemprop="thumbnailUrl" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
+    <meta property="og:image" itemprop="thumbnailUrl"
+        content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
 
 
 
@@ -161,7 +163,33 @@
 @livewire('inc.social-popup')
 @livewire('inc.alert')
 @livewire('content.modal-alert')
+<div class="chat-widget">
+    <div class="chat-item zalo">
+        <a href="{{ App\Helpers\SettingsHelper::getSetting('contact') }}" target="_blank">
+            <img src="{{ asset('logo/zalo.gif') }}" alt="Chat với Zalo" class="chat-gif">
+        </a>
+    </div>
+</div>
+<style>
+    .chat-widget {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
 
+    .chat-item.zalo {
+        margin-right: 14px;
+    }
+    .chat-gif {
+    width: 80px;
+    height: auto;
+    transition: transform .3s ease;
+}
+</style>
 <script>
     setTimeout(function() {
         var $preloader = document.querySelector('.preloader');

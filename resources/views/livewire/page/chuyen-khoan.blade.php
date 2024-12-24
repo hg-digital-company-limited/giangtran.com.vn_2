@@ -31,7 +31,7 @@
                                 <div class="d-flex align-items-center justify-content-between bg-light rounded"
                                     style="padding: 10px;">
                                     <b class="text-dark" id="code-transfer">
-                                        HG {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}
+                                        {{ App\Helpers\SettingsHelper::getSetting('prefix') }}{{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}
                                     </b>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                                                                 d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
                                                             </path>
                                                         </svg></span><br>
-                                                    <span> TRAN LE HOANG GIANG </span><br>
+                                                    <span> {{ App\Helpers\SettingsHelper::getSetting('account_name_qr') }} </span><br>
                                                     <span> {{  number_format(App\Helpers\SettingsHelper::getSetting('min_deposit'), 0, ',', '.') }} VND </span><br>
                                                 </div>
 
