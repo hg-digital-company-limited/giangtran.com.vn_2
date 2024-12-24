@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Services\SourceCode\Components;
 
+use App\Helpers\TelegramHelper;
 use App\Mail\order\SourceCode;
 use App\Models\SourceCodeProduct;
 use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
@@ -59,6 +60,20 @@ class Form extends Component
 
         $this->alert('success', 'Mua mã nguồn thành công!');
         ActivityHistoryEloquentRepository::logActivity('Mua Source Code . ' . $this->sourceCodeDetail->name . '!');
+
+
+
+        $telegramHelper = new TelegramHelper();
+        $message = "Người dùng: " . auth()->user()->email . "
+        Mã sản phẩm: {$this->sourceCodeDetail->id}
+        Đã mua mã nguồn : {$this->sourceCodeDetail->name}
+        giá sản phẩm: " . number_format($this->sourceCodeDetail->price , 0, ',', '.') . " VNĐ" . "
+        Ngày mua: " . now()->format('d/m/Y H:i:s') . "
+        ";
+        $telegramHelper->sendMessage($message);
+
+
+
         Mail::to(auth()->user()->email)->send(new SourceCode($sourceCodeOrder));
         return redirect('/source-code/manager');
     }

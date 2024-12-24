@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Services\Smm\Components;
 
+use App\Helpers\TelegramHelper;
 use App\Mail\Order\Smm;
 use App\Models\SmmCategory;
 use App\Models\SmmService;
@@ -31,7 +32,7 @@ class Form extends Component
         if ($this->categories->isNotEmpty()) {
             $this->selectedCategory = $this->categories->first()->id;
             $this->selectedCategory_path = $this->categories->first()->image ?? null;
-            $this->services = collect(); // Return an empty collection
+            $this->services = SmmService::where('smmcategory_id', $this->selectedCategory)->get(); // Return an empty collection
 
         } else {
             $this->selectedCategory = null;
@@ -140,6 +141,21 @@ class Form extends Component
             $this->reset();
             $this->alert('success', 'Đơn hàng đã được tạo thành công');
             ActivityHistoryEloquentRepository::logActivity('Tạo đơn hàng Smm!');
+
+
+            $telegramHelper = new TelegramHelper();
+            $message =
+            "Người dùng: " . auth()->user()->email . "
+             Đã mua dịch vụ: {$order->service->name}
+             giá dịch vụ: " . number_format($order->unit_price, 0, ',', '.') . " VNĐ" . "
+             số lượng: {$order->quantity}
+             tổng tiền: " . number_format($order->total_price, 0, ',', '.') . " VNĐ" . "
+             link: {$order->link}
+             Ngày mua: " . now()->format('d/m/Y H:i:s') . "
+            ";
+            $telegramHelper->sendMessage($message);
+
+
             Mail::to(auth()->user()->email)->send(new Smm($order));
             return redirect('/smm/manager');
         } else {

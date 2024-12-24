@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 24, 2024 lúc 12:42 AM
+-- Thời gian đã tạo: Th12 24, 2024 lúc 04:18 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -41,53 +41,36 @@ CREATE TABLE `activity_history` (
 --
 
 INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `created_at`, `updated_at`) VALUES
-(239, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(241, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(243, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (245, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (247, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (249, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (251, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (253, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (255, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(495, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(497, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(499, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (501, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (503, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (505, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (507, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (509, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (511, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(751, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(753, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(755, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (757, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (759, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (761, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (763, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (765, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (767, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1007, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1009, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1011, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1013, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1015, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1017, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1019, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1021, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1023, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1263, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1265, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1267, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1269, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1271, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1273, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1275, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1277, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1279, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1519, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1521, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1523, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1525, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1527, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
@@ -95,8 +78,6 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (1531, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1533, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1535, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1775, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1777, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1779, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1781, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1783, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
@@ -104,8 +85,6 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (1787, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1789, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1791, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(2031, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(2033, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2035, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2037, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2039, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
@@ -113,9 +92,6 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (2043, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2045, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2047, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(2285, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(2287, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(2289, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2291, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2293, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2295, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
@@ -150,7 +126,31 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (2350, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-23 02:39:02', '2024-12-23 02:39:02'),
 (2351, 20, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-23 09:00:20', '2024-12-23 09:00:20'),
 (2352, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-23 23:23:14', '2024-12-23 23:23:14'),
-(2353, 20, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-23 23:25:17', '2024-12-23 23:25:17');
+(2353, 20, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-23 23:25:17', '2024-12-23 23:25:17'),
+(2354, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:11:27', '2024-12-24 02:11:27'),
+(2355, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:15:02', '2024-12-24 02:15:02'),
+(2356, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:16:52', '2024-12-24 02:16:52'),
+(2357, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:21:48', '2024-12-24 02:21:48'),
+(2358, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:23:14', '2024-12-24 02:23:14'),
+(2359, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:24:35', '2024-12-24 02:24:35'),
+(2360, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 02:24:48', '2024-12-24 02:24:48'),
+(2361, 20, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-24 02:31:21', '2024-12-24 02:31:21'),
+(2362, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:34:10', '2024-12-24 02:34:10'),
+(2363, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:35:50', '2024-12-24 02:35:50'),
+(2364, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:36:56', '2024-12-24 02:36:56'),
+(2365, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:38:05', '2024-12-24 02:38:05'),
+(2366, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:38:34', '2024-12-24 02:38:34'),
+(2367, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:39:07', '2024-12-24 02:39:07'),
+(2368, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:39:44', '2024-12-24 02:39:44'),
+(2369, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:45:18', '2024-12-24 02:45:18'),
+(2370, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 02:46:03', '2024-12-24 02:46:03'),
+(2371, 20, 'Mua Source Code . Mã Nguồn Smm Panel Siêu Xịn!', '127.0.0.1', '2024-12-24 02:46:54', '2024-12-24 02:46:54'),
+(2372, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 03:02:24', '2024-12-24 03:02:24'),
+(2373, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 03:04:37', '2024-12-24 03:04:37'),
+(2374, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 03:06:18', '2024-12-24 03:06:18'),
+(2375, 20, 'Mua Source Code . super_admin!', '127.0.0.1', '2024-12-24 03:10:27', '2024-12-24 03:10:27'),
+(2376, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 03:15:48', '2024-12-24 03:15:48'),
+(2377, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-24 03:17:38', '2024-12-24 03:17:38');
 
 -- --------------------------------------------------------
 
@@ -335,8 +335,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('PxL4dhjh6TG6r7aGGQY0hhZ45Qrnmkc3HIsvlpxL', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoid2xwUnRJN1pKOUFGUWdFNUFrNDgyOTNla0tURkNyakl2WExUUEh3OCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9zZXR0aW5ncy8xL2VkaXQiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJC9nVkFxd2RiWjh5VWNBakRlRjcxb084N2lDMFRmQkQzQk16T3BWeUMvVHhBWS8yVjBUQkllIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1734997338),
-('r1ukjRcdL3LB6ypSEmb1hH9cBQNdSHMIvUzRUdbA', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMVVjMUFyR1I4ZHJOeXNPbjBkV3NxY0U4ZTJoTUxMcVJyNzRPZ2pQdSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vY3JlYXRlIjt9fQ==', 1734962971);
+('7Zi7OqI1ADDQnqTsRb1bblnCOwOTDKQqOTI6Hdrq', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoic1pqWVBwZFJ2aGVxNGI2TEdkNnNHN1VXM1NMeGtubHc0MzN0SWNRWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjIwO30=', 1735010268);
 
 -- --------------------------------------------------------
 
@@ -424,6 +423,24 @@ CREATE TABLE `smm_orders` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `smm_orders`
+--
+
+INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `created_at`, `updated_at`) VALUES
+(77, 20, 191, 500, 21325.00, 'pending', 42.65, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:08:37', '2024-12-24 02:08:37'),
+(78, 20, 191, 500, 21325.00, 'pending', 42.65, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:09:03', '2024-12-24 02:09:03'),
+(79, 20, 179, 500, 18280.00, 'pending', 36.56, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:11:24', '2024-12-24 02:11:24'),
+(80, 20, 191, 500, 21325.00, 'pending', 42.65, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:14:49', '2024-12-24 02:14:49'),
+(81, 20, 191, 500, 21325.00, 'pending', 42.65, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:14:59', '2024-12-24 02:14:59'),
+(82, 20, 199, 500, 18280.00, 'pending', 36.56, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:16:52', '2024-12-24 02:16:52'),
+(83, 20, 186, 500, 20565.00, 'pending', 41.13, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:21:48', '2024-12-24 02:21:48'),
+(84, 20, 179, 500, 18280.00, 'pending', 36.56, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 02:23:14', '2024-12-24 02:23:14'),
+(85, 20, 186, 5000, 205650.00, 'pending', 41.13, 0, 'https://giangtran.com.vn/', 5000, '2024-12-24 02:24:35', '2024-12-24 02:24:35'),
+(86, 20, 186, 5000, 205650.00, 'pending', 41.13, 0, 'https://giangtran.com.vn/', 5000, '2024-12-24 02:24:48', '2024-12-24 02:24:48'),
+(87, 20, 186, 500, 20565.00, 'pending', 41.13, 0, 'https://giangtran.com.vn/', 500, '2024-12-24 03:15:48', '2024-12-24 03:15:48'),
+(88, 20, 235, 100000, 1000.00, 'pending', 0.01, 0, 'https://giangtran.com.vn/', 100000, '2024-12-24 03:17:38', '2024-12-24 03:17:38');
 
 -- --------------------------------------------------------
 
@@ -643,7 +660,22 @@ CREATE TABLE `source_code_orders` (
 
 INSERT INTO `source_code_orders` (`id`, `user_id`, `source_code_product_id`, `name`, `unit_price`, `order_code`, `link_download`, `created_at`, `updated_at`) VALUES
 (29, 20, 1, 'Mã Nguồn Smm Panel Siêu Xịn', 100000.00, '280370', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', '2024-12-23 09:00:20', '2024-12-23 09:00:20'),
-(30, 20, 1, 'Mã Nguồn Smm Panel Siêu Xịn', 100000.00, '230920', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', '2024-12-23 23:25:17', '2024-12-23 23:25:17');
+(30, 20, 1, 'Mã Nguồn Smm Panel Siêu Xịn', 100000.00, '230920', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', '2024-12-23 23:25:17', '2024-12-23 23:25:17'),
+(31, 20, 1, 'Mã Nguồn Smm Panel Siêu Xịn', 100000.00, '577490', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', '2024-12-24 02:31:21', '2024-12-24 02:31:21'),
+(32, 20, 2, 'super_admin', 123.00, '533844', '123', '2024-12-24 02:34:10', '2024-12-24 02:34:10'),
+(33, 20, 2, 'super_admin', 123.00, '661533', '123', '2024-12-24 02:35:50', '2024-12-24 02:35:50'),
+(34, 20, 2, 'super_admin', 123.00, '519344', '123', '2024-12-24 02:36:56', '2024-12-24 02:36:56'),
+(35, 20, 2, 'super_admin', 123.00, '835204', '123', '2024-12-24 02:38:05', '2024-12-24 02:38:05'),
+(36, 20, 2, 'super_admin', 123.00, '617057', '123', '2024-12-24 02:38:34', '2024-12-24 02:38:34'),
+(37, 20, 2, 'super_admin', 123.00, '764693', '123', '2024-12-24 02:39:07', '2024-12-24 02:39:07'),
+(38, 20, 2, 'super_admin', 123.00, '203459', '123', '2024-12-24 02:39:44', '2024-12-24 02:39:44'),
+(39, 20, 2, 'super_admin', 123.00, '716409', '123', '2024-12-24 02:45:18', '2024-12-24 02:45:18'),
+(40, 20, 2, 'super_admin', 123.00, '241519', '123', '2024-12-24 02:46:03', '2024-12-24 02:46:03'),
+(41, 20, 1, 'Mã Nguồn Smm Panel Siêu Xịn', 100000.00, '544463', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', '2024-12-24 02:46:54', '2024-12-24 02:46:54'),
+(42, 20, 2, 'super_admin', 123.00, '807868', '123', '2024-12-24 03:02:24', '2024-12-24 03:02:24'),
+(43, 20, 2, 'super_admin', 123.00, '776960', '123', '2024-12-24 03:04:37', '2024-12-24 03:04:37'),
+(44, 20, 2, 'super_admin', 123.00, '716534', '123', '2024-12-24 03:06:18', '2024-12-24 03:06:18'),
+(45, 20, 2, 'super_admin', 123.00, '907878', '123', '2024-12-24 03:10:27', '2024-12-24 03:10:27');
 
 -- --------------------------------------------------------
 
@@ -671,8 +703,8 @@ CREATE TABLE `source_code_products` (
 --
 
 INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Mã Nguồn Smm Panel Siêu Xịn', '<p>&nbsp;Thuê Setup Liên Hệ Ạ</p><p>Link SQL: https://drive.google.com/file/d/167K5cOI8HyU6IVVTnnz9VKFG-6Pg4Mu2/view</p><p>- Không dùng mã nguồn này cho mục đích vi phạm pháp luật&nbsp;</p>', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 100000.00, 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 6, 161, '01JFSCJ18WGHDMNEQNQB2GJYHJ.png', '2024-12-18 10:54:14', '2024-12-23 23:25:17'),
-(2, 1, 'super_admin', '<p>123</p>', '123', 123.00, '123', 0, 4, '01JFSDQT4CGBBJYAKRAGPMT9MY.png', '2024-12-23 09:31:58', '2024-12-23 09:36:04');
+(1, 1, 'Mã Nguồn Smm Panel Siêu Xịn', '<p>&nbsp;Thuê Setup Liên Hệ Ạ</p><p>Link SQL: https://drive.google.com/file/d/167K5cOI8HyU6IVVTnnz9VKFG-6Pg4Mu2/view</p><p>- Không dùng mã nguồn này cho mục đích vi phạm pháp luật&nbsp;</p>', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 100000.00, 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 8, 163, '01JFSCJ18WGHDMNEQNQB2GJYHJ.png', '2024-12-18 10:54:14', '2024-12-24 02:46:54'),
+(2, 1, 'super_admin', '<p>123</p>', '123', 123.00, '123', 13, 20, '01JFSDQT4CGBBJYAKRAGPMT9MY.png', '2024-12-23 09:31:58', '2024-12-24 03:10:27');
 
 -- --------------------------------------------------------
 
@@ -775,7 +807,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$/gVAqwdbZ8yUcAjDeF71oO87iC0TfBD3BMzOpVyC/TxAY/2V0TBIe', 'wqIcD3SZanwmVNtaVtdRUfcvjck5bjCSJuYAgNwBDYBruNBv5BXETBlPz9jW', '2024-12-07 02:40:50', '2024-12-23 23:25:17', 'default', NULL, 802156.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 200000.00, NULL, 0, NULL, '123', 179583),
+(20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$/gVAqwdbZ8yUcAjDeF71oO87iC0TfBD3BMzOpVyC/TxAY/2V0TBIe', 'wqIcD3SZanwmVNtaVtdRUfcvjck5bjCSJuYAgNwBDYBruNBv5BXETBlPz9jW', '2024-12-07 02:40:50', '2024-12-24 03:17:38', 'default', NULL, 6987.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 401599.00, NULL, 0, NULL, '123', 179583),
 (21, '2509robloxx', '2509roblox@gmail.comx', '2509robloxx', NULL, '$2y$12$oGWYZv37sgROOHeRHBZKoueExVCXDhOyQw8iU5uY6JfX3hMIxlWcm', NULL, '2024-12-17 14:15:59', '2024-12-17 14:15:59', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
 (22, '2509robloxa', '2509robloxa@gmail.com', '2509robloxa', NULL, '$2y$12$FEN67dl2z5nuGkvKhfIKcO24lCuQTkP.xGMepxjcPYzdBL.T35Qiu', NULL, '2024-12-18 03:18:56', '2024-12-18 03:18:56', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
 (23, 'admin', 'admin@gmail.com', 'admin@gmail.com', NULL, '$2y$12$9lZPQGTtS6a81MzZA4drReezJVVyHI6T/1v6Yhgrx3vjIGNS7i/qS', 'BFTD7VWtzmNmumgjnHDHg9e95iSxOEvQcB18IeevaxeLPmlvXBcFDAk5yrqx', '2024-12-18 03:19:54', '2024-12-23 02:36:53', 'default', NULL, 999696805.00, NULL, NULL, NULL, 1600000.00, 1000000.00, 0, NULL, NULL, NULL);
@@ -953,7 +985,7 @@ ALTER TABLE `web_services`
 -- AUTO_INCREMENT cho bảng `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2354;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2378;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
@@ -995,7 +1027,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT cho bảng `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 
 --
 -- AUTO_INCREMENT cho bảng `smm_services`
@@ -1013,7 +1045,7 @@ ALTER TABLE `source_code_categories`
 -- AUTO_INCREMENT cho bảng `source_code_orders`
 --
 ALTER TABLE `source_code_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT cho bảng `source_code_products`
