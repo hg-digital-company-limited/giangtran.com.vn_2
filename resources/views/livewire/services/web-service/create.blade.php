@@ -56,7 +56,7 @@
                                                             <div class="col-md-6 col-6">
                                                                 <a class="badge badge-dark text-white"
                                                                     style="width: 100%; padding: 10px; cursor: pointer;"
-                                                                    href="https://zalo.me/0966579217" target="_blank"> <i
+                                                                    href="{{ App\Helpers\SettingsHelper::getSetting('contact') }}" target="_blank"> <i
                                                                         class="icofont icofont-cart"></i> Đăng Ký
                                                             </a>
                                                             </div>

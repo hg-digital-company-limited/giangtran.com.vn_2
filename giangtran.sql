@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 24, 2024 lúc 12:45 PM
+-- Thời gian đã tạo: Th12 24, 2024 lúc 01:19 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -336,7 +336,7 @@ CREATE TABLE `sessions` (
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
 ('63A1PP3FbfBSYTZQTX39fjn4rTClyMtLcOgqQfFH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoieWFrQjBwYmlETENDTTY4blJtRnZsTU43YXdncDU4dWFKMDk3UnF6RSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyNzoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2FkbWluIjt9fQ==', 1735040495),
-('B75g6iZUrB7VsVW9QVDZwokI3DD8M3AUXQJvi18V', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjM6InVybCI7YTowOnt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6IkJrelNyQnRnVzVoTU9QTTh0RkttSXF4aEtWVDJPbUwzeXVkRlNPTFgiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvc21tL21hbmFnZXIiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJC9nVkFxd2RiWjh5VWNBakRlRjcxb084N2lDMFRmQkQzQk16T3BWeUMvVHhBWS8yVjBUQkllIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735040733),
+('B75g6iZUrB7VsVW9QVDZwokI3DD8M3AUXQJvi18V', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjM6InVybCI7YTowOnt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6IkJrelNyQnRnVzVoTU9QTTh0RkttSXF4aEtWVDJPbUwzeXVkRlNPTFgiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjIxOiJodHRwOi8vbG9jYWxob3N0OjgwMDAiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJC9nVkFxd2RiWjh5VWNBakRlRjcxb084N2lDMFRmQkQzQk16T3BWeUMvVHhBWS8yVjBUQkllIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735042742),
 ('gdJNmesEspzQoTAipe5ToE1f45sHJfYxKdgWiTfO', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiY210b0t4azVLYUVXbHNHVFJYaEJYRG1nUzdJZUdaMlF6enVmTkFqTCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyNzoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2FkbWluIjt9czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9yZWdpc3RlciI7fX0=', 1735040485),
 ('mpwIXrOO8AYGbpf0BOlTaVg2JUQaJ4Hy7eVRUGZq', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR1RhOEpQTk5ybFRBR2RwRks1UWVvaVNTc0dSdG5hRk14bmxhb2s5TCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1735040592),
 ('qrH1y5MlUCQJbhmS1kEJ5LZEwuW3hulyx7MAxDEL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoidzJWY0hZczRnaVpSUG9ZdjhPc0pmOWVlNHdHWFA5bTRod1NxZm9wRCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1735040391),
@@ -357,6 +357,8 @@ CREATE TABLE `settings` (
   `loading_image` varchar(255) DEFAULT NULL,
   `website_name` varchar(255) DEFAULT NULL,
   `website_description` text DEFAULT NULL,
+  `contact` varchar(255) DEFAULT NULL,
+  `notification` longtext DEFAULT NULL,
   `prefix` varchar(255) DEFAULT NULL,
   `min_deposit` decimal(10,2) NOT NULL DEFAULT 0.00,
   `account_number` varchar(255) DEFAULT NULL,
@@ -384,8 +386,8 @@ CREATE TABLE `settings` (
 -- Đang đổ dữ liệu cho bảng `settings`
 --
 
-INSERT INTO `settings` (`id`, `avatar`, `icon`, `logo`, `banner`, `loading_image`, `website_name`, `website_description`, `prefix`, `min_deposit`, `account_number`, `account_name`, `created_at`, `updated_at`, `account_name_qr`, `sepay_token`, `sepay_account_number`, `telegram_bot_token`, `telegram_chat_id`, `google_client_id`, `google_client_secret`, `google_redirect`, `mail_host`, `mail_port`, `mail_username`, `mail_password`, `mail_encryption`, `mail_from_address`, `mail_from_name`) VALUES
-(1, '01JFW50BCKVA6NGQ7NEG1147KC.jpg', '01JFW50BCNGV8Z24T42C3ZSRRH.jpg', '01JFW6CXW3980HQ30XJF3TCTWA.webp', '01JFW50BCQ65HT9QK315GQWTKT.png', '01JFW6CXW7N938ZNMG8PR3VA7V.webp', 'GIANGTRAN.COM.VN', 'Chúng tôi cung cấp giải pháp tăng tương tác, mã nguồn chất lượng và dịch vụ thiết kế website chuyên nghiệp, giúp bạn phát triển doanh nghiệp trực tuyến hiệu quả. Khám phá ngay!', 'HG ', 10000.00, '0966579217', 'TRẦN LÊ HOÀNG GIANG', '2024-12-23 23:34:47', '2024-12-24 11:21:25', 'TRAN LE HOANG GIANG', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', '1040772401360-g5u4ooibpqu3n7n31so5uo4q39abiisl.apps.googleusercontent.com', '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', '/auth/google/callback', 'smtp.gmail.com', NULL, '2508roblox@gmail.com', 'aftc iqtt ojky tenz', 'tls', '2508roblox@gmail.com', 'GIANGTRAN.COM.VN');
+INSERT INTO `settings` (`id`, `avatar`, `icon`, `logo`, `banner`, `loading_image`, `website_name`, `website_description`, `contact`, `notification`, `prefix`, `min_deposit`, `account_number`, `account_name`, `created_at`, `updated_at`, `account_name_qr`, `sepay_token`, `sepay_account_number`, `telegram_bot_token`, `telegram_chat_id`, `google_client_id`, `google_client_secret`, `google_redirect`, `mail_host`, `mail_port`, `mail_username`, `mail_password`, `mail_encryption`, `mail_from_address`, `mail_from_name`) VALUES
+(1, '01JFW50BCKVA6NGQ7NEG1147KC.jpg', '01JFW50BCNGV8Z24T42C3ZSRRH.jpg', '01JFW6CXW3980HQ30XJF3TCTWA.webp', '01JFW50BCQ65HT9QK315GQWTKT.png', '01JFW6CXW7N938ZNMG8PR3VA7V.webp', 'GIANGTRAN.COM.VN', 'Chúng tôi cung cấp giải pháp tăng tương tác, mã nguồn chất lượng và dịch vụ thiết kế website chuyên nghiệp, giúp bạn phát triển doanh nghiệp trực tuyến hiệu quả. Khám phá ngay!', 'https://zalo.me/0966579217', '<p>&nbsp;<strong>Chào Mừng Đến Với GIANGTRAN.COM.VN</strong></p><p>Nếu Có Bạn Có Bất Cứ Vấn Đề Hoặc Góp Ý Đừng Ngần Ngại Liên Hệ Nhóm Hỗ Trợ, GIANGTRAN.COM.VN Sẽ Cải Thiện Để Mọi Người Sử Dụng Dịch Vụ Được Tốt Nhất.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hỗ Trợ Nhanh Qua: <a href=\"https://zalo.me/1715225565559061022\"><strong>Zalo</strong></a></p>', 'HG ', 10000.00, '0966579217', 'TRẦN LÊ HOÀNG GIANG', '2024-12-23 23:34:47', '2024-12-24 12:16:55', 'TRAN LE HOANG GIANG', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', '1040772401360-g5u4ooibpqu3n7n31so5uo4q39abiisl.apps.googleusercontent.com', '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', '/auth/google/callback', 'smtp.gmail.com', NULL, '2508roblox@gmail.com', 'aftc iqtt ojky tenz', 'tls', '2508roblox@gmail.com', 'GIANGTRAN.COM.VN');
 
 -- --------------------------------------------------------
 
@@ -792,7 +794,11 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('5611248', 'MBBank', '0966579217', '2024-12-21 12:45:19', 0.00, 42000.00, 0.00, 'TRAN LE HUY HOANG chuyen tien', 'FT24356089464102', NULL, NULL, '5090', '2024-12-22 07:31:52', '2024-12-22 07:31:52'),
 ('5628543', 'MBBank', '0966579217', '2024-12-21 20:15:43', 0.00, 100000.00, 0.00, 'MBVCB.7981258022.333212.chuyen tiencode.CT tu 1014309416 NGUYEN VAN CHIEN toi 0966579217 TRAN LE HOANG GIANG tai MB- Ma GD ACSP/ gz333212', 'FT24358470886697', NULL, NULL, '5090', '2024-12-22 07:31:52', '2024-12-22 07:31:52'),
 ('5641830', 'MBBank', '0966579217', '2024-12-22 01:07:00', 0.00, 200.00, 0.00, 'NODATA', '0966579217-20241221', NULL, NULL, '5090', '2024-12-22 07:31:52', '2024-12-22 07:31:52'),
-('5649935', 'MBBank', '0966579217', '2024-12-22 14:34:32', 0.00, 10000.00, 0.00, '74627951589-HG 2509ROBLOX-CHUYEN TIEN-OQCH40695153-MOMO74627951589MOMO', 'FT24358227070035', NULL, NULL, '5090', '2024-12-22 07:35:28', '2024-12-22 07:35:28');
+('5649935', 'MBBank', '0966579217', '2024-12-22 14:34:32', 0.00, 10000.00, 0.00, '74627951589-HG 2509ROBLOX-CHUYEN TIEN-OQCH40695153-MOMO74627951589MOMO', 'FT24358227070035', NULL, NULL, '5090', '2024-12-22 07:35:28', '2024-12-22 07:35:28'),
+('5678938', 'MBBank', '0966579217', '2024-12-23 09:18:45', 0.00, 200000.00, 0.00, 'NGUYEN SI LOI CHUYEN TIEN- Ma GD ACSP/ cf649416', 'FT24358000004697', NULL, NULL, '5090', '2024-12-24 12:00:45', '2024-12-24 12:00:45'),
+('5689770', 'MBBank', '0966579217', '2024-12-23 18:15:43', 53000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien', 'FT24358003591567', NULL, NULL, '5090', '2024-12-24 12:00:45', '2024-12-24 12:00:45'),
+('5696256', 'MBBank', '0966579217', '2024-12-23 20:51:51', 0.00, 145000.00, 0.00, 'TRAN PHUONG THAO chuyen tien whalegame gd2 tang a coc matcha latte nheee', 'FT24358275343471', NULL, NULL, '5090', '2024-12-24 12:00:45', '2024-12-24 12:00:45'),
+('5696277', 'MBBank', '0966579217', '2024-12-23 20:52:30', 0.00, 1305000.00, 0.00, 'e e chuyen nham a', 'FT24358093418136', NULL, NULL, '5090', '2024-12-24 12:00:45', '2024-12-24 12:00:45');
 
 -- --------------------------------------------------------
 

@@ -50,6 +50,13 @@ class SettingResource extends Resource
                                 Forms\Components\Textarea::make('website_description')
                                     ->label('Mô tả website (website_description)')
                                     ->columnSpanFull(),
+                                Forms\Components\TextInput::make('contact')
+                                    ->label('Link liên hệ (contact)')
+                                    ->maxLength(255)
+                                    ->default(null),
+                                Forms\Components\RichEditor::make('notification')
+                                    ->label('Thông báo (notification)')
+                                    ->default(null),
                             ]),
 
                         // Tab Thanh toán

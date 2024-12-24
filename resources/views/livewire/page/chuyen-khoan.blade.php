@@ -56,7 +56,7 @@
                                                 <i class="icofont icofont-qr-code" style="cursor: pointer;"
                                                     title="Mã QR Chuyển Khoản" data-bs-target="#showqr-code"
                                                     data-bs-toggle="modal"
-                                                    onclick="showQRcode(`https://api.vietqr.io/mb/ {{ env('SEPAY_ACCOUNT_NUMBER') }}/0/HG {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
+                                                    onclick="showQRcode(`https://api.vietqr.io/mb/ {{ App\Helpers\SettingsHelper::getSetting('account_number') }}/0/HG {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
                                             </div>
                                         </div>
 
@@ -70,18 +70,18 @@
                                                 </div>
 
                                                 <div class="col-md-6 col-6 text-end">
-                                                    <span> {{ env('SEPAY_ACCOUNT_NUMBER') }} <svg
+                                                    <span> {{ App\Helpers\SettingsHelper::getSetting('account_number') }} <svg
                                                             xmlns="http://www.w3.org/2000/svg"
                                                             style="width: 18px; height: auto; cursor: pointer;"
                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                                            onclick="copyText('{{ env('SEPAY_ACCOUNT_NUMBER') }}');">
+                                                            onclick="copyText('{{ App\Helpers\SettingsHelper::getSetting('account_number') }}');">
                                                             <path stroke-linecap="round" stroke-linejoin="round"
                                                                 stroke-width="{2}"
                                                                 d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
                                                             </path>
                                                         </svg></span><br>
                                                     <span> TRAN LE HOANG GIANG </span><br>
-                                                    <span> 0 VND </span><br>
+                                                    <span> {{  number_format(App\Helpers\SettingsHelper::getSetting('min_deposit'), 0, ',', '.') }} VND </span><br>
                                                 </div>
 
                                             </div>

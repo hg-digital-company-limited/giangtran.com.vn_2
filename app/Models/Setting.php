@@ -17,6 +17,8 @@ class Setting extends Model
         'loading_image',
         'website_name',
         'website_description',
+        'contact',
+        'notification',
         'prefix',
         'min_deposit',
         'account_number',
@@ -36,5 +38,6 @@ class Setting extends Model
         'mail_encryption',
         'mail_from_address',
         'mail_from_name',
+
     ];
 }
