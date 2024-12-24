@@ -2,11 +2,13 @@
 
 namespace App\Livewire\Services\SourceCode\Components;
 
+use App\Mail\order\SourceCode;
 use App\Models\SourceCodeProduct;
 use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use App\Repositories\SourceCodeOrder\SourceCodeOrderRepositoryInterface;
 use App\Repositories\SourceCodeProduct\SourceCodeProductRepositoryInterface;
 use App\Repositories\User\UserRepositoryInterface;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 class Form extends Component
@@ -43,7 +45,7 @@ class Form extends Component
             $this->alert('error', 'Số dư tài khoản không đủ');
             return;
         }
-        $this->sourceCodeOrderRepository->createSourceCodeOrder([
+        $sourceCodeOrder = $this->sourceCodeOrderRepository->createSourceCodeOrder([
             'user_id' => auth()->user()->id,
             'source_code_product_id' => $this->sourceCodeDetail->id,
             'name' => $this->sourceCodeDetail->name,
@@ -57,7 +59,7 @@ class Form extends Component
 
         $this->alert('success', 'Mua mã nguồn thành công!');
         ActivityHistoryEloquentRepository::logActivity('Mua Source Code . ' . $this->sourceCodeDetail->name . '!');
-
+        Mail::to(auth()->user()->email)->send(new SourceCode($sourceCodeOrder));
         return redirect('/source-code/manager');
     }
 
