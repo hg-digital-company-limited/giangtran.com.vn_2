@@ -26,7 +26,7 @@ class SmmOrderEloquentRepository extends EloquentRepository implements SmmOrderR
         $user->balance -= $data['total_price'];
         $user->save();
         // Tạo đơn hàng mới
-        $this->_model::create([
+        $order = $this->_model::create([
             'user_id' => $data['user_id'],
             'smm_service_id' => $data['smm_service_id'],
             'quantity' => $data['quantity'],
@@ -37,7 +37,10 @@ class SmmOrderEloquentRepository extends EloquentRepository implements SmmOrderR
             'link' => $data['link'],
             'remains' => $data['remains'],
         ]);
-        return true;
+        if ($order) {
+            return $order;
+        }
+        return false;
     }
 
     public function getOrdersByCurrentUser()
