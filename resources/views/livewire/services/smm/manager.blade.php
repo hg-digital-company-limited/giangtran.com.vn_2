@@ -1,14 +1,14 @@
 <div>
 
     <head>
-        <title>Quản Lý Tăng Tương Tác - GIANGTRAN.COM.VN</title>
+        <title>Quản Lý Tăng Tương Tác - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
 
 
     </head>
 
     <body id="content">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="/logo/giangtran.webp" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__shake" src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo" height="60" width="60">
         </div>
 
         <div>

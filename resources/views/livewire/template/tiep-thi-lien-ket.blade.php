@@ -3,7 +3,7 @@
 
 
     <head>
-        <title> Tiếp Thị Liên Kết | GIANGTRAN.COM.VN </title>
+        <title> Tiếp Thị Liên Kết | {{ App\Helpers\SettingsHelper::getSetting('website_name') }} </title>
 
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

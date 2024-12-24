@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row gy-1">
             <div class="col-lg-6 col-md-7 footer-copyright">
-                <p class="mb-0 f-light f-w-500"> COPYRIGHT 2024 © GIANGTRAN.COM.VN
+                <p class="mb-0 f-light f-w-500"> COPYRIGHT 2024 © {{ App\Helpers\SettingsHelper::getSetting('website_name') }}
                   </p>
             </div>
             <div class="col-lg-6 col-md-5">

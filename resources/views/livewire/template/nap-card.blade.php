@@ -2,7 +2,7 @@
 
 
     <head>
-        <title>Nap Thẻ | GIANGTRAN.COM.VN</title>
+        <title>Nap Thẻ | {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
 
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=588955398">

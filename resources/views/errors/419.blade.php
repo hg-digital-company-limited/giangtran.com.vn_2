@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/assets/images/favavatar.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/assets/images/favavatar.jpg" type="image/x-icon">
-    <title>419 - GIANGTRAN.COM.VN</title>
+    <title>419 - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
     <link rel="icon" type="image/x-icon" href="/logo/avatar.jpg" />
     <link rel="shortcut icon" href="/logo/avatar.jpg" />
     <!-- Google font-->

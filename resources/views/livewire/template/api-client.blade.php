@@ -1,7 +1,7 @@
 <div>
 
 <head>
-    <title>API Client | GIANGTRAN.COM.VN</title>
+    <title>API Client | {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

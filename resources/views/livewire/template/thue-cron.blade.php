@@ -1,7 +1,7 @@
 <div>
 
     <head>
-        <title> Thuê Cron Job | GIANGTRAN.COM.VN </title>
+        <title> Thuê Cron Job | {{ App\Helpers\SettingsHelper::getSetting('website_name') }} </title>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="/assets/static/style.css?v=1060321659">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

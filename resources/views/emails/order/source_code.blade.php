@@ -1,7 +1,7 @@
 <img src="https://i.ibb.co/MNkB3KP/giangtran-1.png" alt="Logo" style="width: 300px;">
 <br>
 Xin chào! <br>
-cảm ơn bạn đã đặt hàng tại GIANGTRAN.COM.VN <br>
+cảm ơn bạn đã đặt hàng tại {{ App\Helpers\SettingsHelper::getSetting('website_name') }} <br>
 <img src="https://giangtran.com.vn/storage/{{ $order->product->image }}" style="width: 300px;" alt="ảnh sản phẩm"> <br>
 Tên sản phẩm: {{ $order->name }}<br>
 Mã sản phẩm: {{ $order->id }}<br>

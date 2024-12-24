@@ -1,14 +1,14 @@
 <div>
 
     <head>
-        <title>Nạp Tiền - GIANGTRAN.COM.VN</title>
+        <title>Nạp Tiền - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     </head>
 
     <body id="content">
           <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="/logo/giangtran.webp" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__shake" src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo" height="60" width="60">
         </div>
 
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/assets/images/favavatar.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/assets/images/favavatar.jpg" type="image/x-icon">
-    <title>404 - GIANGTRAN.COM.VN</title>
+    <title>404 - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">

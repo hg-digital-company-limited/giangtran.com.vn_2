@@ -13,7 +13,7 @@ aria-labelledby="exampleModalCenter1" aria-hidden="true">
                 <br>
                 <p class="mt-3">
                 <p style="text-align:center"><span style="color:#c0392b"><strong>Ch&agrave;o
-                            Mừng Đến Với GIANGTRAN.COM.VN</strong></span></p>
+                            Mừng Đến Với {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</strong></span></p>
                 {{-- <p style="text-align:center">
 
                     <strong>Giới Thiệu Bạn B&egrave;, Kh&aacute;ch
@@ -21,7 +21,7 @@ aria-labelledby="exampleModalCenter1" aria-hidden="true">
                         Nhanh Ch&oacute;ng&nbsp;<a href="/tiep-thi-lien-ket"><span
                                 style="color:#3498db">Tại Đ&acirc;y</span></a></strong></p> --}}
                 <p style="text-align:center">Nếu C&oacute; Bạn C&oacute; Bất Cứ Vấn Đề Hoặc
-                    G&oacute;p &Yacute; Đừng Ngần Ngại Li&ecirc;n Hệ Nh&oacute;m Hỗ Trợ, GIANGTRAN.COM.VN Sẽ
+                    G&oacute;p &Yacute; Đừng Ngần Ngại Li&ecirc;n Hệ Nh&oacute;m Hỗ Trợ, {{ App\Helpers\SettingsHelper::getSetting('website_name') }} Sẽ
                     Cải Thiện Để Mọi Người Sử Dụng Dịch Vụ Được Tốt Nhất.</p>
 
                 <p style="text-align:center">Hỗ Trợ Nhanh Qua: <a

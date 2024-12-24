@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 24, 2024 lúc 04:18 AM
+-- Thời gian đã tạo: Th12 24, 2024 lúc 12:45 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -169,10 +169,10 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('91032ad7bbcb6cf72875e8e8207dcfba80173f7c', 'i:1;', 1734946369),
-('91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer', 'i:1734946369;', 1734946369),
-('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1734921616),
-('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1734921616;', 1734921616);
+('91032ad7bbcb6cf72875e8e8207dcfba80173f7c', 'i:2;', 1735039326),
+('91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer', 'i:1735039326;', 1735039326),
+('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:4;', 1735037481),
+('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1735037481;', 1735037481);
 
 -- --------------------------------------------------------
 
@@ -335,7 +335,12 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('7Zi7OqI1ADDQnqTsRb1bblnCOwOTDKQqOTI6Hdrq', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoic1pqWVBwZFJ2aGVxNGI2TEdkNnNHN1VXM1NMeGtubHc0MzN0SWNRWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjIwO30=', 1735010268);
+('63A1PP3FbfBSYTZQTX39fjn4rTClyMtLcOgqQfFH', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoieWFrQjBwYmlETENDTTY4blJtRnZsTU43YXdncDU4dWFKMDk3UnF6RSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyNzoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2FkbWluIjt9fQ==', 1735040495),
+('B75g6iZUrB7VsVW9QVDZwokI3DD8M3AUXQJvi18V', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjM6InVybCI7YTowOnt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6IkJrelNyQnRnVzVoTU9QTTh0RkttSXF4aEtWVDJPbUwzeXVkRlNPTFgiO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMzOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvc21tL21hbmFnZXIiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyMDtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJC9nVkFxd2RiWjh5VWNBakRlRjcxb084N2lDMFRmQkQzQk16T3BWeUMvVHhBWS8yVjBUQkllIjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735040733),
+('gdJNmesEspzQoTAipe5ToE1f45sHJfYxKdgWiTfO', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiY210b0t4azVLYUVXbHNHVFJYaEJYRG1nUzdJZUdaMlF6enVmTkFqTCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czoyNzoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL2FkbWluIjt9czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9yZWdpc3RlciI7fX0=', 1735040485),
+('mpwIXrOO8AYGbpf0BOlTaVg2JUQaJ4Hy7eVRUGZq', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR1RhOEpQTk5ybFRBR2RwRks1UWVvaVNTc0dSdG5hRk14bmxhb2s5TCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1735040592),
+('qrH1y5MlUCQJbhmS1kEJ5LZEwuW3hulyx7MAxDEL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoidzJWY0hZczRnaVpSUG9ZdjhPc0pmOWVlNHdHWFA5bTRod1NxZm9wRCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1735040391),
+('XTSoRSy5LrW89GJex5Txwk9gimFRj18gS8JtWDv1', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiN2laVlY4REhJdmM4V2N3ME43bXl6SWlFU2tubEVSN2JZa0dWNGdxYSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vbWFuYWdlciI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1735040339);
 
 -- --------------------------------------------------------
 
@@ -347,7 +352,9 @@ CREATE TABLE `settings` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `avatar` varchar(255) DEFAULT NULL,
   `icon` varchar(255) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
   `banner` varchar(255) DEFAULT NULL,
+  `loading_image` varchar(255) DEFAULT NULL,
   `website_name` varchar(255) DEFAULT NULL,
   `website_description` text DEFAULT NULL,
   `prefix` varchar(255) DEFAULT NULL,
@@ -355,15 +362,30 @@ CREATE TABLE `settings` (
   `account_number` varchar(255) DEFAULT NULL,
   `account_name` varchar(255) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `account_name_qr` varchar(255) DEFAULT NULL,
+  `sepay_token` varchar(255) DEFAULT NULL,
+  `sepay_account_number` varchar(255) DEFAULT NULL,
+  `telegram_bot_token` varchar(255) DEFAULT NULL,
+  `telegram_chat_id` varchar(255) DEFAULT NULL,
+  `google_client_id` varchar(255) DEFAULT NULL,
+  `google_client_secret` varchar(255) DEFAULT NULL,
+  `google_redirect` varchar(255) DEFAULT NULL,
+  `mail_host` varchar(255) DEFAULT NULL,
+  `mail_port` varchar(255) DEFAULT NULL,
+  `mail_username` varchar(255) DEFAULT NULL,
+  `mail_password` varchar(255) DEFAULT NULL,
+  `mail_encryption` varchar(255) DEFAULT NULL,
+  `mail_from_address` varchar(255) DEFAULT NULL,
+  `mail_from_name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `settings`
 --
 
-INSERT INTO `settings` (`id`, `avatar`, `icon`, `banner`, `website_name`, `website_description`, `prefix`, `min_deposit`, `account_number`, `account_name`, `created_at`, `updated_at`) VALUES
-(1, '11123', '123', '123', '123', '123', '123', 123.00, '213', '123', '2024-12-23 23:34:47', '2024-12-23 23:34:47');
+INSERT INTO `settings` (`id`, `avatar`, `icon`, `logo`, `banner`, `loading_image`, `website_name`, `website_description`, `prefix`, `min_deposit`, `account_number`, `account_name`, `created_at`, `updated_at`, `account_name_qr`, `sepay_token`, `sepay_account_number`, `telegram_bot_token`, `telegram_chat_id`, `google_client_id`, `google_client_secret`, `google_redirect`, `mail_host`, `mail_port`, `mail_username`, `mail_password`, `mail_encryption`, `mail_from_address`, `mail_from_name`) VALUES
+(1, '01JFW50BCKVA6NGQ7NEG1147KC.jpg', '01JFW50BCNGV8Z24T42C3ZSRRH.jpg', '01JFW6CXW3980HQ30XJF3TCTWA.webp', '01JFW50BCQ65HT9QK315GQWTKT.png', '01JFW6CXW7N938ZNMG8PR3VA7V.webp', 'GIANGTRAN.COM.VN', 'Chúng tôi cung cấp giải pháp tăng tương tác, mã nguồn chất lượng và dịch vụ thiết kế website chuyên nghiệp, giúp bạn phát triển doanh nghiệp trực tuyến hiệu quả. Khám phá ngay!', 'HG ', 10000.00, '0966579217', 'TRẦN LÊ HOÀNG GIANG', '2024-12-23 23:34:47', '2024-12-24 11:21:25', 'TRAN LE HOANG GIANG', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', '1040772401360-g5u4ooibpqu3n7n31so5uo4q39abiisl.apps.googleusercontent.com', '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', '/auth/google/callback', 'smtp.gmail.com', NULL, '2508roblox@gmail.com', 'aftc iqtt ojky tenz', 'tls', '2508roblox@gmail.com', 'GIANGTRAN.COM.VN');
 
 -- --------------------------------------------------------
 
@@ -703,8 +725,8 @@ CREATE TABLE `source_code_products` (
 --
 
 INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Mã Nguồn Smm Panel Siêu Xịn', '<p>&nbsp;Thuê Setup Liên Hệ Ạ</p><p>Link SQL: https://drive.google.com/file/d/167K5cOI8HyU6IVVTnnz9VKFG-6Pg4Mu2/view</p><p>- Không dùng mã nguồn này cho mục đích vi phạm pháp luật&nbsp;</p>', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 100000.00, 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 8, 163, '01JFSCJ18WGHDMNEQNQB2GJYHJ.png', '2024-12-18 10:54:14', '2024-12-24 02:46:54'),
-(2, 1, 'super_admin', '<p>123</p>', '123', 123.00, '123', 13, 20, '01JFSDQT4CGBBJYAKRAGPMT9MY.png', '2024-12-23 09:31:58', '2024-12-24 03:10:27');
+(1, 1, 'Mã Nguồn Smm Panel Siêu Xịn', '<p>&nbsp;Thuê Setup Liên Hệ Ạ</p><p>Link SQL: https://drive.google.com/file/d/167K5cOI8HyU6IVVTnnz9VKFG-6Pg4Mu2/view</p><p>- Không dùng mã nguồn này cho mục đích vi phạm pháp luật&nbsp;</p>', 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 100000.00, 'https://img.upanh.tv/2024/10/12/NK6Cnp2.jpg', 8, 166, '01JFSCJ18WGHDMNEQNQB2GJYHJ.png', '2024-12-18 10:54:14', '2024-12-24 10:48:55'),
+(2, 1, 'super_admin', '<p>123</p>', '123', 123.00, '123', 13, 21, '01JFSDQT4CGBBJYAKRAGPMT9MY.png', '2024-12-23 09:31:58', '2024-12-24 10:46:52');
 
 -- --------------------------------------------------------
 
@@ -810,7 +832,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `pa
 (20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$/gVAqwdbZ8yUcAjDeF71oO87iC0TfBD3BMzOpVyC/TxAY/2V0TBIe', 'wqIcD3SZanwmVNtaVtdRUfcvjck5bjCSJuYAgNwBDYBruNBv5BXETBlPz9jW', '2024-12-07 02:40:50', '2024-12-24 03:17:38', 'default', NULL, 6987.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 401599.00, NULL, 0, NULL, '123', 179583),
 (21, '2509robloxx', '2509roblox@gmail.comx', '2509robloxx', NULL, '$2y$12$oGWYZv37sgROOHeRHBZKoueExVCXDhOyQw8iU5uY6JfX3hMIxlWcm', NULL, '2024-12-17 14:15:59', '2024-12-17 14:15:59', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
 (22, '2509robloxa', '2509robloxa@gmail.com', '2509robloxa', NULL, '$2y$12$FEN67dl2z5nuGkvKhfIKcO24lCuQTkP.xGMepxjcPYzdBL.T35Qiu', NULL, '2024-12-18 03:18:56', '2024-12-18 03:18:56', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
-(23, 'admin', 'admin@gmail.com', 'admin@gmail.com', NULL, '$2y$12$9lZPQGTtS6a81MzZA4drReezJVVyHI6T/1v6Yhgrx3vjIGNS7i/qS', 'BFTD7VWtzmNmumgjnHDHg9e95iSxOEvQcB18IeevaxeLPmlvXBcFDAk5yrqx', '2024-12-18 03:19:54', '2024-12-23 02:36:53', 'default', NULL, 999696805.00, NULL, NULL, NULL, 1600000.00, 1000000.00, 0, NULL, NULL, NULL);
+(23, 'admin', 'admin@gmail.com', 'admin@gmail.com', NULL, '$2y$12$9lZPQGTtS6a81MzZA4drReezJVVyHI6T/1v6Yhgrx3vjIGNS7i/qS', '69Ht5UEBBqGDauSrbOsAyt0uBcjUhWV7PsaSTRgnRBeuCPVln0ISUKawQcts', '2024-12-18 03:19:54', '2024-12-23 02:36:53', 'default', NULL, 999696805.00, NULL, NULL, NULL, 1600000.00, 1000000.00, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 

@@ -10,13 +10,13 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="google-site-verification" content="XdpPCe9WLWMZA9pEynO-7B7lRoimKZl7qFlCqvZsVlo">
-    <link rel="shortcut icon" href="{{ asset('/logo/avatar.jpg') }}" type="image/png">
+    <link rel="shortcut icon" src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('icon'))) }}" type="image/png">
 
     <meta name="description"
-        content="GIANGTRAN.COM.VN - Chuyên thiết kế website Bán Code, Mã, Sản phẩm, chuẩn SEO, chuyên nghiệp">
-    <meta name="twitter:image" content="{{ asset('logo/banner.png') }}" /> <!-- Add your image path here -->
-    <meta property="og:image" content="{{ asset('logo/banner.png') }}">
-    <meta property="og:image" itemprop="thumbnailUrl" content="{{ asset('logo/banner.png') }}">
+        content="{{ App\Helpers\SettingsHelper::getSetting('website_name') }} - Chuyên thiết kế website Bán Code, Mã, Sản phẩm, chuẩn SEO, chuyên nghiệp">
+    <meta name="twitter:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}" /> <!-- Add your image path here -->
+    <meta property="og:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
+    <meta property="og:image" itemprop="thumbnailUrl" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
 
 
 

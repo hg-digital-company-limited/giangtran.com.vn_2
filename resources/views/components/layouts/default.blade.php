@@ -10,13 +10,13 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:url" content="{{ url('/') }}">
     <meta name="google-site-verification" content="W1Wf5_b9Yoc5PaKmRkfDJB0bzRUGDkcn2rDUhja0skU" />
-    <link rel="shortcut icon" href="{{ asset('/logo/avatar.jpg') }}" type="image/png">
+    <link rel="shortcut icon" src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('icon'))) }}" type="image/png">
 
     <meta name="description"
         content="Thiết kế website bán hàng, công ty, giao diện đẹp, chuyên nghiệp, hỗ trợ nhiệt tình 24/7. Công ty thiết kế web bán hàng, web doanh nghiệp uy tín, chất lượng, kinh nghiệm nhiều năm. 10+ năm kinh nghiệm. Nhân viên chuyên nghiệp.">
-    <meta name="twitter:image" content="{{ asset('logo/banner.png') }}" /> <!-- Add your image path here -->
-    <meta property="og:image" content="{{ asset('logo/banner.png') }}">
-    <meta property="og:image" itemprop="thumbnailUrl" content="{{ asset('logo/banner.png') }}">
+    <meta name="twitter:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}" /> <!-- Add your image path here -->
+    <meta property="og:image" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
+    <meta property="og:image" itemprop="thumbnailUrl" content="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner'))) }}">
     @livewireStyles
 </head>
 

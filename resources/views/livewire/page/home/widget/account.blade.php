@@ -17,7 +17,7 @@
                 @if (Auth::check())
                     <div class="project-details">
                         <div class="d-flex gap-2">
-                            <img src="/logo/avatar.jpg"   style="width: 48px; border-radius: 10px;" alt="user">
+                            <img src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('avatar'))) }}"   style="width: 48px; border-radius: 10px;" alt="user">
                             <div>
                                 <h4 class="f-w-500">
                                     {{ Auth::user()->username }}
