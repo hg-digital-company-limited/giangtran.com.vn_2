@@ -31,13 +31,6 @@ class Setting extends Model
         'google_client_id',
         'google_client_secret',
         'google_redirect',
-        'mail_host',
-        'mail_username',
-        'mail_port',
-        'mail_password',
-        'mail_encryption',
-        'mail_from_address',
-        'mail_from_name',
 
     ];
 }

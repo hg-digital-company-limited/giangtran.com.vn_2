@@ -138,6 +138,10 @@
             table tfoot tr td {
                 padding-bottom: 6px;
             }
+            #content-gallery img {
+                width: 100%;
+
+            }
         </style>
     </body>
 </div>

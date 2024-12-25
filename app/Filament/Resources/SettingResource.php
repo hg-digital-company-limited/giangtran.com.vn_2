@@ -107,49 +107,6 @@ class SettingResource extends Resource
                                     ->default(null),
                             ]),
 
-                        // Tab Mail
-                        Forms\Components\Tabs\Tab::make('Mail')
-                            ->schema([
-                                Forms\Components\TextInput::make('mail_host')
-                                    ->label('Mail Host (mail_host)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('mail_username')
-                                    ->label('Tên người dùng Mail (mail_username)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('mail_password')
-                                    ->label('Mật khẩu Mail (mail_password)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('mail_encryption')
-                                    ->label('Mã hóa Mail (mail_encryption)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('mail_from_address')
-                                    ->label('Địa chỉ Mail gửi đi (mail_from_address)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('mail_from_name')
-                                    ->label('Tên người gửi (mail_from_name)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                            ]),
-                        Forms\Components\Tabs\Tab::make('Google')
-                            ->schema([
-                                Forms\Components\TextInput::make('google_client_id')
-                                    ->label('Client ID (google_client_id)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('google_client_secret')
-                                    ->label('Client Secret (google_client_secret)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                                Forms\Components\TextInput::make('google_redirect')
-                                    ->label('Redirect (google_redirect)')
-                                    ->maxLength(255)
-                                    ->default(null),
-                            ]),
                     ])->columnSpanFull(),
 
 

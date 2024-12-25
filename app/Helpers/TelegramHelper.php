@@ -10,7 +10,7 @@ class TelegramHelper
 
     public function __construct()
     {
-        $this->botToken = env('TELEGRAM_TOKEN');
+        $this->botToken = SettingsHelper::getSetting('telegram_bot_token');
     }
 
     public function sendMessage($message)
@@ -18,7 +18,7 @@ class TelegramHelper
         $url = "https://api.telegram.org/bot{$this->botToken}/sendMessage";
 
         $response = Http::post($url, [
-            'chat_id' => 6708960219,
+            'chat_id' => SettingsHelper::getSetting('telegram_chat_id'),
             'text' => $message,
         ]);
 

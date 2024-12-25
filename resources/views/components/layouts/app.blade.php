@@ -162,7 +162,6 @@
 
 @livewire('inc.social-popup')
 @livewire('inc.alert')
-@livewire('content.modal-alert')
 <div class="chat-widget">
     <div class="chat-item zalo">
         <a href="{{ App\Helpers\SettingsHelper::getSetting('contact') }}" target="_blank">
