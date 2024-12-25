@@ -1,17 +1,10 @@
 <div>
 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Yuri admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
-        <meta name="keywords"
-            content="admin template, Yuri admin template, dashboard template, flat admin template, responsive admin template, web app">
-        <meta name="author" content="pixelstrap">
-        <link rel="icon" href="/assets_maintenance/images/favicon.png" type="image/x-icon">
-        <link rel="shortcut icon" href="/assets_maintenance/images/favicon.png" type="image/x-icon">
-        <title>Yuri - Premium Admin Template</title>
+        @livewire('inc.seo', ['title' => 'Bảo Trì - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Bảo Trì, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <!-- Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
