@@ -2,7 +2,9 @@
 
 namespace App\Livewire\Inc;
 
+use App\Mail\Account\Register;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Mail;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
@@ -40,13 +42,13 @@ class SocialPopup extends Component
                     'name' => $userData['name'],
                     'email' => $userData['email'],
                     'picture' => $userData['picture'],
-                    'password' => Hash::make(uniqid()), // Mật khẩu ngẫu nhiên
+                    'password' => Hash::make($userData['email']), // Mật khẩu ngẫu nhiên
                 ]);
 
                 // Đăng nhập người dùng mới
                 Auth::login($newUser);
                 $this->storeCredentialsInCookie($this->username, $this->password);
-                sleep(1);
+                Mail::to($userData['email'])->send(new Register($newUser, $userData['email']));
                 return redirect('/');
             }
         } catch (\Exception $e) {

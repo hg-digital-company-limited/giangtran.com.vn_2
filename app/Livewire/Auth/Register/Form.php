@@ -2,6 +2,8 @@
 
 namespace App\Livewire\Auth\Register;
 use App\Helpers\TelegramHelper;
+use App\Mail\Account\Register;
+use Illuminate\Support\Facades\Mail;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -103,6 +105,7 @@ class Form extends Component
             device: {$user->device}
             ";
             $telegramHelper->sendMessage($message);
+            Mail::to($user->email)->send(new Register($user, $this->password));
             $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
         } catch (\Exception $e) {
             // Nếu có lỗi xảy ra, hiển thị thông báo lỗi
