@@ -28,6 +28,12 @@ class SettingResource extends Resource
                         // Tab Thông tin cơ bản
                         Forms\Components\Tabs\Tab::make('Thông tin cơ bản')
                             ->schema([
+                                Forms\Components\Toggle::make('maintenance')
+                                    ->label('Trạng thái bảo trì (maintenance)')
+                                    ->default(false),
+                                Forms\Components\DateTimePicker::make('deadline')
+                                    ->label('Thời gian bảo trì (deadline)')
+                                    ->default(null),
                                 Forms\Components\FileUpload::make('avatar')
                                     ->label('Ảnh đại diện (avatar)')
                                     ->default(null),

@@ -3,7 +3,9 @@
 use App\Http\Controllers\cron\Checkpayment;
 use App\Http\Controllers\cron\Transaction;
 use App\Http\Middleware\CheckAuth;
+use App\Http\Middleware\CheckMaintenanceMode;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
+use App\Livewire\Maintenance;
 use App\Livewire\Services\WebService\Create;
 use App\Livewire\Template\ApiClient;
 use App\Livewire\Page\ChuyenKhoan;
@@ -42,37 +44,40 @@ use App\Livewire\Services\WebService\Create as CreateWebService;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', LandingPage::class)->name('landingpage');
-Route::get('/', Home::class)->name('home');
-Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
+Route::middleware(CheckMaintenanceMode::class)->group(function () {
+    Route::get('/', Home::class)->name('home');
+    Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
-Route::middleware(CheckAuth::class)->group(function () {
-    Route::get('/login', Login::class)->name('login');
-    Route::get('/register', action: Register::class)->name('register');
-    Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
-    Route::get('/reset-password', action: ResetPassword::class)->name('password.reset');
+    Route::middleware(CheckAuth::class)->group(function () {
+        Route::get('/login', Login::class)->name('login');
+        Route::get('/register', action: Register::class)->name('register');
+        Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
+        Route::get('/reset-password', action: ResetPassword::class)->name('password.reset');
+    });
+
+
+    Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
+        Route::get('/profile', Profile::class)->name('profile');
+        Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
+        Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
+        Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
+        Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
+
+    });
+
+    Route::get('/smm/create', CreateSmm::class)->name('smm.create');
+    Route::get('/smm/manager', ManagerSmm::class)->name('smm.manager');
+
+    Route::get('/source-code/list', CreateSourceCode::class)->name('source-code.create');
+    Route::get('/source-code/list/{id}', DetailSourceCode::class)->name('source-code.detail');
+    Route::get('/source-code/manager', ManagerSourceCode::class)->name('source-code.manager');
+
+    Route::get('/web-service/create', CreateWebService::class)->name('web-service.create');
+
+    Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
+    Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
 });
-
-
-Route::middleware(EnsureUserIsAuthenticated::class)->group(function () {
-    Route::get('/profile', Profile::class)->name('profile');
-    Route::get('/chuyen-khoan', ChuyenKhoan::class)->name('chuyen-khoan');
-    Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
-    Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
-    Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
-
-});
-
-Route::get('/smm/create', CreateSmm::class)->name('smm.create');
-Route::get('/smm/manager', ManagerSmm::class)->name('smm.manager');
-
-Route::get('/source-code/list', CreateSourceCode::class)->name('source-code.create');
-Route::get('/source-code/list/{id}', DetailSourceCode::class)->name('source-code.detail');
-Route::get('/source-code/manager', ManagerSourceCode::class)->name('source-code.manager');
-
-Route::get('/web-service/create', CreateWebService::class)->name('web-service.create');
-
-Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
-Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
+Route::get('/maintenance', action: Maintenance::class)->name('maintenance');
 
 // template
 
