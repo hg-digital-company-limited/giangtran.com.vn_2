@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Livewire\Inc;
-
+use Illuminate\Support\Facades\Cookie;
 use App\Repositories\User\UserRepositoryInterface; // Thêm dòng này
 use Illuminate\Support\Facades\Auth;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -34,6 +34,8 @@ class Header extends Component
     public function logout()
     {
         Auth::logout();
+        Cookie::queue(Cookie::forget('username'));
+        Cookie::queue(Cookie::forget('password'));
         return redirect('/login');
     }
 }

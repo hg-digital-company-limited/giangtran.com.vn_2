@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Inc;
 
+use Illuminate\Support\Facades\Cookie;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
@@ -30,6 +31,7 @@ class SocialPopup extends Component
             if ($findUser) {
                 // Đăng nhập người dùng nếu đã tồn tại
                 Auth::login($findUser);
+                $this->storeCredentialsInCookie($this->username, $this->password);
                 return redirect('/');
             } else {
                 // Tạo người dùng mới nếu không tồn tại
@@ -43,7 +45,7 @@ class SocialPopup extends Component
 
                 // Đăng nhập người dùng mới
                 Auth::login($newUser);
-
+                $this->storeCredentialsInCookie($this->username, $this->password);
                 sleep(1);
                 return redirect('/');
             }
@@ -69,5 +71,11 @@ class SocialPopup extends Component
     public function render()
     {
         return view('livewire.inc.social-popup');
+    }
+    private function storeCredentialsInCookie($username, $password)
+    {
+        $expiry = 60 * 24 * 30; // Thời gian cookie (30 ngày)
+        Cookie::queue('username', $username, $expiry);
+        Cookie::queue('password', $password, $expiry);
     }
 }

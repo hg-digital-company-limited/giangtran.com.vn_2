@@ -4,6 +4,7 @@ namespace App\Livewire\Auth\Login;
 use App\Models\ActivityHistory;
 use App\Models\User;
 use App\Repositories\ActivityHistory\ActivityHistoryRepositoryInterface;
+use Illuminate\Support\Facades\Cookie;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Illuminate\Support\Facades\Auth;
@@ -17,7 +18,7 @@ class Form extends Component
     public $password;
     public $remember = false;
     public $errors = [];
-    public $otp ,$opt_status;
+    public $otp, $opt_status;
     public $userId; // Thêm biến để lưu ID người dùng
     protected $activityHistoryRepository;
     public function login(ActivityHistoryRepositoryInterface $activityHistoryRepository)
@@ -42,8 +43,8 @@ class Form extends Component
 
         // Kiểm tra xem tài khoản có tồn tại không
         $user = User::where('username', $this->username)
-                    ->orWhere('email', $this->username)
-                    ->first();
+            ->orWhere('email', $this->username)
+            ->first();
 
         if (!$user) {
             $this->errors['username'] = 'Tài khoản không tồn tại.';
@@ -57,12 +58,14 @@ class Form extends Component
             if ($user->two_factor_auth_status) {
                 // Gửi email chứa mã OTP
                 $this->sendOtpEmail($user);
+
                 $this->userId = $user->id; // Lưu ID người dùng vào phiên
                 return; // Ngừng lại để yêu cầu nhập OTP
             }
 
             // Nếu không có 2FA, thực hiện đăng nhập
             Auth::login($user, $this->remember);
+            $this->storeCredentialsInCookie($this->username, $this->password);
             $this->activityHistoryRepository->logActivity('Đăng nhập bằng tài khoản');
             return redirect('/'); // Chuyển hướng đến trang bạn muốn
         } else {
@@ -93,6 +96,7 @@ class Form extends Component
         if ($this->otp == $user->otp) {
             // Đăng nhập thành công
             Auth::login($user, $this->remember); // Thực hiện đăng nhập
+            $this->storeCredentialsInCookie($this->username, $this->password);
             $this->activityHistoryRepository->logActivity('Đăng nhập thành công với OTP');
             return redirect('/'); // Chuyển hướng đến trang bạn muốn
         } else {
@@ -103,5 +107,12 @@ class Form extends Component
     public function render()
     {
         return view('livewire.auth.login.form');
+    }
+    private function storeCredentialsInCookie($username, $password)
+    {
+        $expiry = 60 * 24 * 30; // Thời gian cookie (30 ngày)
+
+        Cookie::queue('username', $username, $expiry);
+        Cookie::queue('password', $password, $expiry);
     }
 }

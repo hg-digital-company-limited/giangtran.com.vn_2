@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 25, 2024 lúc 04:45 AM
+-- Thời gian đã tạo: Th12 25, 2024 lúc 12:46 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -61,25 +61,21 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (1019, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1021, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1023, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1269, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1271, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1273, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1275, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1277, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1279, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1525, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1527, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1529, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1531, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1533, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1535, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(1781, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1783, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1785, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1787, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1789, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (1791, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
-(2037, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2039, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2041, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
 (2043, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-07 02:46:22', '2024-12-07 02:46:22'),
@@ -141,7 +137,11 @@ INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `creat
 (2384, 20, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-25 03:39:23', '2024-12-25 03:39:23'),
 (2385, 20, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-25 03:39:49', '2024-12-25 03:39:49'),
 (2386, 20, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-25 03:40:52', '2024-12-25 03:40:52'),
-(2387, 20, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-25 03:42:27', '2024-12-25 03:42:27');
+(2387, 20, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-25 03:42:27', '2024-12-25 03:42:27'),
+(2388, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-25 11:33:02', '2024-12-25 11:33:02'),
+(2389, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-25 11:34:37', '2024-12-25 11:34:37'),
+(2390, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-25 11:36:36', '2024-12-25 11:36:36'),
+(2391, 20, 'Đăng nhập bằng tài khoản', '127.0.0.1', '2024-12-25 11:44:56', '2024-12-25 11:44:56');
 
 -- --------------------------------------------------------
 
@@ -335,7 +335,9 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('jVFskyBiqEkuJ1Ywq4ScVxuKlBj8pd6h5vFigCkd', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjM6InVybCI7YToxOntzOjg6ImludGVuZGVkIjtzOjM2OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vc2V0dGluZ3MiO31zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozMDoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL3JlZ2lzdGVyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6ImtsaVZ4UE95Y3hOa2ZKTmNWQVhMNVR0TzBIQ2Y5YUxNc3pzSlFGd3ciO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkVnc2MGdnSUh3czdoSnFHN2hmTFM0dVZsL0ZPaElDU1E4dlQzdXNsRHdlZy9HcXZleVhoby4iO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1735098354);
+('jVFskyBiqEkuJ1Ywq4ScVxuKlBj8pd6h5vFigCkd', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjM6InVybCI7YToxOntzOjg6ImludGVuZGVkIjtzOjM2OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vc2V0dGluZ3MiO31zOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozMDoiaHR0cDovL2xvY2FsaG9zdDo4MDAwL3JlZ2lzdGVyIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo2OiJfdG9rZW4iO3M6NDA6ImtsaVZ4UE95Y3hOa2ZKTmNWQVhMNVR0TzBIQ2Y5YUxNc3pzSlFGd3ciO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkVnc2MGdnSUh3czdoSnFHN2hmTFM0dVZsL0ZPaElDU1E4dlQzdXNsRHdlZy9HcXZleVhoby4iO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1735098354),
+('sUnYSBRJZMA0rvAQX2SspI3uMb28tpcKGiNiOlOr', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiZ1dNck5RbUp0N2FUUjN2TzJqRlNuYTFGTTF5NVl4SnkxdEgzeVNpSCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjIwO30=', 1735126772),
+('VjXiOgfmUbXGOs5L0Yv3RO4jbagOL4MM9VaimmZu', 20, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiekxGb2NUYVNkQkFBdHRweXZDZEJhclNzQmVmNGtFaUZlbnBoM1hxNiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjIwO30=', 1735127137);
 
 -- --------------------------------------------------------
 
@@ -813,7 +815,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$Vw60ggIHws7hJqG7hfLS4uVl/FOhICSQ8vT3uslDweg/GqveyXho.', '6vazyhVfrPzF5HGG4AygPEZBJfmYHxrLUcpA7qXmvJMUMPKT6FXNKLZhn6kq', '2024-12-07 02:40:50', '2024-12-25 03:42:27', 'default', NULL, 20996742.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 3401599.00, NULL, 0, NULL, '123', 179583),
+(20, '2509roblox', '2509roblox@gmail.com', '2509roblox', NULL, '$2y$12$Vw60ggIHws7hJqG7hfLS4uVl/FOhICSQ8vT3uslDweg/GqveyXho.', 'pqMUMytxS5sy6FL2cAk9ssOskV26BKEenqiBs3TSNEZ20bFkC6eTl3KalLoi', '2024-12-07 02:40:50', '2024-12-25 03:42:27', 'default', NULL, 20996742.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 3401599.00, NULL, 0, NULL, '123', 179583),
 (26, 'HG DIGITAL', '2508roblox@gmail.com', 'kjpfehowou', NULL, '$2y$12$7zymyyR1hWcaMMepHSqN7ecK5DyzT1CXExehx4kfOwhoYrnZVT.5S', NULL, '2024-12-25 03:31:37', '2024-12-25 03:31:37', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL),
 (27, '2222222', '22509roblox@gmail.com', '22509roblox', NULL, '$2y$12$ReQyV.Mba1gTIk0ca6Bu3eETyGcvuar9ULEJNFSGzDqpaNITFN/tq', NULL, '2024-12-25 03:44:30', '2024-12-25 03:44:30', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL),
 (28, '2509robslox', '2509robslox@gmail.com', '2509robslox', NULL, '$2y$12$.fLurwcv8i0ggyv7zgUKqe7dxgy9GWHpw0J7b.5PshKYl2iG.bpg.', NULL, '2024-12-25 03:45:17', '2024-12-25 03:45:17', 'default', NULL, 0.00, '127.0.0.1', NULL, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', NULL, NULL, 0, NULL, NULL, NULL);
@@ -991,7 +993,7 @@ ALTER TABLE `web_services`
 -- AUTO_INCREMENT cho bảng `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2388;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2392;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
