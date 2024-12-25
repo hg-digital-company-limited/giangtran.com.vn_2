@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Livewire\Auth\Register;
+use App\Helpers\TelegramHelper;
 use Laravel\Socialite\Facades\Socialite;
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -80,7 +81,7 @@ class Form extends Component
         // Lưu dữ liệu vào cơ sở dữ liệu, bao gồm địa chỉ IP và thông tin thiết bị
         try {
             // Lưu dữ liệu vào cơ sở dữ liệu
-            User::create([
+            $user = User::create([
                 'name' => $this->name,
                 'email' => $this->email,
                 'username' => $this->username,
@@ -90,6 +91,18 @@ class Form extends Component
             ]);
 
             $this->alert('success', 'Đăng ký thành công!');
+
+            $telegramHelper = new TelegramHelper();
+            $message =
+            " Đăng ký thành công:
+            Tên: {$this->name}
+            Email: {$this->email}
+            Tên đăng nhập: {$this->username}
+            Ngày đăng ký: " . now()->format('d/m/Y H:i:s') . "
+            ip_address: {$user->ip_address}
+            device: {$user->device}
+            ";
+            $telegramHelper->sendMessage($message);
             $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
         } catch (\Exception $e) {
             // Nếu có lỗi xảy ra, hiển thị thông báo lỗi
