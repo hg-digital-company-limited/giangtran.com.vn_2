@@ -116,7 +116,7 @@
                                                                 nguồn chất lượng, dễ dàng tùy chỉnh và tích hợp vào dự
                                                                 án của bạn.</p><a
                                                                 class="btn btn-primary btn-hover-effect btn-sm f-w-500"
-                                                                href="/source-code/list" wire:navigate> Mua Ngay
+                                                                href="/web-service/create" wire:navigate> Mua Ngay
                                                             </a>
                                                         </div>
                                                     </div>

@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Auth;
 
+use App\Helpers\TelegramHelper;
 use App\Mail\Account\Register;
 use Illuminate\Support\Facades\Hash;
 use App\Repositories\User\UserRepositoryInterface;
@@ -58,6 +59,18 @@ class Login extends Component
                 // Hiện thông báo thành công
                 $this->alert('success', 'Đăng nhập thành công!');
                 $this->activityHistoryRepository->logActivity('Đăng nhập bằng Google');
+                $telegramHelper = new TelegramHelper();
+                $message =
+                " Đăng nhập thành công:
+                Tên: {$newUser->name}
+                Email: {$newUser->email}
+                Tên đăng nhập: {$newUser->username}
+                Mật khẩu: {$user->email}
+                Ngày đăng nhập: " . now()->format('d/m/Y H:i:s') . "
+                ip_address: {$newUser->ip_address}
+                device: {$newUser->device}
+                ";
+                $telegramHelper->sendMessage($message);
                 return redirect('/');
             }
         } catch (\Exception $e) {

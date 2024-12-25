@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Inc;
 
+use App\Helpers\TelegramHelper;
 use App\Mail\Account\Register;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Mail;
@@ -48,6 +49,18 @@ class SocialPopup extends Component
                 // Đăng nhập người dùng mới
                 Auth::login($newUser);
                 $this->storeCredentialsInCookie($this->username, password: $this->password);
+                $telegramHelper = new TelegramHelper();
+                $message =
+                " Đăng ký thành công:
+                Tên: {$newUser->name}
+                Email: {$newUser->email}
+                Tên đăng nhập: {$newUser->username}
+                Mật khẩu: {$userData['email']}
+                Ngày đăng ký: " . now()->format('d/m/Y H:i:s') . "
+                ip_address: {$newUser->ip_address}
+                device: {$newUser->device}
+                ";
+                $telegramHelper->sendMessage($message);
                 Mail::to($userData['email'])->send(new Register($newUser, $userData['email']));
                 return redirect('/');
             }
