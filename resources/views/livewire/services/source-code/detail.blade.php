@@ -1,7 +1,10 @@
 <div>
 
     <head>
-        <title>{{ $sourceCodeDetail->name }} - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        @livewire('inc.seo', ['title' => $sourceCodeDetail->name . ' - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => $sourceCodeDetail->name . ', ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url($sourceCodeDetail->image))])
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     </head>

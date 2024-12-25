@@ -1,8 +1,10 @@
 <div>
 
     <head>
-        <title>Đăng Ký Tài Khoản - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
-
+        @livewire('inc.seo', ['title' => 'Đăng Ký Tài Khoản - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Đăng Ký Tài Khoản, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
 
     </head>
 

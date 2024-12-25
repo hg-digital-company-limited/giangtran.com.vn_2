@@ -1,6 +1,9 @@
 <div>
     <head>
-        <title>Đặt Lại Mật Khẩu - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        @livewire('inc.seo', ['title' => 'Đặt Lại Mật Khẩu - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Đặt Lại Mật Khẩu, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
 
         {{-- <link rel="stylesheet" href="/assets/static/style.css?v=62348332"> --}}
     </head>

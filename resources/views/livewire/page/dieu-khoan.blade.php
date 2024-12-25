@@ -3,7 +3,10 @@
 
     <head>
 
-        <title>Điều Khoản & Chính Sách - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        @livewire('inc.seo', ['title' => 'Điều Khoản & Chính Sách - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Điều Khoản & Chính Sách, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <link rel="stylesheet" href="/assets/static/style.css?v=410833453">
         <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

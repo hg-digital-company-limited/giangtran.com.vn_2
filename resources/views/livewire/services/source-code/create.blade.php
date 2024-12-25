@@ -2,7 +2,10 @@
 
 
     <head>
-        <title>Kho Mã Nguồn - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        @livewire('inc.seo', ['title' => 'Kho Mã Nguồn - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Kho Mã Nguồn, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
 
     <body id="content">

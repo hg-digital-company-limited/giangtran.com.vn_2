@@ -1,7 +1,10 @@
 <div>
 
     <head>
-        <title>Tạo Đơn Tăng Tương Tác - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        @livewire('inc.seo', ['title' => 'Tạo Đơn Tăng Tương Tác - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Tạo Đơn Tăng Tương Tác, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <style>
             li {
                 padding-top: 5px;

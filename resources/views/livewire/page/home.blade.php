@@ -1,36 +1,17 @@
 <div>
 
     <head>
-        <title>Trang Chủ - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
-        <script type="application/ld+json" data-rh="true">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "name": "TRANG CHỦ - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}",
-                "url": "https://giangtran.com.vn",
-                "brand": {
-                    "@type": "Organization",
-                    "name": "{{ App\Helpers\SettingsHelper::getSetting('website_name') }}"
-                },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "itemReviewed": {
-                        "@type": "WebSite",
-                        "name": "TRANG CHỦ - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}",
-                        "url": "https://giangtran.com.vn"  // Thêm URL nếu cần
-                    },
-                    "bestRating": 5,
-                    "worstRating": 1,
-                    "ratingCount": 93,
-                    "ratingValue": 4.90
-                }
-            }
-        </script>
+        @livewire('inc.seo', ['title' => 'Trang Chủ - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+          'keywords' => 'Trang Chủ, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
 
     <body id="content">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__shake"
+                src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo"
+                height="60" width="60">
         </div>
 
 
@@ -280,9 +261,10 @@
                         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1279811/t/8"></script>
                         <script>
                             document.addEventListener('DOMContentLoaded', function() {
-                                document.querySelectorAll('a[href="https://www.freevisitorcounters.com/en/home/stats/id/1279811"]').forEach(function(link) {
-                                    link.style.opacity = '0';
-                                });
+                                document.querySelectorAll('a[href="https://www.freevisitorcounters.com/en/home/stats/id/1279811"]')
+                                    .forEach(function(link) {
+                                        link.style.opacity = '0';
+                                    });
                             });
                         </script>
                     </div>

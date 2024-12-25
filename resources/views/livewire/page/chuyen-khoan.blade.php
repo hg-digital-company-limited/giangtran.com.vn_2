@@ -1,7 +1,10 @@
 <div>
 
     <head>
-        <title>Nạp Tiền - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        @livewire('inc.seo', ['title' => 'Nạp Tiền - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Nạp Tiền, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     </head>
