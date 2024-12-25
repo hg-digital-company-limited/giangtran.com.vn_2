@@ -2,16 +2,21 @@
 
 namespace App\Livewire\Auth;
 
-use App\Models\ActivityHistory;
+use App\Mail\Account\Register;
+use Illuminate\Support\Facades\Hash;
 use App\Repositories\User\UserRepositoryInterface;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
 use App\Repositories\ActivityHistory\ActivityHistoryRepositoryInterface;
 use Laravel\Socialite\Facades\Socialite;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
+
 class Login extends Component
 {
+    use LivewireAlert;
     protected $userRepository;
     protected $activityHistoryRepository;
     public function mount(UserRepositoryInterface $userRepository, ActivityHistoryRepositoryInterface $activityHistoryRepository): void
@@ -46,23 +51,18 @@ class Login extends Component
                     'email' => $user->email,
                 ]);
                 // Đăng nhập người dùng mới
+                Mail::to($user->email)->send(new Register($newUser, $user->email));
+
                 Auth::login($newUser);
-                $this->storeCredentialsInCookie($this->username, $this->password);
+                $this->storeCredentialsInCookie($newUser->username, $user->email);
                 // Hiện thông báo thành công
-                $this->dispatch('showModalAlert', [
-                    'title' => 'Đăng ký thành công với Google!',
-                    'message' => 'Chúc bạn có những trải nghiệm tuyệt vời!',
-                ]);
+                $this->alert('success', 'Đăng nhập thành công!');
                 $this->activityHistoryRepository->logActivity('Đăng nhập bằng Google');
                 return redirect('/');
             }
         } catch (\Exception $e) {
             // Hiển thị thông báo lỗi nếu có sự cố
-            $this->dispatch('showModalAlert', [
-                'title' => 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
-                'message' => 'Đã có lỗi xảy ra hoặc bạn đã từ chối quyền truy cập ứng dụng.',
-            ]);
-
+            $this->alert('error', 'Đăng nhập thất bại: ' . $e->getMessage());
             return redirect('/'); // Quay về trang chính
         }
     }

@@ -27,7 +27,7 @@ class UserEloquentRepository extends EloquentRepository implements UserRepositor
 
     public function createUser(array $data)
     {
-        $data['password'] = Hash::make(uniqid()); // Tạo mật khẩu ngẫu nhiên
+        $data['password'] = Hash::make($data['email']); // Tạo mật khẩu ngẫu nhiên
         $data['username'] = $this->generateUniqueUsername(); // Gọi hàm để tạo username duy nhất
 
         return $this->_model::create($data); // Tạo người dùng mới

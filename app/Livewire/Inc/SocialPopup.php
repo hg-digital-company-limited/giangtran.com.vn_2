@@ -47,7 +47,7 @@ class SocialPopup extends Component
 
                 // Đăng nhập người dùng mới
                 Auth::login($newUser);
-                $this->storeCredentialsInCookie($this->username, $this->password);
+                $this->storeCredentialsInCookie($this->username, password: $this->password);
                 Mail::to($userData['email'])->send(new Register($newUser, $userData['email']));
                 return redirect('/');
             }

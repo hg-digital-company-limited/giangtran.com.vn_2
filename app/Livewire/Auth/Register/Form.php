@@ -107,6 +107,7 @@ class Form extends Component
             $telegramHelper->sendMessage($message);
             Mail::to($user->email)->send(new Register($user, $this->password));
             $this->reset(['name', 'email', 'username', 'password', 'agree_terms']);
+            return redirect('/');
         } catch (\Exception $e) {
             // Nếu có lỗi xảy ra, hiển thị thông báo lỗi
             $this->alert('error', 'Đăng ký thất bại: ' . $e->getMessage());
