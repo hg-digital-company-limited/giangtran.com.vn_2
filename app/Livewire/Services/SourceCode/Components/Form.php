@@ -3,7 +3,7 @@
 namespace App\Livewire\Services\SourceCode\Components;
 
 use App\Helpers\TelegramHelper;
-use App\Mail\order\SourceCode;
+use App\Mail\Order\SourceCode;
 use App\Models\SourceCodeProduct;
 use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;
 use App\Repositories\SourceCodeOrder\SourceCodeOrderRepositoryInterface;
