@@ -3,7 +3,7 @@
 namespace App\Livewire\Services\Smm\Components;
 
 use App\Helpers\TelegramHelper;
-use App\Mail\Order\Smm;
+use App\Mail\Smm;
 use App\Models\SmmCategory;
 use App\Models\SmmService;
 use App\Repositories\ActivityHistory\ActivityHistoryEloquentRepository;

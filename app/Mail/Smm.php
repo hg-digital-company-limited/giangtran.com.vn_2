@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Mail\Order;
+namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class SourceCode extends Mailable
+class Smm extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -17,7 +17,7 @@ class SourceCode extends Mailable
      * Create a new message instance.
      */
     public $order;
-    public function __construct($order )
+    public function __construct($order)
     {
         $this->order = $order;
         $this->from('2508roblox@gmail.com', 'GIANGTRAN.COM.VN');
@@ -39,7 +39,7 @@ class SourceCode extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'emails.order.source_code',
+            view: 'emails.order.smm',
         );
     }
 
