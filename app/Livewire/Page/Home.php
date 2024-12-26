@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Page;
 
+use App\Helpers\SettingsHelper;
 use App\Repositories\SmmOrder\SmmOrderRepositoryInterface;
 use App\Repositories\SourceCodeOrder\SourceCodeOrderRepositoryInterface;
 use Illuminate\Support\Facades\Auth;
@@ -58,6 +59,9 @@ class Home extends Component
 
     public function render()
     {
+        if (SettingsHelper::getSetting('maintenance') == 1) {
+            return view('livewire.maintenance')->layout('components.layouts.default');
+        }
         return view('livewire.page.home');
     }
 }

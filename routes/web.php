@@ -5,7 +5,6 @@ use App\Http\Controllers\cron\Transaction;
 use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\CheckMaintenanceMode;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
-use App\Livewire\Maintenance;
 use App\Livewire\Services\WebService\Create;
 use App\Livewire\Template\ApiClient;
 use App\Livewire\Page\ChuyenKhoan;
@@ -44,8 +43,8 @@ use App\Livewire\Services\WebService\Create as CreateWebService;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', LandingPage::class)->name('landingpage');
+Route::get('/', Home::class)->name('home');
 Route::middleware(CheckMaintenanceMode::class)->group(function () {
-    Route::get('/', Home::class)->name('home');
     Route::get('/dieu-khoan', action: DieuKhoan::class)->name('dieu-khoan');
 
     Route::middleware(CheckAuth::class)->group(function () {
@@ -77,7 +76,6 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
     Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
     Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
 });
-Route::get('/maintenance', action: Maintenance::class)->name('maintenance');
 
 // template
 

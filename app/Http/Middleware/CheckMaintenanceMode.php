@@ -11,7 +11,7 @@ class CheckMaintenanceMode
     public function handle(Request $request, Closure $next)
     {
         if (SettingsHelper::getSetting('maintenance') == 1) {
-            return redirect()->route('maintenance'); // Adjust to your maintenance route
+            return redirect()->route('home'); // Adjust to your maintenance route
         }
 
         return $next($request);
