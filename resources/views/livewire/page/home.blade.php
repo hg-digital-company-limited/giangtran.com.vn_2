@@ -34,7 +34,7 @@
                                         <div class="col-xl-12 box-col-12">
                                             <div class="card title-line upgrade-card overflow-hidden">
                                                 <div class="row align-items-end">
-                                                    <div class="col-sm-8 col-11">
+                                                    <div class="col-sm-11 col-11">
                                                         <div class="card-header">
 
                                                             <h2> Tăng Tương Tác <span class="txt-danger"> Giá Rẻ
@@ -50,8 +50,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="cartoon-image"> <img class="img-fluid"
-                                                        src="/assets/images/smm/banner.png" alt="Nguyễn Thành"></div>
+
                                                 <img class="img-fluid pattern-image"
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
@@ -59,7 +58,7 @@
                                         <div class="col-xl-12 box-col-12">
                                             <div class="card title-line upgrade-card overflow-hidden">
                                                 <div class="row align-items-end">
-                                                    <div class="col-sm-8 col-11">
+                                                    <div class="col-sm-11 col-11">
                                                         <div class="card-header">
 
                                                             <h2> Mã Nguồn <span class="txt-danger"> Giá Rẻ </span>
@@ -74,8 +73,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="cartoon-image"> <img class="img-fluid"
-                                                        src="/assets/images/smm/banner.png" alt="Nguyễn Thành"></div>
+
                                                 <img class="img-fluid pattern-image"
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
@@ -83,7 +81,7 @@
                                         <div class="col-xl-12 box-col-12">
                                             <div class="card title-line upgrade-card overflow-hidden">
                                                 <div class="row align-items-end">
-                                                    <div class="col-sm-8 col-11">
+                                                    <div class="col-sm-11 col-11">
                                                         <div class="card-header">
 
                                                             <h2> Dịch Vụ <span class="txt-danger"> Thiết Kế
@@ -99,8 +97,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="cartoon-image"> <img class="img-fluid"
-                                                        src="/assets/images/smm/banner.png" alt="Nguyễn Thành"></div>
+
                                                 <img class="img-fluid pattern-image"
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
@@ -269,7 +266,7 @@
                                                             </svg>
                                                         </div>
                                                         <div>
-                                                            <h2>Tạo Mã QR Bank</h2><span
+                                                            <h4>Tạo Mã QR Bank</h4><span
                                                                 class="f-light f-w-500 f-12">lượt dùng (100)</span>
                                                         </div>
                                                     </div>
@@ -284,7 +281,7 @@
                                                             </svg>
                                                         </div>
                                                         <div>
-                                                            <h2>Kiểm Tra Domain</h2><span
+                                                            <h4>Kiểm Tra Domain</h4><span
                                                                 class="f-light f-w-500 f-12">lượt dùng (100)</span>
                                                         </div>
                                                     </div>

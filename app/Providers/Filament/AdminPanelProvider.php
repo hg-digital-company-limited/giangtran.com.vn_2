@@ -3,6 +3,7 @@
 namespace App\Providers\Filament;
 
 use App\Filament\Resources\SmmOrderResource\Widgets\SmmOrderOverview;
+use App\Filament\Resources\SourceCodeOrderResource\Widgets\SourceCodeOrderOverview;
 use App\Helpers\SettingsHelper;
 use App\Http\Middleware\AdminAccess;
 use Filament\Http\Middleware\Authenticate;
@@ -44,6 +45,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
                 SmmOrderOverview::class,
+                SourceCodeOrderOverview::class,
             ])
             ->middleware([
                 EncryptCookies::class,

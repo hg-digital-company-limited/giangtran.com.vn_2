@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 26, 2024 lúc 08:28 AM
+-- Thời gian đã tạo: Th12 26, 2024 lúc 09:31 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -35,6 +35,14 @@ CREATE TABLE `activity_history` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `activity_history`
+--
+
+INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `created_at`, `updated_at`) VALUES
+(2397, 39, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-26 07:57:34', '2024-12-26 07:57:34'),
+(2398, 39, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-26 08:01:19', '2024-12-26 08:01:19');
 
 -- --------------------------------------------------------
 
@@ -218,7 +226,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('be3CdVVOI0S3bA0kXl69ZAU5ri2OPvvMm05iDy3n', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiejREQlg1bGVueE9FMkZhekZJSnduZTB6QTNvUkxEa2dNVmhvNG0xZyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbiI7fXM6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkSGdNVjVvelU1SDlNV1F1ekpZdVRTZVViVXN1QWdwczY4WmR5TENxU1BZVDc5R0FJM3RuRnkiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1735198099);
+('AzXgNesNoclMvjxFqFRD309aJnCGmrMjycdEoIlg', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiejREQlg1bGVueE9FMkZhekZJSnduZTB6QTNvUkxEa2dNVmhvNG0xZyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0LzMiO31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJEhnTVY1b3pVNUg5TVdRdXpKWXVUU2VVYlVzdUFncHM2OFpkeUxDcVNQWVQ3OUdBSTN0bkZ5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735201893);
 
 -- --------------------------------------------------------
 
@@ -318,6 +326,13 @@ CREATE TABLE `smm_orders` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `smm_orders`
+--
+
+INSERT INTO `smm_orders` (`id`, `user_id`, `smm_service_id`, `quantity`, `total_price`, `status`, `unit_price`, `start_count`, `link`, `remains`, `created_at`, `updated_at`) VALUES
+(94, 39, 294, 500, 12185.00, 'pending', 24.37, 0, 'https://giangtran.com.vn/', 500, '2024-12-26 08:01:19', '2024-12-26 08:01:19');
 
 -- --------------------------------------------------------
 
@@ -511,7 +526,8 @@ CREATE TABLE `source_code_categories` (
 --
 
 INSERT INTO `source_code_categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'PHP', '2024-12-18 10:34:04', '2024-12-18 10:34:04');
+(1, 'PHP', '2024-12-18 10:34:04', '2024-12-18 10:34:04'),
+(2, 'Wordpress', '2024-12-26 08:17:07', '2024-12-26 08:17:07');
 
 -- --------------------------------------------------------
 
@@ -530,6 +546,13 @@ CREATE TABLE `source_code_orders` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `source_code_orders`
+--
+
+INSERT INTO `source_code_orders` (`id`, `user_id`, `source_code_product_id`, `name`, `unit_price`, `order_code`, `link_download`, `created_at`, `updated_at`) VALUES
+(49, 39, 3, 'Website Bán Đồng Hồ PHP', 1000000.00, '321204', 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', '2024-12-26 07:57:34', '2024-12-26 07:57:34');
 
 -- --------------------------------------------------------
 
@@ -557,7 +580,7 @@ CREATE TABLE `source_code_products` (
 --
 
 INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
-(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Screenshot 2024-12-25 094616.png&quot;,&quot;filesize&quot;:688081,&quot;height&quot;:943,&quot;href&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\"><img src=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\" width=\"1916\" height=\"943\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Screenshot 2024-12-25 094616.png</span> <span class=\"attachment__size\">671.95 KB</span></figcaption></a></figure></p>', NULL, 1000000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 103, 115, '01JFXWYA2DVREVMSDVCH4F6GG0.png', '2024-12-25 03:14:37', '2024-12-25 13:59:47');
+(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Screenshot 2024-12-25 094616.png&quot;,&quot;filesize&quot;:688081,&quot;height&quot;:943,&quot;href&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\"><img src=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\" width=\"1916\" height=\"943\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Screenshot 2024-12-25 094616.png</span> <span class=\"attachment__size\">671.95 KB</span></figcaption></a></figure></p>', NULL, 1000000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 104, 128, '01JFXWYA2DVREVMSDVCH4F6GG0.png', '2024-12-25 03:14:37', '2024-12-26 08:31:19');
 
 -- --------------------------------------------------------
 
@@ -680,7 +703,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-26 03:05:22', 'default', NULL, 0.00, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL);
+(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-26 08:01:19', 'default', NULL, 98987815.00, NULL, NULL, NULL, 1000000.00, NULL, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -855,7 +878,7 @@ ALTER TABLE `web_services`
 -- AUTO_INCREMENT cho bảng `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2397;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2399;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
@@ -897,7 +920,7 @@ ALTER TABLE `smm_categories`
 -- AUTO_INCREMENT cho bảng `smm_orders`
 --
 ALTER TABLE `smm_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
 -- AUTO_INCREMENT cho bảng `smm_services`
@@ -909,13 +932,13 @@ ALTER TABLE `smm_services`
 -- AUTO_INCREMENT cho bảng `source_code_categories`
 --
 ALTER TABLE `source_code_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `source_code_orders`
 --
 ALTER TABLE `source_code_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT cho bảng `source_code_products`

@@ -96,7 +96,7 @@
 
 
                     <script>
-                        document.addEventListener("DOMContentLoaded", function() {
+                        window.addEventListener("load", function() {
                             const galleryDiv = document.getElementById("content-gallery");
                             const images = galleryDiv.getElementsByTagName("img");
 
@@ -143,7 +143,7 @@
             }
             #content-gallery img {
                 width: 100%;
-
+                height: inherit;
             }
         </style>
     </body>

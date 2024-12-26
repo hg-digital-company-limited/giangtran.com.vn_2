@@ -2,32 +2,47 @@
 
 namespace App\Livewire\Services\SourceCode\Components;
 
+use App\Models\SourceCodeCategory;
 use App\Models\SourceCodeProduct;
-use App\Repositories\SourceCodeProduct\SourceCodeProductRepositoryInterface;
 use Livewire\Component;
-use Livewire\WithPagination;
 
 class ProductList extends Component
 {
-    use WithPagination;
+    public $search = '';
+    public $category = null;
+    public $categories;
+    public $sortBy = 'created_at';
+    public $sortDirection = 'asc';
 
-    public $search;
-    protected $sourceCodeProductRepository;
-
-    public function mount(SourceCodeProductRepositoryInterface $sourceCodeProductRepository)
+    public function mount()
     {
-        $this->sourceCodeProductRepository = $sourceCodeProductRepository;
+        $this->categories = SourceCodeCategory::all();
     }
 
-    public function updatedSearch()
+    public function toggleSortDirection()
     {
-        $this->resetPage();
+        $this->sortDirection = $this->sortDirection === 'asc' ? 'desc' : 'asc';
     }
 
     public function render()
     {
+        $query = SourceCodeProduct::query();
+
+        if ($this->category) {
+            $query->where('category_id', $this->category);
+        }
+
+        if ($this->search) {
+            $query->where('name', 'like', '%' . $this->search . '%');
+        }
+
+        $query->orderBy($this->sortBy, $this->sortDirection);
+
+        $sourceCodeProduct = $query->get();
+
         return view('livewire.services.source-code.components.product-list', [
-            'sourceCodeProduct' => SourceCodeProduct::where('name', 'like', '%' . $this->search . '%')->paginate(16), // Chuyển dữ liệu tới view
+            'sourceCodeProduct' => $sourceCodeProduct,
+            'categories' => $this->categories,
         ]);
     }
 }
