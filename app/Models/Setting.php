@@ -24,6 +24,7 @@ class Setting extends Model
         'account_number',
         'account_name',
         'account_name_qr',
+        'bank_name',
         'sepay_token',
         'sepay_account_number',
         'telegram_bot_token',

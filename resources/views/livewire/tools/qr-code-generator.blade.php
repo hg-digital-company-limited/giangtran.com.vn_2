@@ -23,17 +23,7 @@
 
                     <div class="page-body">
                         <div class="container-fluid default-dashboard">
-
-                            <div class="col-xl-12">
-                                <div class="card title-line">
-                                    <div class="card-header">
-                                        <h2 class="card-title mb-0"> Tạo QR Code </h2>
-
-                                    </div>
-                                    <div class="card-body">
-                                    </div>
-                                </div>
-                            </div>
+                            @livewire('tools.qr-code-generator.form')
 
                         </div>
                     </div>

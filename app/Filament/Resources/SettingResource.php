@@ -89,6 +89,10 @@ class SettingResource extends Resource
                                     ->label('Tên tài khoản (account_name_qr)')
                                     ->maxLength(255)
                                     ->default(null),
+                                Forms\Components\TextInput::make('bank_name')
+                                    ->label('Tên ngân hàng (bank_name)')
+                                    ->maxLength(255)
+                                    ->default(null),
                                 Forms\Components\TextInput::make('sepay_token')
                                     ->label('Token SePay (sepay_token)')
                                     ->maxLength(255)

@@ -59,7 +59,7 @@
                                                 <i class="icofont icofont-qr-code" style="cursor: pointer;"
                                                     title="Mã QR Chuyển Khoản" data-bs-target="#showqr-code"
                                                     data-bs-toggle="modal"
-                                                    onclick="showQRcode(`https://api.vietqr.io/mb/ {{ App\Helpers\SettingsHelper::getSetting('account_number') }}/0/HG {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
+                                                    onclick="showQRcode(`https://api.vietqr.io/{{ App\Helpers\SettingsHelper::getSetting('bank_name') }}/ {{ App\Helpers\SettingsHelper::getSetting('account_number') }}/0/HG {{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}/vietqr_net_2.jpg?accountName=TRAN+LE+HOANG+GIANG`);"></i>
                                             </div>
                                         </div>
 
