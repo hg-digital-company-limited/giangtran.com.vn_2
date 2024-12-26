@@ -81,7 +81,7 @@
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-home"></use>
                             </svg>
-                            <span> Nạp Ngân Hàng </span>
+                            <span> Nạp Tiền </span>
                         </a>
                     </li>
                     <li class="sidebar-list">
@@ -158,15 +158,16 @@
                             <h6 class="lan-8">- Tools</h6>
                         </div>
                     </li>
-                    {{-- <li class="sidebar-list">
+
+                    <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
-                        <a class="sidebar-link sidebar-title link-nav" href="/api-client">
+                        <a class="sidebar-link sidebar-title link-nav" href="/tools/qr-code-generator" wire:navigate>
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
                             </svg>
-                            <span> Kết Nối API </span>
+                            <span> Tạo QR Code </span>
                         </a>
-                    </li> --}}
+                    </li>
 
                 </ul>
             </div>

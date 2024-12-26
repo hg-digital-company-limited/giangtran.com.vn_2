@@ -40,6 +40,7 @@ use App\Livewire\Services\SourceCode\Create as CreateSourceCode;
 use App\Livewire\Services\SourceCode\Manager as ManagerSourceCode;
 use App\Livewire\Services\SourceCode\Detail as DetailSourceCode;
 use App\Livewire\Services\WebService\Create as CreateWebService;
+use App\Livewire\Tools\QrCodeGenerator;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', LandingPage::class)->name('landingpage');
@@ -75,6 +76,7 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
 
     Route::get('/auth/google', [Login::class, 'redirectToProvider'])->name('google.login');
     Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
+    Route::get('/tools/qr-code-generator', QrCodeGenerator::class)->name('qr-code-generator');
 });
 
 // template
