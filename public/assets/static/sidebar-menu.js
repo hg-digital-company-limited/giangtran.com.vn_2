@@ -183,18 +183,18 @@
             $header.addClass("close_icon");
         }
     })(jQuery);
-    $(window).resize(function() {
-        var widthwindaw = $window.width();
-        if (widthwindaw <= 1184) {
-            $toggle_nav_top.attr("checked", false);
-            $nav.addClass("close_icon");
-            $header.addClass("close_icon");
-        } else {
-            $toggle_nav_top.attr("checked", true);
-            $nav.removeClass("close_icon");
-            $header.removeClass("close_icon");
-        }
-    });
+    // $(window).resize(function() {
+    //     var widthwindaw = $window.width();
+    //     if (widthwindaw <= 1184) {
+    //         $toggle_nav_top.attr("checked", false);
+    //         $nav.addClass("close_icon");
+    //         $header.addClass("close_icon");
+    //     } else {
+    //         $toggle_nav_top.attr("checked", true);
+    //         $nav.removeClass("close_icon");
+    //         $header.removeClass("close_icon");
+    //     }
+    // });
 
     // horizontal arrows
     var view = $("#sidebar-menu");
