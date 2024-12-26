@@ -168,6 +168,15 @@
                             <span> Tạo QR Code </span>
                         </a>
                     </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" href="/tools/check-domain" wire:navigate>
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                            </svg>
+                            <span> Kiểm Tra Domain </span>
+                        </a>
+                    </li>
 
                 </ul>
             </div>
