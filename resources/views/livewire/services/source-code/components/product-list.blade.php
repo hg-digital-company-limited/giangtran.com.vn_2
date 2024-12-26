@@ -95,7 +95,7 @@
                                         </span>
                                     </div>
                                     <div class="col-md-6 col-6">
-                                        <span class="badge badge-dark text-white" style="width: 100%; padding: 10px;">
+                                        <span  wire:navigate href="/source-code/list/{{ $item->id }}" class="badge badge-dark text-white" style="width: 100%; padding: 10px; cursor: pointer">
                                             <i class="icofont icofont-cart"></i> Mua Ngay
                                         </span>
                                     </div>

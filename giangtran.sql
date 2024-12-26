@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 26, 2024 lúc 09:31 AM
+-- Thời gian đã tạo: Th12 26, 2024 lúc 01:20 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -42,7 +42,8 @@ CREATE TABLE `activity_history` (
 
 INSERT INTO `activity_history` (`id`, `user_id`, `content`, `ip_address`, `created_at`, `updated_at`) VALUES
 (2397, 39, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-26 07:57:34', '2024-12-26 07:57:34'),
-(2398, 39, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-26 08:01:19', '2024-12-26 08:01:19');
+(2398, 39, 'Tạo đơn hàng Smm!', '127.0.0.1', '2024-12-26 08:01:19', '2024-12-26 08:01:19'),
+(2399, 39, 'Mua Source Code . Website Bán Đồng Hồ PHP!', '127.0.0.1', '2024-12-26 11:32:37', '2024-12-26 11:32:37');
 
 -- --------------------------------------------------------
 
@@ -65,8 +66,8 @@ INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer', 'i:1735096587;', 1735096587),
 ('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1735183059),
 ('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1735183059;', 1735183059),
-('ca3512f4dfa95a03169c5a670a4c91a19b3077b4', 'i:1;', 1735198132),
-('ca3512f4dfa95a03169c5a670a4c91a19b3077b4:timer', 'i:1735198132;', 1735198132);
+('ca3512f4dfa95a03169c5a670a4c91a19b3077b4', 'i:1;', 1735215556),
+('ca3512f4dfa95a03169c5a670a4c91a19b3077b4:timer', 'i:1735215556;', 1735215556);
 
 -- --------------------------------------------------------
 
@@ -226,7 +227,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('AzXgNesNoclMvjxFqFRD309aJnCGmrMjycdEoIlg', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiejREQlg1bGVueE9FMkZhekZJSnduZTB6QTNvUkxEa2dNVmhvNG0xZyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0LzMiO31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJEhnTVY1b3pVNUg5TVdRdXpKWXVUU2VVYlVzdUFncHM2OFpkeUxDcVNQWVQ3OUdBSTN0bkZ5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735201893);
+('7fsby6g5Etem7OwcPkSX6pM6WQVfYf7OB6NvULzd', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoia1RrbUVCMXdkYlFMSTdPdHNNcjJTa0xFa05qeWpuZUNDOHc2MjdETCI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzg6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0Ijt9czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRIZ01WNW96VTVIOU1XUXV6Sll1VFNlVWJVc3VBZ3BzNjhaZHlMQ3FTUFlUNzlHQUkzdG5GeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1735215626);
 
 -- --------------------------------------------------------
 
@@ -526,8 +527,11 @@ CREATE TABLE `source_code_categories` (
 --
 
 INSERT INTO `source_code_categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'PHP', '2024-12-18 10:34:04', '2024-12-18 10:34:04'),
-(2, 'Wordpress', '2024-12-26 08:17:07', '2024-12-26 08:17:07');
+(1, 'PHP + Mysql', '2024-12-18 10:34:04', '2024-12-26 11:52:05'),
+(2, 'Wordpress', '2024-12-26 08:17:07', '2024-12-26 08:17:07'),
+(3, 'Laravel', '2024-12-26 11:52:23', '2024-12-26 11:52:23'),
+(4, 'Nextjs', '2024-12-26 11:52:29', '2024-12-26 11:52:29'),
+(5, 'MERN', '2024-12-26 11:52:43', '2024-12-26 11:52:43');
 
 -- --------------------------------------------------------
 
@@ -552,7 +556,8 @@ CREATE TABLE `source_code_orders` (
 --
 
 INSERT INTO `source_code_orders` (`id`, `user_id`, `source_code_product_id`, `name`, `unit_price`, `order_code`, `link_download`, `created_at`, `updated_at`) VALUES
-(49, 39, 3, 'Website Bán Đồng Hồ PHP', 1000000.00, '321204', 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', '2024-12-26 07:57:34', '2024-12-26 07:57:34');
+(49, 39, 3, 'Website Bán Đồng Hồ PHP', 1000000.00, '321204', 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', '2024-12-26 07:57:34', '2024-12-26 07:57:34'),
+(50, 39, 3, 'Website Bán Đồng Hồ PHP', 100000.00, '803472', 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', '2024-12-26 11:32:37', '2024-12-26 11:32:37');
 
 -- --------------------------------------------------------
 
@@ -580,7 +585,20 @@ CREATE TABLE `source_code_products` (
 --
 
 INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
-(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Screenshot 2024-12-25 094616.png&quot;,&quot;filesize&quot;:688081,&quot;height&quot;:943,&quot;href&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\"><img src=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\" width=\"1916\" height=\"943\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Screenshot 2024-12-25 094616.png</span> <span class=\"attachment__size\">671.95 KB</span></figcaption></a></figure></p>', NULL, 1000000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 104, 128, '01JFXWYA2DVREVMSDVCH4F6GG0.png', '2024-12-25 03:14:37', '2024-12-26 08:31:19');
+(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p><div class=\"attachment-gallery attachment-gallery--4\"><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Screenshot 2024-12-25 094616.png&quot;,&quot;filesize&quot;:688081,&quot;height&quot;:943,&quot;href&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\"><img src=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\" width=\"1916\" height=\"943\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Screenshot 2024-12-25 094616.png</span> <span class=\"attachment__size\">671.95 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:423328,&quot;height&quot;:936,&quot;href&quot;:&quot;http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png&quot;,&quot;width&quot;:1907}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png\"><img src=\"http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png\" width=\"1907\" height=\"936\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">413.41 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:115756,&quot;height&quot;:940,&quot;href&quot;:&quot;http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png\"><img src=\"http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png\" width=\"1916\" height=\"940\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">113.04 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:109085,&quot;height&quot;:942,&quot;href&quot;:&quot;http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png&quot;,&quot;width&quot;:1912}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png\"><img src=\"http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png\" width=\"1912\" height=\"942\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">106.53 KB</span></figcaption></a></figure></div>', NULL, 100000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 105, 137, '01JFXWYA2DVREVMSDVCH4F6GG0.png', '2024-12-25 03:14:37', '2024-12-26 11:37:39'),
+(4, 1, 'Web bán hàng php thuần', '<p>Web bán hàng php thuần</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image&quot;,&quot;height&quot;:694,&quot;url&quot;:&quot;https://camo.githubusercontent.com/edc6dcedfab5bfef60d5558cf43b54b7198721198c50781b99d11263f5e8a150/68747470733a2f2f692e696d6775722e636f6d2f545a72555241642e6a706567&quot;,&quot;width&quot;:261}\" data-trix-content-type=\"image\" class=\"attachment attachment--preview\"><img src=\"https://camo.githubusercontent.com/edc6dcedfab5bfef60d5558cf43b54b7198721198c50781b99d11263f5e8a150/68747470733a2f2f692e696d6775722e636f6d2f545a72555241642e6a706567\" width=\"261\" height=\"694\"><figcaption class=\"attachment__caption\"></figcaption></figure></p>', NULL, 20000.00, NULL, 0, 2, '01JG1D6H7M7NRX61MPN2FRP3RE.png', '2024-12-26 11:56:27', '2024-12-26 11:57:57'),
+(5, 1, 'Web bán quần áo (php + mysql)', '<p>Web bán quần áo (php + mysql)</p>', NULL, 99000.00, NULL, 0, 0, '01JG1D91TYSKF1EWCP7R1F0RHM.png', '2024-12-26 11:57:50', '2024-12-26 11:57:50'),
+(6, 1, 'Web xem phim php  + mysql', '<p>Web xem phim php&nbsp; + mysql</p>', NULL, 20000.00, NULL, 0, 0, '01JG1DBTQQ5SG6K2H1BZE37J6A.png', '2024-12-26 11:59:21', '2024-12-26 11:59:21'),
+(7, 1, 'PetShop php + mysql', '<p>PetShop php + mysql</p>', NULL, 50000.00, NULL, 0, 0, '01JG1DG6CGZY7MGKGGZP2EQHJJ.png', '2024-12-26 12:01:44', '2024-12-26 12:01:44'),
+(8, 1, 'Quản lý trường học php + mysql', '<p>Quản lý trường học php + mysql</p>', NULL, 50000.00, NULL, 0, 0, '01JG1DHP9YV8AAYPW3Y13TTGTK.png', '2024-12-26 12:02:33', '2024-12-26 12:02:33'),
+(9, 3, 'Bán vé xem phim Laravel', '<p>Bán vé xem phim Laravel</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image&quot;,&quot;height&quot;:1033,&quot;url&quot;:&quot;https://private-user-images.githubusercontent.com/111523395/328741544-0e3e31b4-4b65-425d-87bb-eea973c82f13.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4MzUsIm5iZiI6MTczNTIxNDUzNSwicGF0aCI6Ii8xMTE1MjMzOTUvMzI4NzQxNTQ0LTBlM2UzMWI0LTRiNjUtNDI1ZC04N2JiLWVlYTk3M2M4MmYxMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NjRhYjkxMTUyMGFkMTQzM2Y4ODI0MThjMWQxOWJmNjg2YjYxY2ZkN2QzYzAxZmJiYmI2NmViYTg1Y2U4ZTgzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.8L9Nb38B9-wnZoYruVMz0iLTZjIxp83Qpsh0cn_DNOc&quot;,&quot;width&quot;:1919}\" data-trix-content-type=\"image\" class=\"attachment attachment--preview\"><img src=\"https://private-user-images.githubusercontent.com/111523395/328741544-0e3e31b4-4b65-425d-87bb-eea973c82f13.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4MzUsIm5iZiI6MTczNTIxNDUzNSwicGF0aCI6Ii8xMTE1MjMzOTUvMzI4NzQxNTQ0LTBlM2UzMWI0LTRiNjUtNDI1ZC04N2JiLWVlYTk3M2M4MmYxMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NjRhYjkxMTUyMGFkMTQzM2Y4ODI0MThjMWQxOWJmNjg2YjYxY2ZkN2QzYzAxZmJiYmI2NmViYTg1Y2U4ZTgzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.8L9Nb38B9-wnZoYruVMz0iLTZjIxp83Qpsh0cn_DNOc\" width=\"1919\" height=\"1033\"><figcaption class=\"attachment__caption\"></figcaption></figure> <figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image&quot;,&quot;height&quot;:1035,&quot;url&quot;:&quot;https://private-user-images.githubusercontent.com/111523395/328741579-09826770-bef4-4cf3-84d7-09dd80649fa3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4MzUsIm5iZiI6MTczNTIxNDUzNSwicGF0aCI6Ii8xMTE1MjMzOTUvMzI4NzQxNTc5LTA5ODI2NzcwLWJlZjQtNGNmMy04NGQ3LTA5ZGQ4MDY0OWZhMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YmFjM2NmODIxOTFiYzdhOWY1ZTBlZGM1ZWQ1Mzk5YzU2Y2Y3MDNlODU2YWY5NjhjOGNjY2Y1YzA4Y2ZmYTFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Zk73IJWnyskhVHleui_9r0Zkizo289U7VoOcvxZEdf0&quot;,&quot;width&quot;:1919}\" data-trix-content-type=\"image\" class=\"attachment attachment--preview\"><img src=\"https://private-user-images.githubusercontent.com/111523395/328741579-09826770-bef4-4cf3-84d7-09dd80649fa3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4MzUsIm5iZiI6MTczNTIxNDUzNSwicGF0aCI6Ii8xMTE1MjMzOTUvMzI4NzQxNTc5LTA5ODI2NzcwLWJlZjQtNGNmMy04NGQ3LTA5ZGQ4MDY0OWZhMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YmFjM2NmODIxOTFiYzdhOWY1ZTBlZGM1ZWQ1Mzk5YzU2Y2Y3MDNlODU2YWY5NjhjOGNjY2Y1YzA4Y2ZmYTFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Zk73IJWnyskhVHleui_9r0Zkizo289U7VoOcvxZEdf0\" width=\"1919\" height=\"1035\"><figcaption class=\"attachment__caption\"></figcaption></figure> <figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image&quot;,&quot;height&quot;:1038,&quot;url&quot;:&quot;https://private-user-images.githubusercontent.com/111523395/328741793-027fe9fb-3c82-4005-a31b-f5706d0abcae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4MzUsIm5iZiI6MTczNTIxNDUzNSwicGF0aCI6Ii8xMTE1MjMzOTUvMzI4NzQxNzkzLTAyN2ZlOWZiLTNjODItNDAwNS1hMzFiLWY1NzA2ZDBhYmNhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNTNiNDJmMTA1NGMzYWNiYzhiNThjMjkyZGY2MGQ1OGJiNTI3MDE4ZWVmN2QyMTlhNmE2NGMxOGRjNGIzMzBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ct-Am2hqQiT8SVVKyChgZWECStzPe-oL1yO8r8MI_Mo&quot;,&quot;width&quot;:1919}\" data-trix-content-type=\"image\" class=\"attachment attachment--preview\"><img src=\"https://private-user-images.githubusercontent.com/111523395/328741793-027fe9fb-3c82-4005-a31b-f5706d0abcae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4MzUsIm5iZiI6MTczNTIxNDUzNSwicGF0aCI6Ii8xMTE1MjMzOTUvMzI4NzQxNzkzLTAyN2ZlOWZiLTNjODItNDAwNS1hMzFiLWY1NzA2ZDBhYmNhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNTNiNDJmMTA1NGMzYWNiYzhiNThjMjkyZGY2MGQ1OGJiNTI3MDE4ZWVmN2QyMTlhNmE2NGMxOGRjNGIzMzBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ct-Am2hqQiT8SVVKyChgZWECStzPe-oL1yO8r8MI_Mo\" width=\"1919\" height=\"1038\"><figcaption class=\"attachment__caption\"></figcaption></figure></p>', NULL, 200000.00, NULL, 0, 0, '01JG1DKH8YZ54VCG57VMGTCVJ8.png', '2024-12-26 12:03:33', '2024-12-26 12:03:33'),
+(10, 1, 'Web bán giày php + mysql', '<h1><br></h1><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image&quot;,&quot;height&quot;:1018,&quot;url&quot;:&quot;https://private-user-images.githubusercontent.com/111523395/330758466-3ed4917e-912f-48d4-8ec1-b690331c9b6f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4NzIsIm5iZiI6MTczNTIxNDU3MiwicGF0aCI6Ii8xMTE1MjMzOTUvMzMwNzU4NDY2LTNlZDQ5MTdlLTkxMmYtNDhkNC04ZWMxLWI2OTAzMzFjOWI2Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyNTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMDA1OTBmNGRmNmVlZDU3ODBjZjU0ODIwYzFlYjZiZWRkOTBjZDk1NmQxYWZmNjU4MGE0YTFkZTViZTUyMDRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TRT-Vm0ntssuNclOndHu7MoRLMVC4lPh8tup5byH9TE&quot;,&quot;width&quot;:1918}\" data-trix-content-type=\"image\" class=\"attachment attachment--preview\"><img src=\"https://private-user-images.githubusercontent.com/111523395/330758466-3ed4917e-912f-48d4-8ec1-b690331c9b6f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzUyMTQ4NzIsIm5iZiI6MTczNTIxNDU3MiwicGF0aCI6Ii8xMTE1MjMzOTUvMzMwNzU4NDY2LTNlZDQ5MTdlLTkxMmYtNDhkNC04ZWMxLWI2OTAzMzFjOWI2Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIyNlQxMjAyNTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMDA1OTBmNGRmNmVlZDU3ODBjZjU0ODIwYzFlYjZiZWRkOTBjZDk1NmQxYWZmNjU4MGE0YTFkZTViZTUyMDRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TRT-Vm0ntssuNclOndHu7MoRLMVC4lPh8tup5byH9TE\" width=\"1918\" height=\"1018\"><figcaption class=\"attachment__caption\"></figcaption></figure></p><p><br></p>', NULL, 50000.00, NULL, 0, 0, '01JG1DPB86RNZBQYH4BFY4DQMM.png', '2024-12-26 12:05:05', '2024-12-26 12:05:05'),
+(11, 1, 'Web đặt lịch cắt tóc php + mysql', '<p>Web đặt lịch cắt tóc php + mysql</p>', NULL, 100000.00, NULL, 0, 0, '01JG1DT36NQBNRT6S3PF03FJQ4.jpg', '2024-12-26 12:07:08', '2024-12-26 12:07:08'),
+(12, 1, 'Web mạng xã hội Php + mysql', '<p>Web mạng xã hội Php + mysql</p>', NULL, 100000.00, NULL, 0, 1, '01JG1DVEGEKH4WZ2X9GM0G12HH.png', '2024-12-26 12:07:53', '2024-12-26 12:15:27'),
+(13, 5, 'Website đặt lịch khám bệnh React, Nodejs, MySQL', '<p>Website đặt lịch khám bệnh PHP + Mysql</p>', NULL, 100000.00, NULL, 0, 1, '01JG1DY29CCJZNHD18GG7VD649.png', '2024-12-26 12:09:18', '2024-12-26 12:18:58'),
+(14, 4, 'Website giới thiệu doanh nghiệp Nextjs', '<p>Website giới thiệu doanh nghiệp Nextjs</p><p><br></p>', 'https://cydeva.tech/', 200000.00, NULL, 0, 3, '01JG1E0NEYZAKVEQN91ATDRBX4.png', '2024-12-26 12:10:44', '2024-12-26 12:13:06'),
+(15, 1, 'Website trắc nghiệm PHP', '<p>Website trắc nghiệm PHP</p>', NULL, 90000.00, NULL, 0, 0, '01JG1EDNWCQSAPC805GK7AWNJJ.png', '2024-12-26 12:17:50', '2024-12-26 12:17:50'),
+(16, 3, 'Website Bán Quần Áo Laravel', '<p>Website Bán Quần Áo Laravel</p>', NULL, 200000.00, NULL, 0, 0, '01JG1EF7PG9D777V010G9MK54D.png', '2024-12-26 12:18:41', '2024-12-26 12:18:41');
 
 -- --------------------------------------------------------
 
@@ -703,7 +721,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-26 08:01:19', 'default', NULL, 98987815.00, NULL, NULL, NULL, 1000000.00, NULL, 0, NULL, NULL, NULL);
+(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-26 11:32:37', 'default', NULL, 98887815.00, NULL, NULL, NULL, 1100000.00, NULL, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -878,7 +896,7 @@ ALTER TABLE `web_services`
 -- AUTO_INCREMENT cho bảng `activity_history`
 --
 ALTER TABLE `activity_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2399;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2400;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
@@ -932,19 +950,19 @@ ALTER TABLE `smm_services`
 -- AUTO_INCREMENT cho bảng `source_code_categories`
 --
 ALTER TABLE `source_code_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `source_code_orders`
 --
 ALTER TABLE `source_code_orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT cho bảng `source_code_products`
 --
 ALTER TABLE `source_code_products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
