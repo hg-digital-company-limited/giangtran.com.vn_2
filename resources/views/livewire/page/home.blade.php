@@ -1,10 +1,7 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Trang Chủ - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-         'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
-          'keywords' => 'Trang Chủ, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
+        @livewire('inc.seo', ['title' => 'Trang Chủ - ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'description' => App\Helpers\SettingsHelper::getSetting('website_description'), 'keywords' => 'Trang Chủ, ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
 
     <body id="content">
@@ -32,7 +29,7 @@
 
                             <div class="row size-column">
 
-                                <div class="col-xl-6 box-col-6">
+                                <div class="col-xl-4 box-col-4">
                                     <div class="row">
                                         <div class="col-xl-12 box-col-12">
                                             <div class="card title-line upgrade-card overflow-hidden">
@@ -108,9 +105,10 @@
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
-                                <div class="col-xl-6 box-col-6">
+                                <div class="col-xl-5 box-col-5">
                                     <div class="row">
                                         <div class="col-xl-12 box-col-12">
                                             @livewire('page.home.widget.account')
@@ -211,7 +209,7 @@
 
                                                     <div class="card-body pt-0 transaction-list">
                                                         <div class="row">
-                                                            <div class="col-md-6 col-6" style="cursor: pointer;"
+                                                            <div class="col-md-6 col-12" style="cursor: pointer;"
                                                                 href="/source-code/list" wire:navigate>
                                                                 <div class="card widget-1">
                                                                     <div class="card-body common-space order-card">
@@ -228,7 +226,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-6 col-6" style="cursor: pointer;"
+                                                            <div class="col-md-6 col-12" style="cursor: pointer;"
                                                                 href="/smm/manager" wire:navigate>
                                                                 <div class="card widget-1">
                                                                     <div class="card-body common-space order-card">
@@ -251,6 +249,49 @@
                                             </div>
                                         @endif
 
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 box-col-3">
+                                    <div class="row">
+
+                                        <div class="col-xl-12 box-col-12">
+                                            <div class="card title-line widget-1">
+                                                <div class="card-header card-no-border">
+                                                    <h2>Tiện Ích</h2>
+                                                </div>
+                                                <div class="card-body pt-0">
+                                                    <div class="light-card satisfaction-box common-box">
+                                                        <div class="widget-icon primary widget-round">
+                                                            <svg>
+                                                                <use
+                                                                    href="/assets/assets/svg/icon-sprite.svg#like-shape">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div>
+                                                            <h2>Tạo Mã QR Bank</h2><span
+                                                                class="f-light f-w-500 f-12">lượt dùng (100)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body pt-0">
+                                                    <div class="light-card satisfaction-box common-box">
+                                                        <div class="widget-icon primary widget-round">
+                                                            <svg>
+                                                                <use
+                                                                    href="/assets/assets/svg/icon-sprite.svg#like-shape">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div>
+                                                            <h2>Kiểm Tra Domain</h2><span
+                                                                class="f-light f-w-500 f-12">lượt dùng (100)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

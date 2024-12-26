@@ -10,7 +10,6 @@ class Form extends Component
     public $bankName;
     public $amount;
     public $content;
-    public $recipientName;
     public $qrCodeUrl;
     public function render()
     {
@@ -18,7 +17,7 @@ class Form extends Component
     }
     public function generateQrCode()
     {
-        $this->qrCodeUrl = "https://api.vietqr.io/{$this->bankName}/{$this->accountNumber}/{$this->amount}/{$this->content}/vietqr_net_2.jpg?accountName=" . urlencode($this->recipientName);
+        $this->qrCodeUrl = "https://api.vietqr.io/{$this->bankName}/{$this->accountNumber}/{$this->amount}/{$this->content}/vietqr_net_2.jpg";
     }
     public function resetFields()
 {
@@ -26,7 +25,6 @@ class Form extends Component
     $this->bankName = '';
     $this->amount = '';
     $this->content = '';
-    $this->recipientName = '';
     $this->qrCodeUrl = '';
 }
 }

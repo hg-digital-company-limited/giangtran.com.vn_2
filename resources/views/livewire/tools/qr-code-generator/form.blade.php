@@ -20,15 +20,13 @@
                     <input type="text"  wire:model="content" class="form-control" placeholder="Ví dụ: {{ App\Helpers\SettingsHelper::getSetting('prefix') }}{{ Auth::check() ? strtoupper(Auth::user()->username) : 'Khách' }}" />
                 </div>
                 <div class="col-md-6">
-                    <label>Tên người nhận:</label>
-                    <input type="text" wire:model="recipientName" class="form-control" placeholder="Ví dụ: {{ App\Helpers\SettingsHelper::getSetting('account_name_qr') }}" />
 
-                    @if ($qrCodeUrl)
-                        <div class="mt-3">
-                            <h4>QR Code:</h4>
+                    <div class="mt-3">
+                        <h4>QR Code:</h4>
+                        @if ($qrCodeUrl)
                             <img src="{{ $qrCodeUrl }}" alt="QR Code" class="img-fluid" />
-                        </div>
-                    @endif
+                        @endif
+                    </div>
                 </div>
                 </form>
             </div>

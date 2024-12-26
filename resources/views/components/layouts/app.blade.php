@@ -107,6 +107,14 @@
                 transform: translate(1px, -2px) rotate(-1deg);
             }
         }
+
+
+        @media (max-width: 767px) {
+            .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+                width: 100vw;
+                z-index: 999999;
+            }
+        }
     </style>
     @livewireStyles
 </head>
