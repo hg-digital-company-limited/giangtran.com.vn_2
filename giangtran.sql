@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 26, 2024 lúc 01:20 PM
+-- Thời gian đã tạo: Th12 28, 2024 lúc 02:01 PM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -66,8 +66,8 @@ INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
 ('91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer', 'i:1735096587;', 1735096587),
 ('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1735183059),
 ('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1735183059;', 1735183059),
-('ca3512f4dfa95a03169c5a670a4c91a19b3077b4', 'i:1;', 1735215556),
-('ca3512f4dfa95a03169c5a670a4c91a19b3077b4:timer', 'i:1735215556;', 1735215556);
+('ca3512f4dfa95a03169c5a670a4c91a19b3077b4', 'i:1;', 1735390738),
+('ca3512f4dfa95a03169c5a670a4c91a19b3077b4:timer', 'i:1735390738;', 1735390738);
 
 -- --------------------------------------------------------
 
@@ -207,6 +207,13 @@ CREATE TABLE `payment_history` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `payment_history`
+--
+
+INSERT INTO `payment_history` (`id`, `user_id`, `transaction_code`, `amount`, `status`, `bank`, `created_at`, `updated_at`) VALUES
+(126, 39, '5820983', 100000.00, 'thành công', 'MBBank', '2024-12-28 02:20:36', '2024-12-28 02:20:36');
+
 -- --------------------------------------------------------
 
 --
@@ -227,7 +234,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('7fsby6g5Etem7OwcPkSX6pM6WQVfYf7OB6NvULzd', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoia1RrbUVCMXdkYlFMSTdPdHNNcjJTa0xFa05qeWpuZUNDOHc2MjdETCI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzg6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0Ijt9czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRIZ01WNW96VTVIOU1XUXV6Sll1VFNlVWJVc3VBZ3BzNjhaZHlMQ3FTUFlUNzlHQUkzdG5GeSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1735215626);
+('mPMRDuunJuk658Nl1Ir8nPip9hbsmJfHcjPNZjBO', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiaUFBVHc3akZyeUJEZXFmckpJSG13VlJpY2dLb2lVaW1lMkxEMmN0OCI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zbW0vY3JlYXRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRIZ01WNW96VTVIOU1XUXV6Sll1VFNlVWJVc3VBZ3BzNjhaZHlMQ3FTUFlUNzlHQUkzdG5GeSI7czo4OiJmaWxhbWVudCI7YTowOnt9czo2OiJ0YWJsZXMiO2E6MTp7czozMToiTGlzdFNvdXJjZUNvZGVQcm9kdWN0c19wZXJfcGFnZSI7czozOiJhbGwiO319', 1735390886);
 
 -- --------------------------------------------------------
 
@@ -585,9 +592,9 @@ CREATE TABLE `source_code_products` (
 --
 
 INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
-(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p><div class=\"attachment-gallery attachment-gallery--4\"><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Screenshot 2024-12-25 094616.png&quot;,&quot;filesize&quot;:688081,&quot;height&quot;:943,&quot;href&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\"><img src=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\" width=\"1916\" height=\"943\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Screenshot 2024-12-25 094616.png</span> <span class=\"attachment__size\">671.95 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:423328,&quot;height&quot;:936,&quot;href&quot;:&quot;http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png&quot;,&quot;width&quot;:1907}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png\"><img src=\"http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png\" width=\"1907\" height=\"936\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">413.41 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:115756,&quot;height&quot;:940,&quot;href&quot;:&quot;http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png\"><img src=\"http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png\" width=\"1916\" height=\"940\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">113.04 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:109085,&quot;height&quot;:942,&quot;href&quot;:&quot;http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png&quot;,&quot;width&quot;:1912}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png\"><img src=\"http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png\" width=\"1912\" height=\"942\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">106.53 KB</span></figcaption></a></figure></div>', NULL, 100000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 105, 137, '01JFXWYA2DVREVMSDVCH4F6GG0.png', '2024-12-25 03:14:37', '2024-12-26 11:37:39'),
+(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p><div class=\"attachment-gallery attachment-gallery--4\"><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;Screenshot 2024-12-25 094616.png&quot;,&quot;filesize&quot;:688081,&quot;height&quot;:943,&quot;href&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\"><img src=\"http://localhost:8000/storage/LmTx6Hem0SoPxxJHaO20oVsAOpN7jM0tpa3fWjxZ.png\" width=\"1916\" height=\"943\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">Screenshot 2024-12-25 094616.png</span> <span class=\"attachment__size\">671.95 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:423328,&quot;height&quot;:936,&quot;href&quot;:&quot;http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png&quot;,&quot;width&quot;:1907}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png\"><img src=\"http://localhost:8000/storage/lMkzmN2rJc5dF6tfpxVuEQoUESASCJqz5Nh7oDTV.png\" width=\"1907\" height=\"936\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">413.41 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:115756,&quot;height&quot;:940,&quot;href&quot;:&quot;http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png&quot;,&quot;width&quot;:1916}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png\"><img src=\"http://localhost:8000/storage/ip9duCopoELe3GsCiS6zvmd1nBARXEwaRCYB9EKk.png\" width=\"1916\" height=\"940\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">113.04 KB</span></figcaption></a></figure><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image/png&quot;,&quot;filename&quot;:&quot;image.png&quot;,&quot;filesize&quot;:109085,&quot;height&quot;:942,&quot;href&quot;:&quot;http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png&quot;,&quot;url&quot;:&quot;http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png&quot;,&quot;width&quot;:1912}\" data-trix-content-type=\"image/png\" data-trix-attributes=\"{&quot;presentation&quot;:&quot;gallery&quot;}\" class=\"attachment attachment--preview attachment--png\"><a href=\"http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png\"><img src=\"http://localhost:8000/storage/s386rdzRLt8JIAevRBxkd7Fg61veVC82843nqt6K.png\" width=\"1912\" height=\"942\"><figcaption class=\"attachment__caption\"><span class=\"attachment__name\">image.png</span> <span class=\"attachment__size\">106.53 KB</span></figcaption></a></figure></div>', NULL, 50000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 105, 137, '01JFXWYA2DVREVMSDVCH4F6GG0.png', '2024-12-25 03:14:37', '2024-12-28 11:27:55'),
 (4, 1, 'Web bán hàng php thuần', '<p>Web bán hàng php thuần</p><p><figure data-trix-attachment=\"{&quot;contentType&quot;:&quot;image&quot;,&quot;height&quot;:694,&quot;url&quot;:&quot;https://camo.githubusercontent.com/edc6dcedfab5bfef60d5558cf43b54b7198721198c50781b99d11263f5e8a150/68747470733a2f2f692e696d6775722e636f6d2f545a72555241642e6a706567&quot;,&quot;width&quot;:261}\" data-trix-content-type=\"image\" class=\"attachment attachment--preview\"><img src=\"https://camo.githubusercontent.com/edc6dcedfab5bfef60d5558cf43b54b7198721198c50781b99d11263f5e8a150/68747470733a2f2f692e696d6775722e636f6d2f545a72555241642e6a706567\" width=\"261\" height=\"694\"><figcaption class=\"attachment__caption\"></figcaption></figure></p>', NULL, 20000.00, NULL, 0, 2, '01JG1D6H7M7NRX61MPN2FRP3RE.png', '2024-12-26 11:56:27', '2024-12-26 11:57:57'),
-(5, 1, 'Web bán quần áo (php + mysql)', '<p>Web bán quần áo (php + mysql)</p>', NULL, 99000.00, NULL, 0, 0, '01JG1D91TYSKF1EWCP7R1F0RHM.png', '2024-12-26 11:57:50', '2024-12-26 11:57:50'),
+(5, 1, 'Web bán quần áo (php + mysql)', '<p>Web bán quần áo (php + mysql)</p>', NULL, 50000.00, 'https://terabox.com/s/1X4sKHWASnzNbHrD_YdJLWw', 0, 0, '01JG1D91TYSKF1EWCP7R1F0RHM.png', '2024-12-26 11:57:50', '2024-12-28 11:31:54'),
 (6, 1, 'Web xem phim php  + mysql', '<p>Web xem phim php&nbsp; + mysql</p>', NULL, 20000.00, NULL, 0, 0, '01JG1DBTQQ5SG6K2H1BZE37J6A.png', '2024-12-26 11:59:21', '2024-12-26 11:59:21'),
 (7, 1, 'PetShop php + mysql', '<p>PetShop php + mysql</p>', NULL, 50000.00, NULL, 0, 0, '01JG1DG6CGZY7MGKGGZP2EQHJJ.png', '2024-12-26 12:01:44', '2024-12-26 12:01:44'),
 (8, 1, 'Quản lý trường học php + mysql', '<p>Quản lý trường học php + mysql</p>', NULL, 50000.00, NULL, 0, 0, '01JG1DHP9YV8AAYPW3Y13TTGTK.png', '2024-12-26 12:02:33', '2024-12-26 12:02:33'),
@@ -596,9 +603,12 @@ INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, 
 (11, 1, 'Web đặt lịch cắt tóc php + mysql', '<p>Web đặt lịch cắt tóc php + mysql</p>', NULL, 100000.00, NULL, 0, 0, '01JG1DT36NQBNRT6S3PF03FJQ4.jpg', '2024-12-26 12:07:08', '2024-12-26 12:07:08'),
 (12, 1, 'Web mạng xã hội Php + mysql', '<p>Web mạng xã hội Php + mysql</p>', NULL, 100000.00, NULL, 0, 1, '01JG1DVEGEKH4WZ2X9GM0G12HH.png', '2024-12-26 12:07:53', '2024-12-26 12:15:27'),
 (13, 5, 'Website đặt lịch khám bệnh React, Nodejs, MySQL', '<p>Website đặt lịch khám bệnh PHP + Mysql</p>', NULL, 100000.00, NULL, 0, 1, '01JG1DY29CCJZNHD18GG7VD649.png', '2024-12-26 12:09:18', '2024-12-26 12:18:58'),
-(14, 4, 'Website giới thiệu doanh nghiệp Nextjs', '<p>Website giới thiệu doanh nghiệp Nextjs</p><p><br></p>', 'https://cydeva.tech/', 200000.00, NULL, 0, 3, '01JG1E0NEYZAKVEQN91ATDRBX4.png', '2024-12-26 12:10:44', '2024-12-26 12:13:06'),
+(14, 4, 'Axtra | Digital Agency React Nextjs Template', '<p>Axtra | Digital Agency React Nextjs Template</p><p><br></p>', 'https://cydeva.tech/', 50000.00, 'https://terabox.com/s/1TPJ8deWhZwmlCyxcJfIarQ', 2, 100, '01JG6G340B7WRR08HR05VM0C6G.png', '2024-12-26 12:10:44', '2024-12-28 11:27:31'),
 (15, 1, 'Website trắc nghiệm PHP', '<p>Website trắc nghiệm PHP</p>', NULL, 90000.00, NULL, 0, 0, '01JG1EDNWCQSAPC805GK7AWNJJ.png', '2024-12-26 12:17:50', '2024-12-26 12:17:50'),
-(16, 3, 'Website Bán Quần Áo Laravel', '<p>Website Bán Quần Áo Laravel</p>', NULL, 200000.00, NULL, 0, 0, '01JG1EF7PG9D777V010G9MK54D.png', '2024-12-26 12:18:41', '2024-12-26 12:18:41');
+(16, 3, 'Website Bán Quần Áo Laravel', '<p>Website Bán Quần Áo Laravel</p>', NULL, 100000.00, NULL, 0, 0, '01JG1EF7PG9D777V010G9MK54D.png', '2024-12-26 12:18:41', '2024-12-28 12:53:09'),
+(17, 2, 'Website ẩm thực Wordpress', '<p>link database:&nbsp; <a href=\"https://terabox.com/s/1tEtYYeEUafg4xXM_TFRfcA\"><span style=\"text-decoration: underline;\">https://terabox.com/s/1tEtYYeEUafg4xXM_TFRfcA</span></a></p><p>pass giải nén: giangtran.com.vn</p>', 'https://amthuc.giaodienwebmau.com/', 100000.00, 'https://terabox.com/s/1_2NsLT5vYKcFCwkuLpwzHw', 10, 15, '01JG6J9CQXD8386ZG0T3PQ3EY5.jpg', '2024-12-28 11:43:12', '2024-12-28 12:51:33'),
+(234, 2, 'Bộ source code website đăng tin bất động sản Wordpress', '<p>link database:&nbsp; <a href=\"https://terabox.com/s/1tEtYYeEUafg4xXM_TFRfcA\"><span style=\"text-decoration: underline;\">https://terabox.com/s/1tEtYYeEUafg4xXM_TFRfcA</span></a></p><p>pass giải nén: giangtran.com.vn</p>', 'https://mauweb.tamnguyen.vn/bds28/', 100000.00, 'https://terabox.com/s/1hyCaEQiPToPmaf2xCeAf1A', 10, 17, '01JG6KKHECJ7HS1HCW5EYS95TH.jpg', '2024-12-28 11:43:12', '2024-12-28 12:26:05'),
+(235, 2, 'Theme wordpress bds 42', '<p>link database:&nbsp; <a href=\"https://terabox.com/s/1tEtYYeEUafg4xXM_TFRfcA\"><span style=\"text-decoration: underline;\">https://terabox.com/s/1tEtYYeEUafg4xXM_TFRfcA</span></a></p><p>pass giải nén: giangtran.com.vn</p>', 'https://themewpgiare.com/themes/theme-wordpress-bds-42/', 100000.00, 'https://terabox.com/s/1DKo423paBZOLIRFe3S3Z6w', 10, 14, '01JG6NHT1G86PA9R5GGRDHJM7E.png', '2024-12-28 11:43:12', '2024-12-28 12:58:38');
 
 -- --------------------------------------------------------
 
@@ -684,7 +694,12 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('5742880', 'MBBank', '0966579217', '2024-12-25 17:00:21', 400000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien', 'FT24360839901371', NULL, NULL, '5090', '2024-12-25 12:32:09', '2024-12-25 12:32:09'),
 ('5743662', 'MBBank', '0966579217', '2024-12-25 17:22:42', 20000000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ IT223042', 'FT24360859139073', NULL, NULL, '5090', '2024-12-25 12:32:09', '2024-12-25 12:32:09'),
 ('5743721', 'MBBank', '0966579217', '2024-12-25 17:24:09', 20000000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ S5692830', 'FT24360874674962', NULL, NULL, '5090', '2024-12-25 12:32:09', '2024-12-25 12:32:09'),
-('5752364', 'MBBank', '0966579217', '2024-12-25 21:06:35', 0.00, 53000.00, 0.00, 'NGUYEN VAN TRONG chuyen tien', 'FT24360010044602', NULL, NULL, '5090', '2024-12-26 03:05:41', '2024-12-26 03:05:41');
+('5752364', 'MBBank', '0966579217', '2024-12-25 21:06:35', 0.00, 53000.00, 0.00, 'NGUYEN VAN TRONG chuyen tien', 'FT24360010044602', NULL, NULL, '5090', '2024-12-26 03:05:41', '2024-12-26 03:05:41'),
+('5809217', 'MBBank', '0966579217', '2024-12-27 20:32:18', 0.00, 300000.00, 0.00, 'NGUYEN HUU LONG chuyen tien FT24362908532150   Ma giao dich  Trace511379 Trace 511379', 'FT24362121038679', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
+('5813843', 'MBBank', '0966579217', '2024-12-27 23:09:41', 0.00, 100000.00, 0.00, '75068149062-HG O8F8TRDELY-CHUYEN TIEN-OQCH42312683-MOMO75068149062MOMO', 'FT24363064415804', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
+('5813845', 'MBBank', '0966579217', '2024-12-27 23:09:35', 100000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIkEhCvZui-75066804826', 'FT24363528664800', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
+('5820982', 'MBBank', '0966579217', '2024-12-28 09:19:15', 100000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIuRIMqRmf-75085022324', 'FT24363000903229', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
+('5820983', 'MBBank', '0966579217', '2024-12-28 09:19:18', 0.00, 100000.00, 0.00, '75086454233-HG X5VHSCSRI3-CHUYEN TIEN-OQCH42363509-MOMO75086454233MOMO', 'FT24363180756178', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34');
 
 -- --------------------------------------------------------
 
@@ -721,7 +736,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-26 11:32:37', 'default', NULL, 98887815.00, NULL, NULL, NULL, 1100000.00, NULL, 0, NULL, NULL, NULL);
+(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-28 02:20:36', 'default', NULL, 98987815.00, NULL, NULL, NULL, 1100000.00, NULL, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -920,7 +935,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT cho bảng `payment_history`
 --
 ALTER TABLE `payment_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 
 --
 -- AUTO_INCREMENT cho bảng `settings`
@@ -962,7 +977,7 @@ ALTER TABLE `source_code_orders`
 -- AUTO_INCREMENT cho bảng `source_code_products`
 --
 ALTER TABLE `source_code_products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=334;
 
 --
 -- AUTO_INCREMENT cho bảng `users`
