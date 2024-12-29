@@ -2,9 +2,9 @@
     <div class="row">
         <div class="col-md-4">
             <a data-fancybox="gallery"
-                href="{{ Storage::url($sourceCodeDetail->image) }}"
+                href="{{ Storage::url($sourceCodeDetail->image[0]) }}"
                 data-caption="<strong>{{ $sourceCodeDetail->name }}</strong>">
-                <img src="{{ Storage::url($sourceCodeDetail->image) }}"
+                <img src="{{ Storage::url($sourceCodeDetail->image[0]) }}"
                     class="img-fluid" alt="{{ $sourceCodeDetail->name }}" alt="{{ $sourceCodeDetail->name }}"
                     style="max-width: 100%; border-radius: 5px;">
             </a>

@@ -4,7 +4,7 @@
         @livewire('inc.seo', ['title' => $sourceCodeDetail->name . ' - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
         'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
          'keywords' => $sourceCodeDetail->name . ', ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-         'image' => url(Storage::url($sourceCodeDetail->image))])
+         'image' => url(Storage::url($sourceCodeDetail->image[0]))])
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     </head>
@@ -67,9 +67,9 @@
                                             <div class="row">
                                                 @foreach ($randomProducts as $item)
                                                 <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="{{ Storage::url($item->image) }}"
+                                                    <a data-fancybox="gallery" href="{{ Storage::url($item->image[0]) }}"
                                                         data-caption="{{ $item->name }}">
-                                                        <img src="{{ Storage::url($item->image) }}" class="img-fluid"
+                                                        <img src="{{ Storage::url($item->image[0]) }}" class="img-fluid"
                                                             alt="{{ $item->name }}"
                                                             style="max-width: 100%; border-radius: 5px;">
                                                     </a>

@@ -22,6 +22,9 @@ class SourceCodeProduct extends Model
         'view_count',
         'image',
     ]; // Các cột có thể gán giá trị hàng loạt
+    protected $casts = [
+        'image' => 'array',
+    ];
     public function category()
     {
         return $this->belongsTo(SourceCodeCategory::class);

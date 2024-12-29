@@ -52,7 +52,7 @@
                         <div class="product-box">
                             <div class="product-img">
                                 <img style="object-fit: cover; width: 100%;" class="img-fluid"
-                                     src="{{ Storage::url($item->image) }}" alt="">
+                                     src="{{ Storage::url($item->image[0]) }}" alt="">
                                 <div class="product-hover">
                                     <ul>
                                         <li>

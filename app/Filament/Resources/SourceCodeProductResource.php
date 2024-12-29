@@ -62,6 +62,7 @@ class SourceCodeProductResource extends Resource
                     ->default(0)
                     ->label('Số lượt xem'),
                 Forms\Components\FileUpload::make('image')
+                    ->multiple()
                     ->required()
                     ->label('Hình ảnh'),
             ]);
