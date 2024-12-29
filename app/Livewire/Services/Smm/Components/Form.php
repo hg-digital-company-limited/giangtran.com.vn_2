@@ -16,7 +16,7 @@ class Form extends Component
 {
     use LivewireAlert;
     public $balance;
-
+    public $loading = false;
 
 
     public $selectedCategory, $categories, $services, $selectedCategory_path, $quantity, $link, $image; // Danh sách danh mục

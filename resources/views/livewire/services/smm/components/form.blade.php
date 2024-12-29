@@ -7,8 +7,17 @@
                 <div class="card-header card-no-border">
                     <h2> Đăng Ký Dịch Vụ </h2>
                 </div>
+                <div class="card-body" style="position: relative;">
 
-                <div class="card-body">
+                    <div wire:loading.flex id="loading"
+                        style="position: absolute; width: 100%; height: 100%; z-index: 99; left: 0; top: 0; align-items: center; justify-content: center; background-color: rgba(168, 160, 160, 0.2);  ">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+
+
 
                     @if (!empty($errors))
                         <div class="alert alert-danger">
@@ -20,24 +29,23 @@
                         </div>
                     @endif
                     <div class="form-group">
-                        <label for="categories">Danh Mục</label>
+                        <label for="categories">Danh Mục</label> {{ $loading }}
                         <input type="hidden" id="cycle_max" value="12">
                         <select class="form-control" id="categories" wire:model="selectedCategory">
                             @foreach ($categories as $category)
-                                <option value="{{ $category['id'] }}"
-                                        data-image="{{ $category->image }}">
+                                <option value="{{ $category['id'] }}" data-image="{{ $category->image }}">
                                     {{ $category['name'] }}
                                 </option>
                             @endforeach
                         </select>
                     </div>
-
                     <div class="form-group mt-3">
                         <label>Gói Dịch Vụ</label>
                         <select class="form-control" id='services' wire:model="selectedService">
                             @foreach ($services as $service)
                                 <option value="{{ $service->id }}">
-                                    <strong>{{ $service->id }}</strong> - {{ $service->name }} - {{ $service->price }} VNĐ
+                                    <strong>{{ $service->id }}</strong> - {{ $service->name }} - {{ $service->price }}
+                                    VNĐ
                                 </option>
                             @endforeach
                         </select>
@@ -52,11 +60,11 @@
                         <label>Số Lượng</label>
                         <div class="input-group">
                             <input class="form-control" type="number" placeholder="Tối thiểu 1000 tối đa 10000"
-                                   wire:model.live="quantity" min="{{ $selectedServiceMin }}"
-                                   max="{{ $selectedServiceMax }}">
-                                   <button class="btn btn-success" type="button">
-                                    {{ number_format((float)$selectedServicePrice * (int)$quantity, 0, '.', '.') }} đ
-                                </button>
+                                wire:model.live="quantity" min="{{ $selectedServiceMin }}"
+                                max="{{ $selectedServiceMax }}">
+                            <button class="btn btn-success" type="button">
+                                {{ number_format((float) $selectedServicePrice * (int) $quantity, 0, '.', '.') }} đ
+                            </button>
                         </div>
                         <small class="form-text text-muted">
                             Tối thiểu: {{ number_format($selectedServiceMin, 0, '.', '.') }},
@@ -72,7 +80,7 @@
                             <a href="/dieu-khoan" class="txt-primary"> Điều Khoản Sử Dụng Dịch Vụ </a>
                         </div>
                         <button class="btn btn-primary mt-2" wire:click="submitOrder" id="payment"
-                                wire:loading.attr="disabled" wire:loading.class="disabled">
+                            wire:loading.attr="disabled" wire:loading.class="disabled">
                             <i class="fa fa-shopping-cart me-1"></i>
                             <span wire:loading.remove>Thanh Toán</span>
                             <span wire:loading>Đang xử lý...</span>
@@ -110,7 +118,7 @@
                                 <tr>
                                     <td>Số Lượng:</td>
                                     <td colspan="2" id="discount-show">
-                                        {{ number_format((float)$quantity, 0, '.', '.') }}
+                                        {{ number_format((float) $quantity, 0, '.', '.') }}
                                     </td>
                                 </tr>
                                 <tr>

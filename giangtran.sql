@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 29, 2024 lúc 03:24 AM
+-- Thời gian đã tạo: Th12 29, 2024 lúc 04:05 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -234,7 +234,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('DMzuBmeIGI63euJbRAKNQDwQxSjrXCbodMDIxhL5', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoieUlVWDk4T1dsT3ZMTUhBVUYzUVIwM0Q0dVlEVUtlS0s3UU5DYnZhZSI7czozOiJ1cmwiO2E6MDp7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjQ4OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYWRtaW4vc291cmNlLWNvZGUtcHJvZHVjdHMiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aTozOTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJEhnTVY1b3pVNUg5TVdRdXpKWXVUU2VVYlVzdUFncHM2OFpkeUxDcVNQWVQ3OUdBSTN0bkZ5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735439046),
+('qIKD4yp3MpltIdZwdBca3XFF19PemsmT0lblPu8n', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoieUlVWDk4T1dsT3ZMTUhBVUYzUVIwM0Q0dVlEVUtlS0s3UU5DYnZhZSI7czozOiJ1cmwiO2E6MDp7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjM4OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvc291cmNlLWNvZGUvbGlzdCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjM5O3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkSGdNVjVvelU1SDlNV1F1ekpZdVRTZVViVXN1QWdwczY4WmR5TENxU1BZVDc5R0FJM3RuRnkiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1735441516),
 ('v64corBAWdB3sspZ69aAppecKvMObiEzLFy4r3DD', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoidk5HdVVTSlg1NVZQT29GZDNId0ZyZDRqNll3ZGJra25tMXp0ckYxYyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0LzMiO31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJEhnTVY1b3pVNUg5TVdRdXpKWXVUU2VVYlVzdUFncHM2OFpkeUxDcVNQWVQ3OUdBSTN0bkZ5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735437021);
 
 -- --------------------------------------------------------
