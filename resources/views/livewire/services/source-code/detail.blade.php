@@ -10,9 +10,7 @@
     </head>
 
     <body id="content">
-        <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo" height="60" width="60">
-        </div>
+
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
@@ -67,7 +65,7 @@
                                             <div class="row">
                                                 @foreach ($randomProducts as $item)
                                                 <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a data-fancybox="gallery" href="{{ Storage::url($item->image[0]) }}"
+                                                    <a    href="/source-code/list/{{ $item->id }}" wire:navigate
                                                         data-caption="{{ $item->name }}">
                                                         <img src="{{ Storage::url($item->image[0]) }}" class="img-fluid"
                                                             alt="{{ $item->name }}"
@@ -93,38 +91,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <script>
-                        window.addEventListener("load", function() {
-                            const galleryDiv = document.getElementById("content-gallery");
-                            const images = galleryDiv.getElementsByTagName("img");
-
-                            for (let i = 0; i < images.length; i++) {
-                                const img = images[i];
-                                const src = img.src;
-                                const alt = img.alt;
-
-                                const anchor = document.createElement("a");
-                                anchor.setAttribute("data-fancybox", "gallery");
-                                anchor.setAttribute("href", src);
-                                anchor.setAttribute("data-caption", `<strong>${alt}</strong>`);
-
-                                img.parentNode.insertBefore(anchor, img);
-                                anchor.appendChild(img);
-
-                                img.style.width = "100%";
-                                img.style.height = "auto";
-                            }
-                        });
-                    </script>
-                    <script>
-                        Fancybox.bind('[data-fancybox="gallery"]', {
-                            // Your custom options for a specific gallery
-                        });
-                    </script>
-
-
                     <script src="/assets/static/payment-code.js" defer></script>
                     @livewire('inc.footer')
                 </div>
@@ -146,5 +112,33 @@
                 height: inherit;
             }
         </style>
+         <script>
+            window.addEventListener("load", function() {
+                const galleryDiv = document.getElementById("content-gallery");
+                const images = galleryDiv.getElementsByTagName("img");
+
+                for (let i = 0; i < images.length; i++) {
+                    const img = images[i];
+                    const src = img.src;
+                    const alt = img.alt;
+
+                    const anchor = document.createElement("a");
+                    anchor.setAttribute("data-fancybox", "gallery");
+                    anchor.setAttribute("href", src);
+                    anchor.setAttribute("data-caption", `<strong>${alt}</strong>`);
+
+                    img.parentNode.insertBefore(anchor, img);
+                    anchor.appendChild(img);
+
+                    img.style.width = "100%";
+                    img.style.height = "auto";
+                }
+            });
+        </script>
+        <script>
+            Fancybox.bind('[data-fancybox="gallery"]', {
+                // Your custom options for a specific gallery
+            });
+        </script>
     </body>
 </div>

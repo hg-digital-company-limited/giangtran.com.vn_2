@@ -1,13 +1,15 @@
 <div class="card card-body">
     <div class="row">
         <div class="col-md-4">
-            <a data-fancybox="gallery"
-                href="{{ Storage::url($sourceCodeDetail->image[0]) }}"
+            @foreach ($sourceCodeDetail->image as $item)
+            <a data-fancybox="gallery" {{ $loop->index > 0 ? 'hidden' : '' }}
+                href="{{ Storage::url($item) }}"
                 data-caption="<strong>{{ $sourceCodeDetail->name }}</strong>">
-                <img src="{{ Storage::url($sourceCodeDetail->image[0]) }}"
+                <img src="{{ Storage::url($item) }}"
                     class="img-fluid" alt="{{ $sourceCodeDetail->name }}" alt="{{ $sourceCodeDetail->name }}"
                     style="max-width: 100%; border-radius: 5px;">
             </a>
+            @endforeach
         </div>
 
         <div class="col-md-8">
@@ -89,4 +91,5 @@
             </div>
         </div>
     </div>
+
 </div>

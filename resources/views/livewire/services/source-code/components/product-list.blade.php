@@ -57,7 +57,7 @@
                                     <ul>
                                         <li>
                                             <button class="btn" type="button" wire:navigate
-                                                    href="/source-code/list/{{ $item->id }}">
+                                                    href="/source-code/list/{{ $item->id }}/">
                                                 <i class="icon-shopping-cart"></i>
                                             </button>
                                         </li>
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="product-details">
-                                <a style="cursor: pointer;" wire:navigate href="/source-code/list/{{ $item->id }}">
+                                <a style="cursor: pointer;" wire:navigate href="/source-code/list/{{ $item->id }}/">
                                     <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
                                         {{ $item->name }}
                                     </h5>
@@ -95,7 +95,7 @@
                                         </span>
                                     </div>
                                     <div class="col-md-6 col-6">
-                                        <span  wire:navigate href="/source-code/list/{{ $item->id }}" class="badge badge-dark text-white" style="width: 100%; padding: 10px; cursor: pointer">
+                                        <span  wire:navigate href="/source-code/list/{{ $item->id }}/" class="badge badge-dark text-white" style="width: 100%; padding: 10px; cursor: pointer">
                                             <i class="icofont icofont-cart"></i> Mua Ngay
                                         </span>
                                     </div>

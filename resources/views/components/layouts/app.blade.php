@@ -120,7 +120,11 @@
 </head>
 
 <body>
-
+    <div class="preloader flex-column justify-content-center align-items-center" wire:navigating>
+        <img class="animation__shake"
+            src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo"
+            height="60" width="60">
+    </div>
     {{ $slot }}
 
     @livewireScripts
@@ -192,20 +196,23 @@
         transition: transform .3s ease;
     }
 </style>
-<script>
-    setTimeout(function() {
-        var $preloader = document.querySelector('.preloader');
-        var $animation__shake = document.querySelector('.animation__shake');
 
-        if ($preloader) {
-            $preloader.style.height = '0';
-            setTimeout(function() {
-                if ($animation__shake) {
-                    $animation__shake.style.display = 'none';
-                }
-            }, 200);
-        }
-    }, 900);
+<script>
+    document.addEventListener('livewire:navigated', function() {
+        setTimeout(function() {
+            var $preloader = document.querySelector('.preloader');
+            var $animation__shake = document.querySelector('.animation__shake');
+
+            if ($preloader) {
+                $preloader.style.height = '0';
+                setTimeout(function() {
+                    if ($animation__shake) {
+                        $animation__shake.style.display = 'none';
+                    }
+                }, 200);
+            }
+        }, 900);
+    });
 </script>
 
 </html>
