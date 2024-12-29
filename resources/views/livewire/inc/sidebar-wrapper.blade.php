@@ -79,7 +79,7 @@
                         <i class="fa fa-thumb-tack"></i>
                         <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/chuyen-khoan">
                             <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-home"></use>
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
                             </svg>
                             <span> Nạp Tiền </span>
                         </a>
@@ -88,7 +88,7 @@
                         <i class="fa fa-thumb-tack"></i>
                         <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/profile">
                             <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-home"></use>
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
                             </svg>
                             <span> Thông Tin Tài Khoản </span>
                         </a>
@@ -110,7 +110,7 @@
 
 
 
-                            <li><a wire:navigate href="/smm/create"> Danh sách dịch vụ </a></li>
+                            <li><a  href="/smm/create"> Danh sách dịch vụ </a></li>
 
 
 

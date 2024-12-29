@@ -65,7 +65,7 @@
                                             <div class="row">
                                                 @foreach ($randomProducts as $item)
                                                 <div class="col-md-4 col-4" style="padding: 10px;">
-                                                    <a    href="/source-code/list/{{ $item->id }}" wire:navigate
+                                                    <a    href="/source-code/list/{{ $item->id }}"
                                                         data-caption="{{ $item->name }}">
                                                         <img src="{{ Storage::url($item->image[0]) }}" class="img-fluid"
                                                             alt="{{ $item->name }}"
@@ -74,7 +74,7 @@
 
                                                     <a style="cursor: pointer;"
                                                         href="/source-code/list/{{ $item->id }}"
-                                                        wire:navigate>
+                                                        >
                                                         <h5
                                                             style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; padding-top: 5px;">
                                                             {{ $item->name }}

@@ -41,7 +41,7 @@
                                                                 theo dõi và nâng cao sự hiện diện trực tuyến của bạn.
                                                             </p> <a
                                                                 class="btn btn-primary btn-hover-effect btn-sm f-w-500"
-                                                                href="/smm/create" wire:navigate> Mua Ngay
+                                                                href="/smm/create" > Mua Ngay
                                                             </a>
                                                         </div>
                                                     </div>
