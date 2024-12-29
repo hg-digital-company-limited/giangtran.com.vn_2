@@ -112,6 +112,7 @@
                 height: inherit;
             }
         </style>
+        @script
          <script>
             window.addEventListener("load", function() {
                 const galleryDiv = document.getElementById("content-gallery");
@@ -135,6 +136,7 @@
                 }
             });
         </script>
+        @endscript
         <script>
             Fancybox.bind('[data-fancybox="gallery"]', {
                 // Your custom options for a specific gallery

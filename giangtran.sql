@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 29, 2024 lúc 04:05 AM
+-- Thời gian đã tạo: Th12 29, 2024 lúc 10:59 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -212,7 +212,9 @@ CREATE TABLE `payment_history` (
 --
 
 INSERT INTO `payment_history` (`id`, `user_id`, `transaction_code`, `amount`, `status`, `bank`, `created_at`, `updated_at`) VALUES
-(126, 39, '5820983', 100000.00, 'thành công', 'MBBank', '2024-12-28 02:20:36', '2024-12-28 02:20:36');
+(126, 39, '5820983', 100000.00, 'thành công', 'MBBank', '2024-12-28 02:20:36', '2024-12-28 02:20:36'),
+(127, 39, '5858101', 100000.00, 'thành công', 'MBBank', '2024-12-29 09:54:53', '2024-12-29 09:54:53'),
+(128, 39, '5858153', 110000.00, 'thành công', 'MBBank', '2024-12-29 09:59:09', '2024-12-29 09:59:09');
 
 -- --------------------------------------------------------
 
@@ -234,8 +236,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('qIKD4yp3MpltIdZwdBca3XFF19PemsmT0lblPu8n', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoieUlVWDk4T1dsT3ZMTUhBVUYzUVIwM0Q0dVlEVUtlS0s3UU5DYnZhZSI7czozOiJ1cmwiO2E6MDp7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjM4OiJodHRwOi8vbG9jYWxob3N0OjgwMDAvc291cmNlLWNvZGUvbGlzdCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjM5O3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkSGdNVjVvelU1SDlNV1F1ekpZdVRTZVViVXN1QWdwczY4WmR5TENxU1BZVDc5R0FJM3RuRnkiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1735441516),
-('v64corBAWdB3sspZ69aAppecKvMObiEzLFy4r3DD', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoidk5HdVVTSlg1NVZQT29GZDNId0ZyZDRqNll3ZGJra25tMXp0ckYxYyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9zb3VyY2UtY29kZS9saXN0LzMiO31zOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEyJEhnTVY1b3pVNUg5TVdRdXpKWXVUU2VVYlVzdUFncHM2OFpkeUxDcVNQWVQ3OUdBSTN0bkZ5IjtzOjg6ImZpbGFtZW50IjthOjA6e319', 1735437021);
+('448zKRexuvoKDMtxCJtJuEhM9wyjhRY12wfrlp3P', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiaDA2Vk16ZUgxZjl1dVJBUEhJRWFHRkJ4SE5NQ0JrVzUxRWpNNmI1VyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzg6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hcGkvY2hlY2twYXltZW50Ijt9fQ==', 1735466377);
 
 -- --------------------------------------------------------
 
@@ -593,8 +594,8 @@ CREATE TABLE `source_code_products` (
 --
 
 INSERT INTO `source_code_products` (`id`, `category_id`, `name`, `description`, `demo`, `price`, `link_download`, `purchase_count`, `view_count`, `image`, `created_at`, `updated_at`) VALUES
-(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p>', NULL, 100000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 105, 184, '[\"01JFXWYA2DVREVMSDVCH4F6GG0.png\",\"01JG81RC4XHX0DNDRM1WQHPGT2.png\",\"01JG81RC51GBG59M42HRJ6CQEG.png\",\"01JG81RC5CYKAVF36SDK2B362G.png\",\"01JG81RC5FMFQ6YTYD3ADS588X.png\"]', '2024-12-25 03:14:37', '2024-12-29 02:22:54'),
-(4, 1, 'Web bán hàng php thuần', '<p>Web bán hàng php thuần</p><p>pass giải nén: giangtran.com.vn</p>', 'https://youtu.be/2lietU56AT4?si=zqfXOGO8tsECyvSp', 100000.00, 'https://terabox.com/s/1PX87ZEhc0ztNY7rbNbMP3Q', 3, 101, '[\"01JG1D6H7M7NRX61MPN2FRP3RE.png\"]', '2024-12-26 11:56:27', '2024-12-29 02:22:50'),
+(3, 1, 'Website Bán Đồng Hồ PHP', '<p>Website Bán Đồng Hồ PHP</p>', NULL, 100000.00, 'https://terabox.com/s/1y9vmHkAwO5Km6W2x3EPSoA', 105, 198, '[\"01JFXWYA2DVREVMSDVCH4F6GG0.png\",\"01JG81RC4XHX0DNDRM1WQHPGT2.png\",\"01JG81RC51GBG59M42HRJ6CQEG.png\",\"01JG81RC5CYKAVF36SDK2B362G.png\",\"01JG81RC5FMFQ6YTYD3ADS588X.png\"]', '2024-12-25 03:14:37', '2024-12-29 09:47:52'),
+(4, 1, 'Web bán hàng php thuần', '<p>Web bán hàng php thuần</p><p>pass giải nén: giangtran.com.vn</p>', 'https://youtu.be/2lietU56AT4?si=zqfXOGO8tsECyvSp', 100000.00, 'https://terabox.com/s/1PX87ZEhc0ztNY7rbNbMP3Q', 3, 102, '[\"01JG1D6H7M7NRX61MPN2FRP3RE.png\"]', '2024-12-26 11:56:27', '2024-12-29 09:47:57'),
 (5, 1, 'Web bán quần áo (php + mysql)', '<p>Web bán quần áo (php + mysql)</p>', NULL, 50000.00, 'https://terabox.com/s/1X4sKHWASnzNbHrD_YdJLWw', 0, 0, '[\"01JG1D91TYSKF1EWCP7R1F0RHM.png\"]', '2024-12-26 11:57:50', '2024-12-28 11:31:54'),
 (6, 1, 'Web xem phim php  + mysql', '<p>Web xem phim php&nbsp; + mysql</p>', NULL, 20000.00, NULL, 0, 0, '[\"01JG1DBTQQ5SG6K2H1BZE37J6A.png\"]', '2024-12-26 11:59:21', '2024-12-26 11:59:21'),
 (7, 1, 'PetShop php + mysql', '<p>PetShop php + mysql</p>', NULL, 50000.00, NULL, 0, 0, '[\"01JG1DG6CGZY7MGKGGZP2EQHJJ.png\"]', '2024-12-26 12:01:44', '2024-12-26 12:01:44'),
@@ -664,6 +665,7 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('5520934', 'MBBank', '0966579217', '2024-12-18 14:15:33', 10650.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIctPVCftp-74307602378', 'FT24353698318044', NULL, NULL, '5090', '2024-12-18 07:16:17', '2024-12-18 07:16:17'),
 ('5520936', 'MBBank', '0966579217', '2024-12-18 14:15:35', 0.00, 10650.00, 0.00, '74309033193-927083-CHUYEN TIEN-OQCH39549957-MOMO74309033193MOMO', 'FT24353547661926', NULL, NULL, '5090', '2024-12-18 07:16:22', '2024-12-18 07:16:22'),
 ('5520957', 'MBBank', '0966579217', '2024-12-18 14:16:52', 18280.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIzrekhETm-74307454213', 'FT24353008086641', NULL, NULL, '5090', '2024-12-18 07:17:38', '2024-12-18 07:17:38'),
+('55209571', 'MBBank', '0966579217', '2024-12-18 14:16:52', 18280.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIzrekhETm-74307454213', 'FT24353008086641', NULL, NULL, '5090', '2024-12-18 07:17:38', '2024-12-18 07:17:38'),
 ('5520958', 'MBBank', '0966579217', '2024-12-18 14:16:55', 0.00, 18280.00, 0.00, '74309122490-905692-CHUYEN TIEN-OQCH39550278-MOMO74309122490MOMO', 'FT24353438100861', NULL, NULL, '5090', '2024-12-18 07:17:38', '2024-12-18 07:17:38'),
 ('5576347', 'MBBank', '0966579217', '2024-12-20 09:03:00', 30000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 729819', 'FT24355660755605', NULL, NULL, '5090', '2024-12-22 07:31:52', '2024-12-22 07:31:52'),
 ('5579191', 'MBBank', '0966579217', '2024-12-20 11:19:49', 150000.00, 0.00, 0.00, 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ W3939221', 'FT24355431004351', NULL, NULL, '5090', '2024-12-22 07:31:52', '2024-12-22 07:31:52'),
@@ -700,7 +702,11 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('5813843', 'MBBank', '0966579217', '2024-12-27 23:09:41', 0.00, 100000.00, 0.00, '75068149062-HG O8F8TRDELY-CHUYEN TIEN-OQCH42312683-MOMO75068149062MOMO', 'FT24363064415804', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
 ('5813845', 'MBBank', '0966579217', '2024-12-27 23:09:35', 100000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIkEhCvZui-75066804826', 'FT24363528664800', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
 ('5820982', 'MBBank', '0966579217', '2024-12-28 09:19:15', 100000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIuRIMqRmf-75085022324', 'FT24363000903229', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
-('5820983', 'MBBank', '0966579217', '2024-12-28 09:19:18', 0.00, 100000.00, 0.00, '75086454233-HG X5VHSCSRI3-CHUYEN TIEN-OQCH42363509-MOMO75086454233MOMO', 'FT24363180756178', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34');
+('5820983', 'MBBank', '0966579217', '2024-12-28 09:19:18', 0.00, 100000.00, 0.00, '75086454233-HG X5VHSCSRI3-CHUYEN TIEN-OQCH42363509-MOMO75086454233MOMO', 'FT24363180756178', NULL, NULL, '5090', '2024-12-28 02:20:34', '2024-12-28 02:20:34'),
+('5858100', 'MBBank', '0966579217', '2024-12-29 16:53:31', 100000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIJkEReytu-75188483884', 'FT24365281406803', NULL, NULL, '5090', '2024-12-29 09:54:51', '2024-12-29 09:54:51'),
+('5858101', 'MBBank', '0966579217', '2024-12-29 16:53:33', 0.00, 100000.00, 0.00, '75189795602-HG X5VHSCSRI3-CHUYEN TIEN-OQCH42784780-MOMO75189795602MOMO', 'FT24365667840791', NULL, NULL, '5090', '2024-12-29 09:54:51', '2024-12-29 09:54:51'),
+('5858150', 'MBBank', '0966579217', '2024-12-29 16:58:00', 110000.00, 0.00, 0.00, 'MOMO-CASHIN-0966579217-OQCIOMxxvlgf-75188486920', 'FT24365675980749', NULL, NULL, '5090', '2024-12-29 09:59:07', '2024-12-29 09:59:07'),
+('5858153', 'MBBank', '0966579217', '2024-12-29 16:58:03', 0.00, 110000.00, 0.00, '75190249466-HG X5VHSCSRI3-CHUYEN TIEN-OQCH42786176-MOMO75190249466MOMO', 'FT24365411275388', NULL, NULL, '5090', '2024-12-29 09:59:07', '2024-12-29 09:59:07');
 
 -- --------------------------------------------------------
 
@@ -737,7 +743,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `username`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `theme`, `theme_color`, `balance`, `ip_address`, `other_contact_info`, `device`, `total_consumption`, `total_deposit`, `two_factor_auth_status`, `avatar`, `contact`, `otp`) VALUES
-(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-28 02:20:36', 'default', NULL, 98987815.00, NULL, NULL, NULL, 1100000.00, NULL, 0, NULL, NULL, NULL);
+(39, 'HG DIGITAL', '2509roblox@gmail.com', 'x5vhscsri3', NULL, '$2y$12$HgMV5ozU5H9MWQuzJYuTSeUbUsuAgps68ZdyLCqSPYT79GAI3tnFy', NULL, '2024-12-26 03:05:22', '2024-12-29 09:59:10', 'default', NULL, 99197815.00, NULL, NULL, NULL, 1100000.00, NULL, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -936,7 +942,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT cho bảng `payment_history`
 --
 ALTER TABLE `payment_history`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
 
 --
 -- AUTO_INCREMENT cho bảng `settings`

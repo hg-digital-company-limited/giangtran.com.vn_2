@@ -252,7 +252,7 @@
                                                 <div class="card-header card-no-border">
                                                     <h2>Tiện Ích</h2>
                                                 </div>
-                                                <div class="card-body pt-0">
+                                                <a href="/tools/qr-code-generator" class="card-body pt-0" wire:navigate>
                                                     <div class="light-card satisfaction-box common-box">
                                                         <div class="widget-icon primary widget-round">
                                                             <svg>
@@ -266,8 +266,8 @@
                                                                 class="f-light f-w-500 f-12">lượt dùng (100)</span>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="card-body pt-0">
+                                                </a>
+                                                <a class="card-body pt-0" href="/tools/check-domain" wire:navigate>
                                                     <div class="light-card satisfaction-box common-box">
                                                         <div class="widget-icon primary widget-round">
                                                             <svg>
@@ -281,7 +281,7 @@
                                                                 class="f-light f-w-500 f-12">lượt dùng (100)</span>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </a>
 
                                             </div>
                                         </div>

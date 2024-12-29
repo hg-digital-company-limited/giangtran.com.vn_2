@@ -1,12 +1,14 @@
 <?php
 namespace App\Repositories\PaymentHistory;
 
+use App\Helpers\TelegramHelper;
 use App\Models\PaymentHistory;
 use App\Models\Transaction;
 use App\Models\User;
 use App\Repositories\EloquentRepository;
 use Illuminate\Support\Carbon;
 use App\Repositories\PaymentHistory\PaymentHistoryRepositoryInterface;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 class PaymentHistoryEloquentRepository extends EloquentRepository implements PaymentHistoryRepositoryInterface
@@ -46,6 +48,15 @@ class PaymentHistoryEloquentRepository extends EloquentRepository implements Pay
                         'status' => $transaction->status ?? 'thành công', // Trạng thái
                         'bank' => $transaction->bank_brand_name, // Tên ngân hàng
                     ]);
+                    $telegramHelper = new TelegramHelper();
+                    $message =
+                    " Nạp thành công:
+                    Người nạp: " . Auth::user()->email . "
+                    Mã code: {$code}
+                    Số tiền: " . number_format($transaction->amount_in, 0, ',', '.') . " VNĐ
+                    Ngày nạp: " . now()->format('d/m/Y H:i:s') . "
+                    ";
+                    $telegramHelper->sendMessage($message);
                     $user = User::find($user_id); // Giả sử bạn có mô hình User
                     $user->balance += $transaction->amount_in; // Cộng số tiền vào balance
                     $user->save(); // Lưu thay đổi
