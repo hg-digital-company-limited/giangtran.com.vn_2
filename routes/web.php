@@ -5,6 +5,8 @@ use App\Http\Controllers\cron\Transaction;
 use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\CheckMaintenanceMode;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
+use App\Livewire\Page\RutTien;
+use App\Livewire\Page\TiepThiLienKet;
 use App\Livewire\Services\WebService\Create;
 use App\Livewire\Template\ApiClient;
 use App\Livewire\Page\ChuyenKhoan;
@@ -26,9 +28,8 @@ use App\Livewire\Template\Hosting\MuaHosting;
 use App\Livewire\Template\Manage\Hosting;
 use App\Livewire\Template\Manage\Reseller;
 use App\Livewire\Template\KhoMaNguon;
-use App\Livewire\Template\RutTien;
+
 use App\Livewire\Template\ThueCron;
-use App\Livewire\Template\TiepThiLienKet;
 use App\Livewire\Template\VpsStore\CloudVpsVietNam\CloudVpsPro;
 use App\Livewire\Template\VpsStore\CloudVpsVietNam\CloudVpsPro\Detail;
 use App\Livewire\Template\KhoMaNguon\Detail as KhoMaNguonDetail;
@@ -79,6 +80,10 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
     Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
     Route::get('/tools/qr-code-generator', QrCodeGenerator::class)->name('qr-code-generator');
     Route::get('/tools/check-domain', action: CheckDomain::class)->name('check-domain');
+    Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
+Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
+
+
 });
 
 // template
@@ -97,7 +102,6 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
 // Route::get('/manage/code', Code::class)->name('code');
 // Route::get('/thue-cron', ThueCron::class)->name('thue-cron');
 // Route::get('/manage/cronjob', Cronjob::class)->name('cronjob');
-// Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
 // Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 // Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 // Route::get('/api-client', action: ApiClient::class)->name('api-client');

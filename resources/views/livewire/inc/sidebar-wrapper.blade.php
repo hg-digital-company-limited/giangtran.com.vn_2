@@ -75,15 +75,7 @@
                             <span> Trang Chủ </span>
                         </a>
                     </li>
-                    <li class="sidebar-list">
-                        <i class="fa fa-thumb-tack"></i>
-                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/chuyen-khoan">
-                            <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
-                            </svg>
-                            <span> Nạp Tiền </span>
-                        </a>
-                    </li>
+
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
                         <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/profile">
@@ -110,7 +102,7 @@
 
 
 
-                            <li><a  href="/smm/create"> Danh sách dịch vụ </a></li>
+                            <li><a href="/smm/create"> Danh sách dịch vụ </a></li>
 
 
 
@@ -152,7 +144,41 @@
                             <span> Dịch Vụ Website </span>
                         </a>
                     </li>
+                    <li class="sidebar-main-title">
+                        <div>
+                            <h6 class="lan-8">- OTHERS</h6>
+                        </div>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/chuyen-khoan">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                            </svg>
+                            <span> Nạp Tiền </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
+                            </svg>
 
+                            <span class="lan-6"> Tiếp Thi Liên Kết </span></a>
+                        <ul class="sidebar-submenu">
+
+
+
+                            <li><a wire:navigate href="/tiep-thi-lien-ket"> Thống Kê </a></li>
+
+
+
+                            <li><a wire:navigate href="/rut-tien"> Rút Tiền </a></li>
+
+
+
+                        </ul>
+                    </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6 class="lan-8">- Tools</h6>

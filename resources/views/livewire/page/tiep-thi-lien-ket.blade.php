@@ -1,43 +1,28 @@
 <div>
 
-
-
     <head>
-        <title> Tiếp Thị Liên Kết | {{ App\Helpers\SettingsHelper::getSetting('website_name') }} </title>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <link rel="stylesheet" href="/assets/static/style.css?v=1311648943">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/css/toast@1.0.1/fuiToast.min.css">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
+        @livewire('inc.seo', ['title' => 'Tiếp Thị Liên Kết - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+         'keywords' => 'Tiếp Thị Liên Kết, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     </head>
 
     <body id="content">
-        <div class="loader-wrapper" style="z-index: 999999;">
-            <div class="boxes"></div>
-        </div>
+
+
+
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
-            @livewire('inc.header')
+                @livewire('inc.header', ['title' => 'Tiếp Thị Liên Kết', 'description' => 'Tiếp Thị Liên Kết'])
 
                 <div class="page-body-wrapper">
 
 
-                @livewire('inc.sidebar-wrapper')
-
-                    <!-- TEMPLATE MỤC NÀY LẤY Ý TƯỞNG TỪ SHOPCLONEV7 CMSNT NHÉ KHỎI NHẬN VƠ -->
-                    <script>
-                        console.log('TEMPLATE MỤC NÀY LẤY Ý TƯỞNG TỪ SHOPCLONEV7 CMSNT NHÉ KHỎI NHẬN VƠ');
-                    </script>
+                    @livewire('inc.sidebar-wrapper')
 
                     <div class="page-body">
                         <div class="container-fluid default-dashboard">
@@ -58,7 +43,7 @@
                                                     <label>Liên Kết Của Bạn:</label>
                                                     <div class="input-group">
                                                         <div class="form-control" id="link-to-copy" readonly>
-                                                            https://nify.vn/ref/569 </div>
+                                                            {{url('/')}}/ref/{{auth()->user()->username}} </div>
                                                         <div class="input-group-append">
                                                             <button class="btn btn-default" onclick="copyText('{{url('/')}}/ref/{{auth()->user()->username}}')" type="button">
                                         <i class="icofont icofont-copy-alt"></i>
@@ -105,7 +90,7 @@
                                                     <div class="col-md-6">
                                                         <div class="card card-body bg-dark">
                                                             <span> Lượt Truy Cập: </span>
-                                                            <b class="txt-primary" style="font-size: 16px;"> 1 </b>
+                                                            <b class="txt-primary" style="font-size: 16px;"> 0 </b>
                                                         </div>
                                                     </div>
 
@@ -184,7 +169,7 @@
                                                     <div class="col-md-6">
                                                         <div class="card card-body bg-dark">
                                                             <span> Lượt Truy Cập: </span>
-                                                            <b class="txt-primary" style="font-size: 16px;"> 1 </b>
+                                                            <b class="txt-primary" style="font-size: 16px;">    0 </b>
                                                         </div>
                                                     </div>
 
@@ -271,13 +256,40 @@
                         </div>
                     </div>
 
-                    <script src="/static/wallet.js"></script>
-                @livewire('inc.footer')
+                    <div class="modal fade" id="showqr-code" aria-hidden="true" aria-labelledby="exampleModalToggle2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="modal-toggle-wrapper">
+                                        <ul class="modal-img">
+                                            <li>
+                                                <center><img src="" id="qr-cid"
+                                                        style="width: 70%; height: auto;" alt=""></center>
+                                            </li>
+                                        </ul>
+
+                                        <span class="text-center mt-3">Sử dụng App MoMo hoặc ứng dụng Camera hỗ trợ QR
+                                            code để quét mã.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        function showQRcode(img) {
+                            $("#qr-cid").attr("src", img);
+                        }
+                    </script>
+
+                    @livewire('inc.footer')
                 </div>
             </div>
         </div>
 
 
+        <input type="hidden" id="mn" value="0">
 
         <style>
             table tfoot tr {
@@ -289,36 +301,6 @@
             }
         </style>
 
-
-          {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-        <script src="/assets/static/simplebar.js"></script>
-        <script src="/assets/static/invoices.js?v=1731410753" defer></script>
-        <script src="/assets/static/jquery.min.js"></script>
-        <script src="/assets/static/config.js"></script>
-        <script src="/assets/static/cyberlux.js"></script>
-        <script src="/assets/static/handlebars.min.js"></script>
-        <script src="/assets/static/jquery.dataTables.min.js"></script>
-        <script src="/assets/static/datatable.custom.js"></script>
-        <script src="/assets/static/bundle.min.js"></script>
-        <script src="/assets/static/feather.min.js"></script>
-        <script src="/assets/static/bootstrap.bundle.min.js"></script>
-        <script src="/assets/static/feather.min.js"></script>
-        <script src="/assets/static/feather-icon.js"></script>
-        <script src="/assets/static/custom.js"></script>
-        <script src="/assets/static/swiper-bundle.min.js"></script>
-        <script src="/assets/static/sidebar-menu.js"></script>
-        <script src="/assets/static/sidebar-pin.js"></script>
-        <script src="/assets/static/bootstrap-notify.min.js"></script>
-        <script src="/assets/static/index.js"></script>
-        <script src="/assets/static/custom_touchspin.js"></script>
-        <script src="/assets/static/simple-datatable.js"></script>
-        <script src="/assets/static/handlebars.js"></script>
-        <script src="/assets/static/typeahead.bundle.js"></script>
-        <script src="/assets/static/typeahead.custom.js"></script>
-        <script src="/assets/static/search-handlebars.js"></script>
-        <script src="/assets/static/script.js"></script>
-        <script src="/assets/static/customizer.js"></script>
 
     </body>
 
