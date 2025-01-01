@@ -5,10 +5,10 @@ use App\Http\Controllers\cron\Transaction;
 use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\CheckMaintenanceMode;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
+use App\Livewire\Page\ApiClient;
 use App\Livewire\Page\RutTien;
 use App\Livewire\Page\TiepThiLienKet;
 use App\Livewire\Services\WebService\Create;
-use App\Livewire\Template\ApiClient;
 use App\Livewire\Page\ChuyenKhoan;
 use App\Livewire\Page\DieuKhoan;
 use App\Livewire\Auth\ForgotPassword;
@@ -104,7 +104,7 @@ Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 // Route::get('/manage/cronjob', Cronjob::class)->name('cronjob');
 // Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 // Route::get('/nap-card', action: NapCard::class)->name('nap-card');
-// Route::get('/api-client', action: ApiClient::class)->name('api-client');
+Route::get('/api-client', action: ApiClient::class)->name('api-client');
 // Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
 
 

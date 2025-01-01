@@ -17,7 +17,7 @@
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
-                @livewire('inc.header', ['title' => 'Rút Tiền', 'description' => 'Rút Tiền Hoa Hồng'])
+                @livewire('inc.header', ['title' => 'Rút Tiền (Đang phát triển)', 'description' => 'Rút Tiền Hoa Hồng'])
                 <div class="page-body-wrapper">
 
 

@@ -17,7 +17,7 @@
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
             <div class="page-wrapper compact-wrapper" id="pageWrapper">
-                @livewire('inc.header', ['title' => 'Tiếp Thị Liên Kết', 'description' => 'Tiếp Thị Liên Kết'])
+                @livewire('inc.header', ['title' => 'Tiếp Thị Liên Kết (Đang phát triển)', 'description' => 'Tiếp Thị Liên Kết'])
 
                 <div class="page-body-wrapper">
 

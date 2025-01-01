@@ -164,7 +164,7 @@
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
                             </svg>
 
-                            <span class="lan-6"> Tiếp Thi Liên Kết </span></a>
+                            <span class="lan-6"> Tiếp Thị Liên Kết </span></a>
                         <ul class="sidebar-submenu">
 
 
@@ -178,6 +178,15 @@
 
 
                         </ul>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/api-client">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-faq"></use>
+                            </svg>
+                            <span> Kết Nối Api </span>
+                        </a>
                     </li>
                     <li class="sidebar-main-title">
                         <div>
