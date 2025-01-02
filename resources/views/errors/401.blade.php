@@ -5,27 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/assets/images/favavatar.jpg" type="image/x-icon">
-    <link rel="shortcut icon" href="/assets/assets/images/favavatar.jpg" type="image/x-icon">
+    <link rel="icon" href="{{ App\Helpers\SettingsHelper::getSetting('icon') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ App\Helpers\SettingsHelper::getSetting('icon') }}" type="image/x-icon">
     <title>401 - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
-    <link rel="icon" type="image/x-icon" href="/logo/avatar.jpg" />
-    <link rel="shortcut icon" href="/logo/avatar.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,700&amp;display=swap" rel="stylesheet">
-    <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="/assets/assets/css/font-awesome.css">
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/icofont.css">
-    <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/themify.css">
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/flag-icon.css">
-    <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/feather-icon.css">
-    <!-- Plugins css start-->
-    <!-- Plugins css Ends-->
-    <!-- Bootstrap css-->
+
+
     <link rel="stylesheet" type="text/css" href="/assets/assets/css/vendors/bootstrap.css">
     <!-- App css-->
     <link rel="stylesheet" type="text/css" href="/assets/assets/css/style.css">
@@ -40,9 +24,9 @@
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- error-401 start-->
       <div class="error-wrapper">
-        <div class="container"><img class="img-100" src="/assets/assets/images/other-images/sad.png" alt="">
+        <div class="container"><img class="img-100" src="/assets/images/other-images/sad.png" alt="">
           <div class="error-heading">
-            <h2 class="headline font-warning">402</h2>
+            <h2 class="headline font-warning">401</h2>
           </div>
           <div class="col-md-8 offset-md-2">
             <p class="sub-content">Bạn không có quyền truy cập vào trang này.</p>
@@ -52,19 +36,6 @@
       </div>
       <!-- error-401 end-->
     </div>
-    <!-- latest jquery-->
-    <script src="/assets/assets/js/jquery.min.js"></script>
-    <!-- Bootstrap js-->
-    <script src="/assets/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- feather icon js-->
-    <script src="/assets/assets/js/icons/feather-icon/feather.min.js"></script>
-    <script src="/assets/assets/js/icons/feather-icon/feather-icon.js"></script>
-    <!-- scrollbar js-->
-    <!-- Sidebar jquery-->
-    <script src="/assets/assets/js/config.js"></script>
-    <!-- Plugins JS start-->
-    <!-- Plugins JS Ends-->
-    <!-- Theme js-->
-    <script src="/assets/assets/js/script.js"></script>
+
   </body>
 </html>

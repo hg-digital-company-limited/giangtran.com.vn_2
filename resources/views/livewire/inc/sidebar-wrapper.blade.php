@@ -247,6 +247,34 @@
 
                         </ul>
                     </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+                        <a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6"> Khóa Học </span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a>Danh Sách Khóa Học </a></li>
+                            <li><a> Quản Lý </a></li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+                        <a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6"> Tài Nguyên MMO </span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a>Danh Sách Tài Nguyên </a></li>
+                            <li><a> Quản Lý </a></li>
+                        </ul>
+                    </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6 class="lan-8">- OTHERS</h6>
