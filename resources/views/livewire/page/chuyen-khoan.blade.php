@@ -98,7 +98,7 @@
                                     <div class="card-header">
                                         <h2 class="card-title mb-0"> Lịch Sử Nạp Tiền </h2>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body" id="ls-naptien" style="opacity: 0; transition: opacity 0.2s;">
                                         <div class="col-sm-12">
                                             <div class="table-responsive custom-scrollbar">
                                                 <table class="display" id="basic-1">
@@ -114,7 +114,7 @@
                                                     </thead>
                                                     <tbody id="datatable">
                                                         @foreach ($paymentHistories as $index => $history)
-                                                            <tr>
+                                                            <tr wire:transition>
                                                                 <td>{{ $index + 1 }}</td>
                                                                 <td>{{ $history->transaction_code }}</td>
                                                                 <td>{{ number_format($history->amount, 2) }} VNĐ</td>
@@ -131,6 +131,7 @@
                                         </div>
 
                                     </div>
+
                                 </div>
                             </div>
 
@@ -252,5 +253,10 @@
             });
         </script>
     </body>
-
+    <script>
+        setTimeout(() => {
+            const table = document.getElementById('ls-naptien');
+            table.style.opacity = '1';
+        }, 2000);
+    </script>
 </div>

@@ -47,7 +47,7 @@
     <div class="product-wrapper-grid mt-3" style="opacity: 1;">
         <div class="row">
             @forelse ($sourceCodeProduct as $item)
-                <div class="col-xl-3 col-sm-6 xl-4">
+                <div class="col-xl-3 col-sm-6 xl-4" wire:transition>
                     <div class="card">
                         <div class="product-box">
                             <div class="product-img">

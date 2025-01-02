@@ -28,13 +28,6 @@
         src="https://cdn.jsdelivr.net/gh/lelinh014756/fui-toast-js@master/assets/js/toast@1.0.1/fuiToast.min.js"></script>
     <link id="googleidentityservice" type="text/css" media="all" href="https://accounts.google.com/gsi/style"
         rel="stylesheet">
-    {{-- <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /> --}}
-
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -121,17 +114,25 @@
 </head>
 
 <body>
-    <div class="preloader flex-column justify-content-center align-items-center" wire:navigating>
+    {{-- <div class="preloader flex-column justify-content-center align-items-center" wire:navigating>
         <img class="animation__shake"
             src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo"
             height="60" width="60">
-    </div>
+    </div> --}}
+
     {{ $slot }}
 
     @livewireScripts
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
     <script src="/assets/static/simplebar.js"></script>
+    <script defer>
+        setTimeout(() => {
+            const sidebar = document.querySelector('.sidebar-main');
+            sidebar.style.opacity = '1';
+        }, 1000);
+    </script>
     <script src="/assets/static/invoices.js?v=1731409673"></script>
     <script src="/assets/static/jquery.min.js"></script>
     <script src="/assets/static/config.js"></script>
@@ -198,22 +199,6 @@
     }
 </style>
 
-<script>
-    document.addEventListener('livewire:navigated', function() {
-        setTimeout(function() {
-            var $preloader = document.querySelector('.preloader');
-            var $animation__shake = document.querySelector('.animation__shake');
 
-            if ($preloader) {
-                $preloader.style.height = '0';
-                setTimeout(function() {
-                    if ($animation__shake) {
-                        $animation__shake.style.display = 'none';
-                    }
-                }, 200);
-            }
-        }, 900);
-    });
-</script>
 
 </html>

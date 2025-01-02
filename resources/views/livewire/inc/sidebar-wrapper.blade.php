@@ -45,7 +45,8 @@
             </div>
         </div>
 
-        <nav class="sidebar-main">
+        <nav class="sidebar-main" style="opacity: 0; transition: opacity 0.2s;">
+
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
             <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
