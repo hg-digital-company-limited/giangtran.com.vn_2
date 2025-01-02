@@ -78,25 +78,25 @@
 
 
                     <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
-                        href="#">
-                        <svg class="stroke-icon">
-                            <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
-                        </svg>
-                        <span class="lan-6"> Tài Khoản </span></a>
-                    <ul class="sidebar-submenu">
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
+                            </svg>
+                            <span class="lan-6"> Tài Khoản </span></a>
+                        <ul class="sidebar-submenu">
 
 
 
-                        <li><a href="/profile" > Thông Tin </a></li>
+                            <li><a href="/profile"> Thông Tin </a></li>
 
 
 
-                        <li><a wire:click="logout"> Đăng Xuất </a></li>
+                            <li><a wire:click="logout"> Đăng Xuất </a></li>
 
 
 
-                    </ul>
-                </li>
+                        </ul>
+                    </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6 class="lan-8">- SERVICES</h6>
@@ -155,6 +155,98 @@
                             <span> Dịch Vụ Website </span>
                         </a>
                     </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+                        <a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6"> Hosting & Reseller </span></a>
+                        <ul class="sidebar-submenu">
+
+
+
+                            <li><a> Danh sách Hosting </a></li>
+
+
+
+                            <li><a> Quản Lý </a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+                        <a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6"> Cloud VPS </span></a>
+                        <ul class="sidebar-submenu">
+
+
+
+                            <li><a> Danh sách Cloud VPS </a></li>
+
+
+
+                            <li><a> Quản Lý </a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+                        <a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6">  Shared License  </span></a>
+                        <ul class="sidebar-submenu">
+
+
+
+                            <li><a> Cửa Hàng </a></li>
+
+
+
+                            <li><a> Quản Lý </a></li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+                        <a class="sidebar-link sidebar-title"
+                            href="#">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-social"></use>
+                            </svg>
+
+                            <span class="lan-6"> Cron Job </span></a>
+                        <ul class="sidebar-submenu">
+
+
+
+                            <li><a> Thuê Cron Job </a></li>
+
+
+
+                            <li><a> Quản Lý </a></li>
+
+
+
+                        </ul>
+                    </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6 class="lan-8">- OTHERS</h6>
@@ -192,6 +284,7 @@
                     </li>
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
                         <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/api-client">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-faq"></use>
@@ -225,29 +318,32 @@
                     </li>
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
                         <a class="sidebar-link sidebar-title link-nav" href="/tools/watermark" wire:navigate>
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
                             </svg>
-                            <span> Thêm Wartermark ảnh </span>
+                            <span>Wartermark</span>
                         </a>
                     </li>
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
                         <a class="sidebar-link sidebar-title link-nav" href="/tools/check-ip" wire:navigate>
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
                             </svg>
-                            <span> Kiểm tra ip của bạn </span>
+                            <span> My IP </span>
                         </a>
                     </li>
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
                         <a class="sidebar-link sidebar-title link-nav" href="/tools/ping-domain" wire:navigate>
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
                             </svg>
-                            <span> Ping domain </span>
+                            <span> Ping Domain </span>
                         </a>
                     </li>
 
