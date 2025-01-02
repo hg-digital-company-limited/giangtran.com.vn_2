@@ -76,16 +76,27 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-list">
-                        <i class="fa fa-thumb-tack"></i>
-                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/profile">
-                            <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
-                            </svg>
-                            <span> Thông Tin Tài Khoản </span>
-                        </a>
-                    </li>
 
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
+                        href="#">
+                        <svg class="stroke-icon">
+                            <use href="/assets/assets/svg/icon-sprite.svg#stroke-widget"></use>
+                        </svg>
+                        <span class="lan-6"> Tài Khoản </span></a>
+                    <ul class="sidebar-submenu">
+
+
+
+                        <li><a href="/profile" > Thông Tin </a></li>
+
+
+
+                        <li><a wire:click="logout"> Đăng Xuất </a></li>
+
+
+
+                    </ul>
+                </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6 class="lan-8">- SERVICES</h6>
@@ -210,6 +221,33 @@
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
                             </svg>
                             <span> Kiểm Tra Domain </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" href="/tools/watermark" wire:navigate>
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                            </svg>
+                            <span> Thêm Wartermark ảnh </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" href="/tools/check-ip" wire:navigate>
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                            </svg>
+                            <span> Kiểm tra ip của bạn </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" href="/tools/ping-domain" wire:navigate>
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                            </svg>
+                            <span> Ping domain </span>
                         </a>
                     </li>
 

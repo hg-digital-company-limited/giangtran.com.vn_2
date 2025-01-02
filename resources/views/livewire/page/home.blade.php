@@ -41,7 +41,7 @@
                                                                 theo dõi và nâng cao sự hiện diện trực tuyến của bạn.
                                                             </p> <a
                                                                 class="btn btn-primary btn-hover-effect btn-sm f-w-500"
-                                                                href="/smm/create" > Mua Ngay
+                                                                href="/smm/create"> Mua Ngay
                                                             </a>
                                                         </div>
                                                     </div>
@@ -98,7 +98,54 @@
                                                     src="/assets/assets/images/dashboard/bg-1.png" alt="Nguyễn Thành">
                                             </div>
                                         </div>
+                                        <div class="col-xl-12 box-col-12" style="margin-top: -10px;">
+                                            <div class="offer-banner"
+                                                style="background-image: url(/assets/assets/images/bg-affilate.png);">
+                                                <div class="offer-content">
+                                                    <h2> Nhận Lên Đến 30% Cho Mỗi Lần Nạp </h2>
+                                                    <p class="f-w-500 f-12"> Bắt Đầu Giới Thiệu Kiếm Tiền Ngay! </p>
+                                                    <a href="/tiep-thi-lien-ket" wire:navigate
+                                                        class="btn btn-dark btn-sm"> Bắt Đầu </a>
+                                                </div><img class="img-fluid"
+                                                    src="/assets/assets/images/cyberlux/developer-4268348-3560991.png"
+                                                    alt="vector" loading="lazy">
+                                            </div>
 
+                                            <div class="card height-equal title-line mt-3">
+                                                <div class="card-header card-no-border">
+                                                    <div class="header-top">
+                                                        <h2> Affiliates </h2>
+                                                        <div class="card-header-right-icon customer-header"><a
+                                                                class="link-stroke-icon" href="/tiep-thi-lien-ket" wire:navigate> Chi
+                                                                Tiết
+                                                                <svg>
+                                                                    <use
+                                                                        href="/assets/assets/svg/icon-sprite.svg#eye-contact">
+                                                                    </use>
+                                                                </svg></a></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-body pt-0">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-6">
+                                                            <div class="customer-rate" style="padding: 20px;">
+                                                                <span class="f-light f-12 f-w-500 text-success"> Số Dư
+                                                                    Hoa Hồng </span>
+                                                                <h3 class="f-w-600"> 0<sup>đ</sup> </h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-6">
+                                                            <div class="customer-rate" style="padding: 20px;">
+                                                                <span class="f-light f-12 f-w-500 text-danger"> Hoa Hồng
+                                                                    Đã Rút </span>
+                                                                <h3 class="f-w-600"> 0<sup>đ</sup> </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-5 box-col-5">
@@ -241,7 +288,41 @@
                                                 </div>
                                             </div>
                                         @endif
+                                        <div class="col-xl-12 box-col-12">
+                                            <div class="card height-equal title-line">
+                                                <div class="card-header card-no-border">
+                                                    <div class="header-top">
+                                                        <h2> Mã Khuyến Mãi </h2>
+                                                    </div>
+                                                </div>
 
+                                                <div class="card-body pt-0">
+                                                    <ul class="scrollable-div-250px">
+
+
+                                                        <li>
+                                                            <div class="card card-body">
+                                                                <div style="display: flex;">
+                                                                    <b class="text-danger"> HAPPYNEWYEAR </b>
+                                                                    <a onclick="copyText('HAPPYNEWYEAR');"
+                                                                        class="badge badge-primary text-light"
+                                                                        style="margin-left: auto; cursor: pointer;"> <i
+                                                                            class="icofont icofont-copy-alt"></i> </a>
+                                                                </div>
+
+                                                                <div>
+                                                                    <span> Dịch vụ: Tăng Tương Tác</span><br>
+                                                                    <span> Giảm: 25%, Đã Dùng: 25/<sup>25 Lượt</sup>,
+                                                                        <br> Hết Hạn Vào: 10/01/2025 - 12:00:00 </span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-3 box-col-3">
@@ -252,7 +333,8 @@
                                                 <div class="card-header card-no-border">
                                                     <h2>Tiện Ích</h2>
                                                 </div>
-                                                <a href="/tools/qr-code-generator" class="card-body pt-0" wire:navigate>
+                                                <a href="/tools/qr-code-generator" class="card-body pt-0"
+                                                    wire:navigate>
                                                     <div class="light-card satisfaction-box common-box">
                                                         <div class="widget-icon primary widget-round">
                                                             <svg>
@@ -289,18 +371,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a href='https://www.free-counters.org/'>www.Free-Counters.org</a>
-                        <script type='text/javascript'
-                            src='https://www.freevisitorcounters.com/auth.php?id=edade5990080b86e1416a2cedeb15a986f449778'></script>
-                        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1279811/t/8"></script>
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function() {
-                                document.querySelectorAll('a[href="https://www.freevisitorcounters.com/en/home/stats/id/1279811"]')
-                                    .forEach(function(link) {
-                                        link.style.opacity = '0';
-                                    });
-                            });
-                        </script>
                     </div>
 
                     @livewire('content.modal-home')
