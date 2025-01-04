@@ -55,6 +55,9 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
         Route::get('/register', action: Register::class)->name('register');
         Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
         Route::get('/reset-password', action: ResetPassword::class)->name('password.reset');
+        Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
+        Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
+
     });
 
 
@@ -80,8 +83,6 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
     Route::get('/auth/google/callback', [Login::class, 'handleGoogleCallback']);
     Route::get('/tools/qr-code-generator', QrCodeGenerator::class)->name('qr-code-generator');
     Route::get('/tools/check-domain', action: CheckDomain::class)->name('check-domain');
-    Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
-Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 
 
 });
