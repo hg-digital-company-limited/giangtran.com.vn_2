@@ -102,10 +102,10 @@
                                             <div class="offer-banner"
                                                 style="background-image: url(/assets/assets/images/bg-affilate.png);">
                                                 <div class="offer-content">
-                                                    <h2> Nhận Lên Đến 30% Cho Mỗi Lần Nạp </h2>
-                                                    <p class="f-w-500 f-12"> Bắt Đầu Giới Thiệu Kiếm Tiền Ngay! </p>
-                                                    <a href="/tiep-thi-lien-ket" wire:navigate
-                                                        class="btn btn-dark btn-sm"> Bắt Đầu </a>
+                                                    <h2> Mã nguồn Wordrpress Chỉ 20k </h2>
+                                                    <p class="f-w-500 f-12"> Tổng cộng 650 theme! </p>
+                                                    <a href="/source-code/list/334/" wire:navigate
+                                                        class="btn btn-dark btn-sm"> Mua Ngay </a>
                                                 </div><img class="img-fluid"
                                                     src="/assets/assets/images/cyberlux/developer-4268348-3560991.png"
                                                     alt="vector" loading="lazy">
@@ -250,7 +250,7 @@
                                                     <div class="card-body pt-0 transaction-list">
                                                         <div class="row">
                                                             <div class="col-md-6 col-12" style="cursor: pointer;"
-                                                                href="/source-code/list" wire:navigate>
+                                                                href="/source-code/manager" wire:navigate>
                                                                 <div class="card widget-1">
                                                                     <div class="card-body common-space order-card">
                                                                         <div> <span

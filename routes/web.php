@@ -55,8 +55,7 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
         Route::get('/register', action: Register::class)->name('register');
         Route::get('/forgot-password', action: ForgotPassword::class)->name('forgot-password');
         Route::get('/reset-password', action: ResetPassword::class)->name('password.reset');
-        Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
-        Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
+
 
     });
 
@@ -67,7 +66,8 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
         Route::get('/api/transaction', [Transaction::class, 'transaction'])->name('cron-transaction');
         Route::get('/api/checkpayment', [Checkpayment::class, 'checkPayment'])->name('checkpayment');
         Route::get('/api/invoice/{invoice_code}', [Checkpayment::class, 'checkInvoice'])->name('checkinvoice');
-
+     Route::get('/tiep-thi-lien-ket', action: TiepThiLienKet::class)->name('tiep-thi-lien-ket');
+        Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
     });
 
     Route::get('/smm/create', CreateSmm::class)->name('smm.create');

@@ -290,7 +290,10 @@
                             <span> Nạp Tiền </span>
                         </a>
                     </li>
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title"
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <label class="badge badge-light-secondary">beta</label>
+
+                        <a class="sidebar-link sidebar-title"
                             href="#">
                             <svg class="stroke-icon">
                                 <use href="/assets/assets/svg/icon-sprite.svg#stroke-ecommerce"></use>
