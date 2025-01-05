@@ -37,13 +37,13 @@ class Form extends Component
         $response = $this->getDomainStatus($this->domain);
 
         if ($response['code'] === "0") {
-            $this->status = $response['message'];
-            $this->registrar = $response['registrar'];
-            $this->nameServer = $response['nameServer'];
-            $this->creationDate = $response['creationDate'];
-            $this->expirationDate = $response['expirationDate'];
-            $this->registrantName = $response['registrantName'];
-            $this->dnssec = $response['DNSSEC'];
+            $this->status = $response['message'] ?? null;
+            $this->registrar = $response['registrar'] ?? null;
+            $this->nameServer = $response['nameServer'] ?? null;
+            $this->creationDate = $response['creationDate'] ?? null;
+            $this->expirationDate = $response['expirationDate'] ?? null;
+            $this->registrantName = $response['registrantName'] ?? null;
+            $this->dnssec = $response['DNSSEC'] ?? null;
         } elseif ($response['code'] === "1") {
             $this->alert('error', 'Tên miền không tồn tại.');
             $this->resetFields(); // Reset thông tin khác

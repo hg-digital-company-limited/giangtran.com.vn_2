@@ -22,22 +22,105 @@
                 <div class="col-md-6">
                     @if ($status)
                         <div class="mt-3">
-                            <h4>Kết quả:</h4>
-                            <div class="card">
-                                <div class="card-body">
-                                    <p><strong>Trạng thái:</strong> {{ $status }}</p>
-                                    <p><strong>Đăng ký bởi:</strong> {{ $registrar }}</p>
-                                    <p><strong>Tên miền:</strong> {{ $domain }}</p>
-                                    <p><strong>Ngày tạo:</strong> {{ $creationDate }}</p>
-                                    <p><strong>Ngày hết hạn:</strong> {{ $expirationDate }}</p>
-                                    <p><strong>Tên người đăng ký:</strong> {{ $registrantName }}</p>
-                                    <p><strong>DNSSEC:</strong> {{ $dnssec }}</p>
-                                    <p><strong>Name Server:</strong></p>
-                                    <ul>
-                                        @foreach ($nameServer as $server)
-                                            <li>{{ $server }}</li>
-                                        @endforeach
-                                    </ul>
+                            <div class="card mb-0">
+                                <div class="card-header d-flex">
+                                    <h2 class="mb-0">Thông tin tên miền</h2>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="taskadd">
+                                        <div class="table-responsive custom-scrollbar">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Trạng thái</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $status ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Đăng ký bởi</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $registrar ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Tên miền</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $domain ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Ngày tạo</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $creationDate ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Ngày hết hạn</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $expirationDate ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Tên người đăng ký</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $registrantName ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">DNSSEC</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">{{ $dnssec ?? 'Không xác định' }}</p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="task_title_0">Name Server</h6>
+                                                        </td>
+                                                        <td>
+                                                            <p class="task_desc_0">
+                                                                @if ($nameServer)
+                                                                @foreach ($nameServer as $server)
+                                                                    <li>{{ $server }}</li>
+                                                                @endforeach
+                                                            @endif
+                                                            </p>
+                                                        </td>
+
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
