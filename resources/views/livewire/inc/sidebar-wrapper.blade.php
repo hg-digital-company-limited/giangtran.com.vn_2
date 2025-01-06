@@ -350,6 +350,15 @@
                     </li>
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" href="/tools/check-ip" wire:navigate>
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
+                            </svg>
+                            <span> Kiểm tra IP </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
                         <label class="badge badge-light-secondary">beta</label>
                         <a class="sidebar-link sidebar-title link-nav" href="/tools/watermark" wire:navigate>
                             <svg class="stroke-icon">
@@ -358,16 +367,7 @@
                             <span>Wartermark</span>
                         </a>
                     </li>
-                    <li class="sidebar-list">
-                        <i class="fa fa-thumb-tack"></i>
-                        <label class="badge badge-light-secondary">beta</label>
-                        <a class="sidebar-link sidebar-title link-nav" href="/tools/check-ip" wire:navigate>
-                            <svg class="stroke-icon">
-                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-knowledgebase"></use>
-                            </svg>
-                            <span> My IP </span>
-                        </a>
-                    </li>
+
                     <li class="sidebar-list">
                         <i class="fa fa-thumb-tack"></i>
                         <label class="badge badge-light-secondary">beta</label>

@@ -344,8 +344,9 @@
                                                             </svg>
                                                         </div>
                                                         <div>
-                                                            <h4>Tạo Mã QR Bank</h4><span
-                                                                class="f-light f-w-500 f-12">lượt dùng (100)</span>
+                                                            <h4>Tạo Mã QR Bank</h4>
+                                                            {{-- <span
+                                                                class="f-light f-w-500 f-12">lượt dùng (100)</span> --}}
                                                         </div>
                                                     </div>
                                                 </a>
@@ -359,8 +360,25 @@
                                                             </svg>
                                                         </div>
                                                         <div>
-                                                            <h4>Kiểm Tra Domain</h4><span
-                                                                class="f-light f-w-500 f-12">lượt dùng (100)</span>
+                                                            <h4>Kiểm Tra Domain</h4>
+                                                            {{-- <span
+                                                                class="f-light f-w-500 f-12">lượt dùng (+)</span> --}}
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="card-body pt-0" href="/tools/check-ip" wire:navigate>
+                                                    <div class="light-card satisfaction-box common-box">
+                                                        <div class="widget-icon primary widget-round">
+                                                            <svg>
+                                                                <use
+                                                                    href="/assets/assets/svg/icon-sprite.svg#like-shape">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div>
+                                                            <h4>Kiểm Tra IP</h4>
+                                                            {{-- <span
+                                                                class="f-light f-w-500 f-12">lượt dùng (+)</span> --}}
                                                         </div>
                                                     </div>
                                                 </a>
