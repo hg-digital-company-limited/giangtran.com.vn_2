@@ -34,5 +34,7 @@ class Setting extends Model
         'google_redirect',
         'maintenance',
         'deadline',
+        'anti_devtool',
     ];
 }
+

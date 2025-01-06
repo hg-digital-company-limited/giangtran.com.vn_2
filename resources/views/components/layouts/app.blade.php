@@ -111,14 +111,68 @@
     </style>
 
     @livewireStyles
+
 </head>
 
 <body>
-    {{-- <div class="preloader flex-column justify-content-center align-items-center" wire:navigating>
-        <img class="animation__shake"
-            src="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('loading_image'))) }}" alt="AdminLTELogo"
-            height="60" width="60">
-    </div> --}}
+    @if ( \App\Helpers\SettingsHelper::getSetting('anti_devtool'))
+        <script>
+            // Chặn chuột phải
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault(); // Ngăn chặn menu chuột phải
+            });
+
+            // Chặn F12 và các phím tắt phổ biến (Ctrl+U, Ctrl+Shift+I, Ctrl+C)
+            document.addEventListener('keydown', function(e) {
+                // F12
+                if (e.keyCode == 123) {
+                    e.preventDefault();
+                }
+
+                // Ctrl+Shift+I (Mở công cụ dev), Ctrl+Shift+C (Kiểm tra phần tử)
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 67)) {
+                    e.preventDefault();
+                }
+
+                // Ctrl+U (Xem mã nguồn)
+                if (e.ctrlKey && e.keyCode == 85) {
+                    e.preventDefault();
+                }
+
+                // Ctrl+C (Sao chép)
+                if (e.ctrlKey && e.keyCode == 67) {
+                    e.preventDefault();
+                }
+                // Ngăn chặn Ctrl + S (Lưu trang)
+                if (e.ctrlKey && e.keyCode === 83) { // Ctrl + S
+                    e.preventDefault(); // Ngăn chặn hành động mặc định (lưu trang)
+                }
+            });
+            // Chặn copy (sao chép) văn bản bằng cách chặn sự kiện copy
+            document.addEventListener('copy', function(e) {
+                e.preventDefault(); // Ngăn chặn copy
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/devtools-detector@2.0.22/lib/devtools-detector.min.js"></script>
+        <script>
+            var view = document.createElement('div');
+            document.body.appendChild(view);
+
+            // Lắng nghe trạng thái của Developer Tools
+            devtoolsDetector.addListener(function(isOpen) {
+                view.innerText = isOpen ? 'devtools status: open' : 'devtools status: close';
+
+                // Nếu Developer Tools đang mở, cho die() trang web
+                if (isOpen) {
+                    window.location.href = 'about:blank'; // Bạn có thể thay thế bằng die() nếu muốn
+
+                }
+            });
+
+            // Khởi chạy phát hiện Developer Tools
+            devtoolsDetector.launch();
+        </script>
+    @endif
 
     {{ $slot }}
 
@@ -198,7 +252,5 @@
         transition: transform .3s ease;
     }
 </style>
-
-
 
 </html>

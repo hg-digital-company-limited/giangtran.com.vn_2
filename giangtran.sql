@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 05, 2025 at 01:27 AM
+-- Generation Time: Jan 06, 2025 at 11:03 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.2.27
 
@@ -40,9 +40,10 @@ CREATE TABLE `access_history` (
 --
 
 INSERT INTO `access_history` (`id`, `date`, `visit_count`, `created_at`, `updated_at`) VALUES
-(1, '2025-01-05', 23, '2025-01-05 01:14:49', '2025-01-05 01:27:01'),
+(1, '2025-01-05', 77, '2025-01-05 01:14:49', '2025-01-05 02:26:33'),
 (2, '2025-01-04', 2, '2025-01-05 01:14:49', '2025-01-05 01:14:56'),
-(3, '2025-01-03', 2, '2025-01-05 01:14:49', '2025-01-05 01:14:56');
+(3, '2025-01-03', 2, '2025-01-05 01:14:49', '2025-01-05 01:14:56'),
+(4, '2025-01-06', 51, '2025-01-06 04:23:40', '2025-01-06 11:03:35');
 
 -- --------------------------------------------------------
 
@@ -259,7 +260,10 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('BzXGYnBiqx81RYpRzkYC2xhRPCScdKAOsJIfJ90n', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiM1ZYOWVBaTl2RjdicUNDWkcxWnI3eXBkaGs4UDFGS2JlSXlqU3lwRyI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiRIZ01WNW96VTVIOU1XUXV6Sll1VFNlVWJVc3VBZ3BzNjhaZHlMQ3FTUFlUNzlHQUkzdG5GeSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1736040421);
+('6xY95jy4kW9skVaHuJkrjWypasorqsZp72F3j2Nw', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiVzFPeTEzRDZGOGJidUphRGRPbzI1NlVrRFduVHNEcEhYSG8xYWkyNiI7czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mzk7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fX0=', 1736160534),
+('kw2bMtndx1a8c0yt7AgSxkpBjKEKuBCVyRQF0OnY', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNVFuRVRaeGk5d3VCZ2ZrbWNjcXMyUEhWQzVKbTJqc1A0SzdRdEhEcCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fX0=', 1736160604),
+('Pf5bGlxbXGUrVR6rcF4H1YCj9990VabuTJ9DOP6S', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZmk3SE92V3lhNW5MYXNEd002WmVCeVdEeVRMVk5FSFZFUE1RQ05rMCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fX0=', 1736160849),
+('vbpd7H8Dw55H5FF4HZQrIGyCMhTXPlxVEvCRBfEB', 39, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiQWJJV1M1NUhSakppeUNJOEFTOG5hc1Q1Z0lxck5heEYybkdUNmxzUSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjM5O3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkSGdNVjVvelU1SDlNV1F1ekpZdVRTZVViVXN1QWdwczY4WmR5TENxU1BZVDc5R0FJM3RuRnkiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1736161423);
 
 -- --------------------------------------------------------
 
@@ -291,15 +295,16 @@ CREATE TABLE `settings` (
   `telegram_bot_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `telegram_chat_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `maintenance` int NOT NULL DEFAULT '0',
-  `deadline` datetime DEFAULT NULL
+  `deadline` datetime DEFAULT NULL,
+  `anti_devtool` tinyint DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `settings`
 --
 
-INSERT INTO `settings` (`id`, `avatar`, `icon`, `logo`, `banner`, `loading_image`, `website_name`, `website_description`, `contact`, `notification`, `prefix`, `min_deposit`, `account_number`, `account_name`, `created_at`, `updated_at`, `account_name_qr`, `bank_name`, `sepay_token`, `sepay_account_number`, `telegram_bot_token`, `telegram_chat_id`, `maintenance`, `deadline`) VALUES
-(1, '01JG0XGBRYKZKZP4XA684C5K2K.png', '01JG0XGBSGNV6Y2297CTVXYNGE.png', '01JFW6CXW3980HQ30XJF3TCTWA.webp', '01JG0XTTYH3WR4D7MJM9X46S8D.png', '01JFW6CXW7N938ZNMG8PR3VA7V.webp', 'GIANGTRAN.COM.VN', 'Chúng tôi cung cấp giải pháp tăng tương tác, mã nguồn chất lượng và dịch vụ thiết kế website chuyên nghiệp, giúp bạn phát triển doanh nghiệp trực tuyến hiệu quả. Khám phá ngay!', 'https://zalo.me/0966579217', '<p>&nbsp;<strong>Chào Mừng Đến Với GIANGTRAN.COM.VN</strong></p><p><strong><em>theme wordpress giá rẻ chỉ 20k&nbsp; &nbsp;</em></strong><a href=\"https://giangtran.com.vn/source-code/list/334/\"><strong><em>tại đây</em></strong></a></p><p>Hỗ Trợ Nhanh Qua: <a href=\"https://zalo.me/1715225565559061022\"><strong>Zalo</strong></a></p>', 'HG ', '10000.00', '0966579217', 'TRẦN LÊ HOÀNG GIANG', '2024-12-23 23:34:47', '2025-01-05 00:47:24', 'TRAN LE HOANG GIANG', 'mb', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', '7705050554:AAHLZs4l_cnG7nJqvwMDrt-4ITk3LWu8aQA', '6708960219', 0, '2024-12-27 21:50:04');
+INSERT INTO `settings` (`id`, `avatar`, `icon`, `logo`, `banner`, `loading_image`, `website_name`, `website_description`, `contact`, `notification`, `prefix`, `min_deposit`, `account_number`, `account_name`, `created_at`, `updated_at`, `account_name_qr`, `bank_name`, `sepay_token`, `sepay_account_number`, `telegram_bot_token`, `telegram_chat_id`, `maintenance`, `deadline`, `anti_devtool`) VALUES
+(1, '01JG0XGBRYKZKZP4XA684C5K2K.png', '01JG0XGBSGNV6Y2297CTVXYNGE.png', '01JFW6CXW3980HQ30XJF3TCTWA.webp', '01JG0XTTYH3WR4D7MJM9X46S8D.png', '01JFW6CXW7N938ZNMG8PR3VA7V.webp', 'GIANGTRAN.COM.VN', 'Chúng tôi cung cấp giải pháp tăng tương tác, mã nguồn chất lượng và dịch vụ thiết kế website chuyên nghiệp, giúp bạn phát triển doanh nghiệp trực tuyến hiệu quả. Khám phá ngay!', 'https://zalo.me/0966579217', '<p>&nbsp;<strong>Chào Mừng Đến Với GIANGTRAN.COM.VN</strong></p><p><strong><em>theme wordpress giá rẻ chỉ 20k&nbsp; &nbsp;</em></strong><a href=\"https://giangtran.com.vn/source-code/list/334/\"><strong><em>tại đây</em></strong></a></p><p>Hỗ Trợ Nhanh Qua: <a href=\"https://zalo.me/1715225565559061022\"><strong>Zalo</strong></a></p>', 'HG ', '10000.00', '0966579217', 'TRẦN LÊ HOÀNG GIANG', '2024-12-23 23:34:47', '2025-01-06 11:03:33', 'TRAN LE HOANG GIANG', 'mb', 'FHQMNTA45AVPJTZAUU2C61UZQ3OWBZMFDII1MESK8GXYVPB7NKS7JHYLN0PAXQEL', '0966579217', '7705050554:AAHLZs4l_cnG7nJqvwMDrt-4ITk3LWu8aQA', '6708960219', 0, '2024-12-27 21:50:04', 0);
 
 -- --------------------------------------------------------
 
@@ -740,7 +745,17 @@ INSERT INTO `transactions` (`id`, `bank_brand_name`, `account_number`, `transact
 ('5942164', 'MBBank', '0966579217', '2024-12-31 18:48:43', '103000.00', '0.00', '0.00', 'TRAN LE HOANG GIANG chuyen tien- MaGD ACSP/ MP773865', 'FT24366326531696', NULL, NULL, '5090', '2025-01-02 13:10:06', '2025-01-02 13:10:06'),
 ('5986028', 'MBBank', '0966579217', '2025-01-01 20:49:16', '0.00', '300000.00', '0.00', 'NGUYEN DUY PHUOC chuyen tien', 'FT25001145862040', NULL, NULL, '5090', '2025-01-02 13:10:06', '2025-01-02 13:10:06'),
 ('5999153', 'MBBank', '0966579217', '2025-01-02 08:40:57', '5000.00', '0.00', '0.00', 'TRAN LE HOANG GIANG chuyen tien', 'FT25002030780845', NULL, NULL, '5090', '2025-01-02 13:10:06', '2025-01-02 13:10:06'),
-('6000102', 'MBBank', '0966579217', '2025-01-02 09:10:22', '580000.00', '0.00', '0.00', 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 398426', 'FT25002196576587', NULL, NULL, '5090', '2025-01-02 13:10:06', '2025-01-02 13:10:06');
+('6000102', 'MBBank', '0966579217', '2025-01-02 09:10:22', '580000.00', '0.00', '0.00', 'TRAN LE HOANG GIANG chuyen tien - Ma giao dich/ Trace 398426', 'FT25002196576587', NULL, NULL, '5090', '2025-01-02 13:10:06', '2025-01-02 13:10:06'),
+('6039439', 'MBBank', '0966579217', '2025-01-03 08:37:30', '0.00', '800000.00', '0.00', 'LE TU HOANG chuyen tien website', 'FT25003574046241', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6050339', 'MBBank', '0966579217', '2025-01-03 17:01:17', '0.00', '100000.00', '0.00', 'done', 'FT25003568566724', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6054683', 'MBBank', '0966579217', '2025-01-03 18:37:21', '0.00', '100000.00', '0.00', 'DO HOAI GIANG CHUYEN TIEN- Ma GD ACSP/ Y5590053', 'FT25003613678859', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6067837', 'MBBank', '0966579217', '2025-01-03 22:31:22', '0.00', '350000.00', '0.00', 'mua 3 ten mien giup anh   Ma giao dich  Trace708488 Trace 708488', 'FT25004202062424', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6080858', 'MBBank', '0966579217', '2025-01-04 09:34:17', '353100.00', '0.00', '0.00', 'QRCODE VNPAY QRCODE 096657921725010409343500529 BP0001c85ags', 'FT25004610412668', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6086118', 'MBBank', '0966579217', '2025-01-04 14:40:49', '100000.00', '0.00', '0.00', 'MOMO-CASHIN-0966579217-OQCITbHplHJz-75679936608', 'FT25004232250470', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6101030', 'MBBank', '0966579217', '2025-01-04 21:29:24', '0.00', '200000.00', '0.00', 'MBVCB.8123312323.822374.LE TU HOANGchuyen tien website.CT tu 1049043107 LE TU HOANG toi 0966579217 TRANLE HOANG GIANG tai MB- Ma GD ACSP/', 'FT25004589610420', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6131285', 'MBBank', '0966579217', '2025-01-05 17:41:29', '10000.00', '0.00', '0.00', 'MOMO-CASHIN-0966579217-OQCIxuilsZtL-75776248040', 'FT25006341806909', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6161635', 'MBBank', '0966579217', '2025-01-06 09:28:42', '0.00', '400000.00', '0.00', 'HUYNH VAN TRUNG chuyen tien FT25006823673040   Ma giao dich  Trace103752 Trace 103752', 'FT25006037305271', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44'),
+('6161712', 'MBBank', '0966579217', '2025-01-06 09:31:43', '120000.00', '0.00', '0.00', 'done task 400', 'FT25006049327090', NULL, NULL, '5090', '2025-01-06 10:45:44', '2025-01-06 10:45:44');
 
 -- --------------------------------------------------------
 
@@ -958,7 +973,7 @@ ALTER TABLE `web_services`
 -- AUTO_INCREMENT for table `access_history`
 --
 ALTER TABLE `access_history`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `activity_history`

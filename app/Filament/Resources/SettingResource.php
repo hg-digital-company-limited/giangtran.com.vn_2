@@ -28,6 +28,9 @@ class SettingResource extends Resource
                         // Tab Thông tin cơ bản
                         Forms\Components\Tabs\Tab::make('Thông tin cơ bản')
                             ->schema([
+                                Forms\Components\Toggle::make('anti_devtool')
+                                    ->label('Chặn devtool (anti_devtool)')
+                                    ->default(false),
                                 Forms\Components\Toggle::make('maintenance')
                                     ->label('Trạng thái bảo trì (maintenance)')
                                     ->default(false),

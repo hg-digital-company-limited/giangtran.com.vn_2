@@ -176,7 +176,7 @@
                                     }
                                     const imageUrl = $(state.element).data('image');
                                     return $('<span><img src="' + imageUrl +
-                                        '" class="img-flag" style="width: 100px;  " /> ' + state
+                                        '" class="img-flag" style="height: 30px;  " /> ' + state
                                         .text + '</span>');
                                 }
                                 $('#bank-select').on('change', function(e) {
