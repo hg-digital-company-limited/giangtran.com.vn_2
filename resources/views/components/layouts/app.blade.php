@@ -15,8 +15,8 @@
         type="image/png">
     <link rel="icon" type="image/png" sizes="32x32"
         href="{{ url(Storage::url(App\Helpers\SettingsHelper::getSetting('icon'))) }}">
-    <meta name="google-site-verification" content="F6YQKXRzp2CQXZQnFrTo3gAeBHesT0q5ZygwwbutBns" />
 
+    <meta name="google-site-verification" content="zDwl8PmwUUK3FW1C4jD2qGWfIgEdLkyVmhvUhUrGXmU" />
 
 
     <link rel="stylesheet" href="/assets/static/style.css?v=1822759336">
