@@ -12,8 +12,12 @@ class BlogDetail extends Component
     public function mount($slug)
     {
         $this->blog = Blog::where('slug', $slug)->first();
-        $this->blog->views++;
-        $this->blog->save();
+        if ($this->blog) {
+            $this->blog->views++;
+            $this->blog->save();
+        } else {
+            return abort(404);
+        }
     }
 
     public function render()
