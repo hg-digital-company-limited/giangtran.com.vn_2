@@ -6,6 +6,8 @@ use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\CheckMaintenanceMode;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
 use App\Livewire\Page\ApiClient;
+use App\Livewire\Page\Blog;
+use App\Livewire\Page\BlogDetail;
 use App\Livewire\Page\RutTien;
 use App\Livewire\Page\TiepThiLienKet;
 use App\Livewire\Services\WebService\Create;
@@ -107,6 +109,8 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
 // Route::get('/rut-tien', action: RutTien::class)->name('rut-tien');
 // Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 Route::get('/api-client', action: ApiClient::class)->name('api-client');
+Route::get('/blog', action: Blog::class)->name('blog');
+Route::get('/blog/{slug}', action: BlogDetail::class)->name('blog-detail');
 // Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
 
 

@@ -324,6 +324,15 @@
                             <span> Kết Nối Api </span>
                         </a>
                     </li>
+                    <li class="sidebar-list">
+                        <i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" wire:navigate href="/blog">
+                            <svg class="stroke-icon">
+                                <use href="/assets/assets/svg/icon-sprite.svg#stroke-blog"></use>
+                            </svg>
+                            <span> Blog </span>
+                        </a>
+                    </li>
                     <li class="sidebar-main-title">
                         <div>
                             <h6 class="lan-8">- Tools</h6>

@@ -41,8 +41,8 @@
                     </div>
                 </div>
 
-                <span class="mt-2"> Cập Nhật Gần Nhất Vào:
-                    {{ $sourceCodeDetail->updated_at }}
+                <span class="mt-2"> Ngày tạo:
+                    {{ $sourceCodeDetail->created_at }}
                 </span>
 
                 <div class="col-md-12 card card-body text-light mt-3"
