@@ -13,6 +13,7 @@ class ListBlogs extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
+            \EightyNine\ExcelImport\ExcelImportAction::make(),
             Actions\CreateAction::make(),
         ];
     }

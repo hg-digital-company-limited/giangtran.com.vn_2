@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\cron\Checkpayment;
 use App\Http\Controllers\cron\Transaction;
+use App\Http\Controllers\SitemapController;
 use App\Http\Middleware\CheckAuth;
 use App\Http\Middleware\CheckMaintenanceMode;
 use App\Http\Middleware\EnsureUserIsAuthenticated;
@@ -110,9 +111,12 @@ Route::middleware(CheckMaintenanceMode::class)->group(function () {
 // Route::get('/nap-card', action: NapCard::class)->name('nap-card');
 Route::get('/api-client', action: ApiClient::class)->name('api-client');
 Route::get('/blog', action: Blog::class)->name('blog');
-Route::get('/blog/{slug}', action: BlogDetail::class)->name('blog-detail');
+Route::get('/blog/{slug}', action: BlogDetail::class)->name('blog.show');
 // Route::get('/product/hosting/{id}', action: DetailHosting::class)->name('product-hosting');
-
+Route::get('/sitemap.xml', [
+    SitemapController::class,
+    'generateSitemap'
+]);
 
 
 
@@ -143,3 +147,4 @@ Route::get('/500', function () {
 Route::get('/503', function () {
     return view('errors.503');
 });
+

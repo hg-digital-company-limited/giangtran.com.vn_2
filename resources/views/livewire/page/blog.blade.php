@@ -57,6 +57,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @if ($blog3)
                                     <div class="card" onclick="window.location.href='/blog/{{  $blog3->slug }}'" style="cursor: pointer;">
                                         <div class="blog-box blog-list row">
                                             <div class="col-sm-5"><img class="img-fluid sm-100-w"
@@ -76,6 +77,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
                                 </div>
                                 @foreach ($blogs as $blog)
                                 <div class="col-md-6 col-xxl-3 box-col-6">

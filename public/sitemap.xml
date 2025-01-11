@@ -1,45 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://giangtran.com.vn/</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://giangtran.com.vn/home</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://giangtran.com.vn/dieu-khoan</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://giangtran.com.vn/chuyen-khoan</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://giangtran.com.vn/services/smm/create</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://giangtran.com.vn/login</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://giangtran.com.vn/register</loc>
-    <lastmod>2024-11-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>http://localhost:8000/blog/realme-14-pro-chinh-thuc-ra-mat-tai-trung-quoc</loc>
+        <lastmod>2025-01-10T00:00:00+07:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://localhost:8000/blog/1234234</loc>
+        <lastmod>2025-01-10T00:00:00+07:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://localhost:8000/blog/12342341</loc>
+        <lastmod>2025-01-10T00:00:00+07:00</lastmod>
+
+            </url>
 </urlset>
