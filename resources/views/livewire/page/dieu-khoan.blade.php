@@ -2,9 +2,9 @@
 
 
     <head>
-
-        @livewire('inc.seo', ['title' => 'Điều Khoản & Chính Sách - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+        <title>Điều Khoản & Chính Sách - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Điều Khoản & Chính Sách - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Điều Khoản & Chính Sách, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'keywords' => 'Điều Khoản & Chính Sách, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <link rel="stylesheet" href="/assets/static/style.css?v=410833453">

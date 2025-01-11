@@ -1,13 +1,14 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Kết Nối Api - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+        <title>Kết Nối Api - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Kết Nối Api - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', [
          'keywords' => 'Kết Nối Api, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    </head>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <body id="content">
 

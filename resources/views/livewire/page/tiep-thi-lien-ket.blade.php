@@ -1,8 +1,9 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Tiếp Thị Liên Kết - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+        <title>Tiếp Thị Liên Kết - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Tiếp Thị Liên Kết - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Tiếp Thị Liên Kết, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'keywords' => 'Tiếp Thị Liên Kết, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -1,7 +1,9 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Trang Tin Tức - ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'description' => App\Helpers\SettingsHelper::getSetting('website_description'), 'keywords' => 'Trang Tin Tức, ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
+        <title>Trang Tin Tức - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Trang Tin Tức - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Trang Tin Tức, ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
 
     <body id="content">

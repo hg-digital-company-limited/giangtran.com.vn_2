@@ -1,8 +1,9 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Tạo Đơn Tăng Tương Tác - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+        <title>Tạo Đơn Tăng Tương Tác - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Tạo Đơn Tăng Tương Tác - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Tạo Đơn Tăng Tương Tác, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'keywords' => 'Tạo Đơn Tăng Tương Tác, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <style>

@@ -1,11 +1,12 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => $blog->title . ' - ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'description' => $blog->short_description, 'keywords' => $blog->title . ', ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'image' => url(Storage::url($blog->image))])
+        <title>{{ $blog->title }} - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="{{ $blog->short_description }}">
+        @livewire('inc.seo', [   'keywords' => $blog->title . ', ' . App\Helpers\SettingsHelper::getSetting('website_name'), 'image' => url(Storage::url($blog->image))])
     </head>
 
     <body id="content">
-
         <div>
             <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 

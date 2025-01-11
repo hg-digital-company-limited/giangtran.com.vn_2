@@ -1,8 +1,9 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Thông Tin Tài Khoản - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+        <title>Thông Tin Tài Khoản - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Thông Tin Tài Khoản - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Thông Tin Tài Khoản, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'keywords' => 'Thông Tin Tài Khoản, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
@@ -16,7 +17,7 @@
         <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 
         <div class="page-wrapper compact-wrapper" id="pageWrapper">
-            @livewire('inc.header')
+            @livewire('inc.header', ['title' => 'Thông Tin Tài Khoản', 'description' => 'Thông Tin Tài Khoản'])
 
             <div class="page-body-wrapper">
 

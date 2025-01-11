@@ -2,6 +2,10 @@
 
     <head>
         <title>Dịch Vụ Website - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Dịch Vụ Website - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Dịch Vụ Website, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'keywords' => 'Dịch Vụ Website, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+         'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
 
     <body id="content">

@@ -1,9 +1,9 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Rút Tiền - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
-         'keywords' => 'Rút Tiền, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
+        <title>Rút Tiền - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Rút Tiền - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Rút Tiền, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

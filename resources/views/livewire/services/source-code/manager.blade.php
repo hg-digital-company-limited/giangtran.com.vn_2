@@ -1,8 +1,9 @@
 <div>
 
     <head>
-        @livewire('inc.seo', ['title' => 'Quản Lý Mã Nguồn - ' . App\Helpers\SettingsHelper::getSetting('website_name'),
-        'description' => App\Helpers\SettingsHelper::getSetting('website_description'),
+        <title>Quản Lý Mã Nguồn - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}</title>
+        <meta name="description" content="Quản Lý Mã Nguồn - {{ App\Helpers\SettingsHelper::getSetting('website_name') }}">
+        @livewire('inc.seo', ['keywords' => 'Quản Lý Mã Nguồn, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'keywords' => 'Quản Lý Mã Nguồn, ' . App\Helpers\SettingsHelper::getSetting('website_name'),
          'image' => url(Storage::url(App\Helpers\SettingsHelper::getSetting('banner')))])
     </head>
